@@ -117,7 +117,8 @@ Movement range:
 An unit:
 
 - can only attack once per turn
-- can only attack a general/unit within range of 1 tile (horizontal, vertical, diagonal)
+- can only attack a general/unit within range of 1 tile (horizontal, vertical,
+  diagonal)
 - can only attack one target per turn
 - looks in a direction:
   - Player 1: left (`>`)
