@@ -198,14 +198,13 @@ Battle Pet is a tribe of minions that cannot be directly controlled
 2. If there are no enemies within attacking range even after moving, a Battle
    Pet will move towards the closest enemy. If there are multiple enemies that
    share the closest distance, it will move towards one at random.
-3. This rule is the one most likely to trip someone up! If there are enemies
-   within attacking range but only after moving, a Battle Pet will move towards
-   the enemy that requires the least number of tiles to reach for the attack.
-   If there are multiple such enemies, it will choose one at random. Then as
-   above, it attacks the closest enemy, prioritizing enemies on the same row or
-   column. Note that this is different from moving towards the closest enemy;
-   two enemies may have different distances but require the same number of
-   tiles to reach.
+3. If there are enemies within attacking range but only after moving, a Battle
+   Pet will move towards the enemy that requires the least number of tiles to
+   reach for the attack. If there are multiple such enemies, it will choose one
+   at random. Then as above, it attacks the closest enemy, prioritizing enemies
+   on the same row or column. Note that this is different from moving towards
+   the closest enemy; two enemies may have different distances but require the
+   same number of tiles to reach.
 4. A Battle Pet will always take the shortest path towards its target. If there
    are multiple shortest paths, it will choose one at random.
 5. A Battle Pet with Ranged moves the same way as if it did not have Ranged (if
