@@ -258,12 +258,10 @@ a.legend-post-title {
 .card-description a {
     font-weight: bold;
 	color: #ffffff;
-	cursor: pointer;
 }
 .card-description span {
     font-weight: bold;
 	color: #ffffff;
-	cursor: help;
 }
 
 /* card ability */
@@ -271,7 +269,6 @@ a.legend-post-title {
     color: #ffffff;
     font-size: 12px;
     letter-spacing: 1px;
-    font-family: Arial, sans-serif;
 	display: block;
 	margin-bottom: 10px;
 }
