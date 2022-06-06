@@ -166,7 +166,7 @@ The unit can attack and move the same turn it was summoned.
 
 ### Flying
 
-The unit can move anywhere on the battlefield.
+The unit can move to any non-occupied tile on the battlefield.
 Being fully surrounded doesn't prevent movement.
 
 ### Ranged
@@ -183,32 +183,80 @@ only attack the friendly unit with this keyword and cannot move.
 
 ### Arcanyst
 
-...
+Arcanysts with the Bond keyword will only activate that ability if there is a
+friendly Arcanyst on the board when they are summoned.
 
 ### Battle pet
 
-...
+Battle Pet is a tribe of minions that cannot be directly controlled
+
+1. If there are enemies within immediate attacking range, a Battle Pet will
+   attack the closest one without moving. If there are multiple such enemies,
+   it will attack one at random. Enemies on the same row or column as the
+   Battle Pet are prioritized over enemies diagonal to it.
+2. If there are no enemies within attacking range even after moving, a Battle
+   Pet will move towards the closest enemy. If there are multiple enemies that
+   share the closest distance, it will move towards one at random.
+3. This rule is the one most likely to trip someone up! If there are enemies
+   within attacking range but only after moving, a Battle Pet will move towards
+   the enemy that requires the least number of tiles to reach for the attack.
+   If there are multiple such enemies, it will choose one at random. Then as
+   above, it attacks the closest enemy, prioritizing enemies on the same row or
+   column. Note that this is different from moving towards the closest enemy;
+   two enemies may have different distances but require the same number of
+   tiles to reach.
+4. A Battle Pet will always take the shortest path towards its target. If there
+   are multiple shortest paths, it will choose one at random.
+5. A Battle Pet with Ranged moves the same way as if it did not have Ranged (if
+   it moves at all), and attacks the closest enemy. This makes its ranged
+   effect not very useful as it does not keep its distance.
+6. A Battle Pet with Flying behaves as above, except there is almost never a
+   case where there are no enemies within attacking range.
+7. If a player controls multiple Battle Pets when their turn begins, they act
+   in the order they entered the battlefield. If a Battle Pet hatches from an
+   Egg or comes into play from a Transform, it is considered to have entered
+   the battlefield after Battle Pets that were already there. Nature's
+   Confluence places Battle Pets onto the battlefield from left to right,
+   bottom to top.
 
 ### Dervish
 
-...
+Summoned Wind Dervish tokens are Ephemeral and disappear at the end of your
+turn unless buffed by a Dunecaster.
+
+Your Obelysks won’t spawn Dervish tokens if the Obelysk is surrounded.
+
+Ephemeral is a special tag possessed by wind dervishes. It can be removed by a
+Dunecaster, but can't otherwise be dispelled. Equally, when a wind dervish that
+has been buffed by a dunecaster is dispelled, it does not regain the
+"ephemeral" tag and does not disappear at the end of the turn.
 
 ### Golem
 
-...
+The special abilities of Golems with the Bond keyword only trigger when another
+friendly Golem is already on the battlefield.
 
 ### Mech
 
-...
+Some mechs have the same Opening Gambit of progressing the
+Build for MECHAZ0R!. After playing 5 of these mechs you can summon MECHAZ0R!
+for free. After that the building progress gets reset and you can build
+towards a new MECHAZ0R!.
+
+The building progress can't be dispelled.
 
 ### Structure
 
-...
+Structure minions cannot move or attack and can not increase their attack.
+
+All cards with the build are structures during their build time.
+
+A dispelled structure no longer activates summon minions, but still cannot
+attack or move, and continues to occupy its terrain space until it is
+destroyed. 
+
+Structures cannot gain attack boosts, except through Stone to Spears.
 
 ### Vespyr
 
-...
-
-### Wall
-
-...
+Vespyr tokens will also activate Vespyr effects.
