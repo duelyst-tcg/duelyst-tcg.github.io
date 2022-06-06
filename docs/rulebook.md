@@ -149,9 +149,9 @@ Keywords take predecense over the basic rules.
 Bloodbound Spells (BBS) costs 1 mana to activate and can only be activated when
 it's available.
 
-BBS are available at the start of your 3rd turn. It is available every other
-turn until you reach maximum mana capacity, at which it becomes available every
-turn (ex: 3, 5, 7, 9, 10, 11, 12, etc).
+BBS are available at the start of your 3rd turn. It is available your every
+other turn until you reach maximum mana capacity, at which it becomes available
+every of your turns (ex: 3, 5, 7, 9, 10, 11, 12, etc).
 
 You may choose to withhold a BBS the turn it's available to use on an "off"
 turn (ex: use it on your 4th turn).
