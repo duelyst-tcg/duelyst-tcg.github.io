@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Duelspot';
+    src: url('duelspot-icons.woff') format('woff'),
+        url('duelspot-icons.eot') format('embedded-opentype'),
+        url('duelspot-icons.ttf') format('truetype'),
+        url('duelspot-icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Duelspot' !important;
+
+    /* better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* disabled because of vscode warning */
+    /* speak: none; */
+    
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+.icon-mana:before {
+    content: "\e900";
+}
+.icon-minion:before {
+    content: "\e901";
+}
+.icon-line:before {
+    content: "\e902";
+}
+.icon-attack:before {
+    content: "\e903";
+}
+.icon-email:before {
+    content: "\e904";
+}
+.icon-health:before {
+    content: "\e905";
+}
+.icon-help:before {
+    content: "\e906";
+}
+.icon-info:before {
+    content: "\e907";
+}
+.icon-rarity-wide:before {
+    content: "\e908";
+}
+.icon-rarity-tight:before {
+    content: "\e909";
+}
+.icon-hammer:before {
+    content: "\e996";
+}
+.icon-fire:before {
+    content: "\e9a9";
+}
+.icon-target:before {
+    content: "\e9b3";
+}
+.icon-shield:before {
+    content: "\e9b4";
+}
+.icon-infinite:before {
+    content: "\ea2f";
+}
+.icon-chevron-up:before {
+    content: "\ea3f";
+}
+.icon-chevron-down:before {
+    content: "\ea4f";
+}
+.icon-stack:before {
+    content: "\ea5f";
+}
+.icon-equalizer:before {
+    content: "\ea6f";
+}
+.icon-equalizer2:before {
+    content: "\ea7f";
+}
+.icon-video-camera:before {
+    content: "\ea8f";
+}
+.icon-bubbles:before {
+    content: "\ea9f";
+}
