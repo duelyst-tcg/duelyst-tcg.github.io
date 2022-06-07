@@ -142,9 +142,6 @@ Resolving combat:
 
 ## Keywords
 
-These give generals/units additional abilities.
-Keywords take predecense over the basic rules.
-
 ### Airdrop
 
 The unit can be summoned on any non-occupied tile on the battlefield.
@@ -312,33 +309,37 @@ friendly Arcanyst on the board when they are summoned.
 
 Battle Pet is a tribe of minions that cannot be directly controlled
 
-1. If there are enemies within immediate attacking range, a Battle Pet will
-   attack the closest one without moving. If there are multiple such enemies,
-   it will attack one at random. Enemies on the same row or column as the
-   Battle Pet are prioritized over enemies diagonal to it.
-2. If there are no enemies within attacking range even after moving, a Battle
-   Pet will move towards the closest enemy. If there are multiple enemies that
-   share the closest distance, it will move towards one at random.
-3. If there are enemies within attacking range but only after moving, a Battle
-   Pet will move towards the enemy that requires the least number of tiles to
-   reach for the attack. If there are multiple such enemies, it will choose one
-   at random. Then as above, it attacks the closest enemy, prioritizing enemies
-   on the same row or column. Note that this is different from moving towards
-   the closest enemy; two enemies may have different distances but require the
-   same number of tiles to reach.
-4. A Battle Pet will always take the shortest path towards its target. If there
-   are multiple shortest paths, it will choose one at random.
-5. A Battle Pet with Ranged moves the same way as if it did not have Ranged (if
-   it moves at all), and attacks the closest enemy. This makes its ranged
-   effect not very useful as it does not keep its distance.
-6. A Battle Pet with Flying behaves as above, except there is almost never a
-   case where there are no enemies within attacking range.
-7. If a player controls multiple Battle Pets when their turn begins, they act
-   in the order they entered the battlefield. If a Battle Pet hatches from an
-   Egg or comes into play from a Transform, it is considered to have entered
-   the battlefield after Battle Pets that were already there. Nature's
-   Confluence places Battle Pets onto the battlefield from left to right,
-   bottom to top.
+If there are enemies within immediate attacking range, a Battle Pet will attack
+the closest one without moving. If there are multiple such enemies, it will
+attack one at random. Enemies on the same row or column as the Battle Pet are
+prioritized over enemies diagonal to it.
+
+If there are no enemies within attacking range even after moving, a Battle Pet
+will move towards the closest enemy. If there are multiple enemies that share
+the closest distance, it will move towards one at random.
+
+If there are enemies within attacking range but only after moving, a Battle Pet
+will move towards the enemy that requires the least number of tiles to reach
+for the attack. If there are multiple such enemies, it will choose one at
+random. Then as above, it attacks the closest enemy, prioritizing enemies on
+the same row or column. Note that this is different from moving towards the
+closest enemy; two enemies may have different distances but require the same
+number of tiles to reach.
+
+A Battle Pet will always take the shortest path towards its target. If there
+are multiple shortest paths, it will choose one at random.
+
+A Battle Pet with Ranged moves the same way as if it did not have Ranged (if it
+moves at all), and attacks the closest enemy.
+
+A Battle Pet with Flying behaves as above, except there is almost never a case
+where there are no enemies within attacking range.
+
+If a player controls multiple Battle Pets when their turn begins, they act in
+the order they entered the battlefield. If a Battle Pet hatches from an Egg or
+comes into play from a Transform, it is considered to have entered the
+battlefield after Battle Pets that were already there. Nature's Confluence
+places Battle Pets onto the battlefield from left to right, bottom to top.
 
 ### Dervish
 
