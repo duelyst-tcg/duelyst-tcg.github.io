@@ -151,11 +151,15 @@ The unit can be summoned on any non-occupied tile on the battlefield.
 
 ### Backstab: (X)
 
-When attacking from behind the enemy unit, this unit deals an additional X damage AND prevents a counterattack. The additional damage also applies when this unit is counterattacking from behind the enemy unit.
+When attacking from behind the enemy unit, this unit deals an additional X
+damage AND prevents a counterattack. The additional damage also applies when
+this unit is counterattacking from behind the enemy unit.
 
 ### Blast
 
-When this unit attacks in a cardinal direction, it hits ALL enemy units on the same line. Only nearby or Ranged units will counterattack. Can target non-adjacent minions and generals.
+When this unit attacks in a cardinal direction, it hits ALL enemy units on the
+same line. Only nearby or Ranged units will counterattack. Can target
+non-adjacent minions and generals.
 
 ### Bloodbound Spell
 
@@ -175,11 +179,16 @@ Triggers an effect after you activate your Bloodbound Spell.
 
 ### Bond
 
-Triggers an effect when summoned if you have another minion from the same tribe.
+Triggers an effect when summoned if you have another minion from the same
+tribe.
 
 ### Build
 
-When you summon a minion with the Build keyword, it comes into play as a 0/10 Structure. At the beginning of your turn, your minion's build counter decrements by one: this occurs every turn until the build counter reaches zero. Once the build counter reaches zero, the Structure will transform into the minion you played from your action bar.
+When you summon a minion with the Build keyword, it comes into play as a 0/10
+Structure. At the beginning of your turn, your minion's build counter
+decrements by one: this occurs every turn until the build counter reaches zero.
+Once the build counter reaches zero, the Structure will transform into the
+minion you played from your action bar.
 
 ### Celerity
 
@@ -216,7 +225,8 @@ Cancel the first damage taken each turn.
 
 ### Frenzy
 
-When this unit attacks, it simultaneously hits ALL nearby enemy units. Only the attack target will counterattack.
+When this unit attacks, it simultaneously hits ALL nearby enemy units. Only the
+attack target will counterattack.
 
 ### Grow: +X/+X
 
@@ -224,7 +234,8 @@ This minion gains +X/+X at the start of your turn.
 
 ### Infiltrate
 
-This minion gains a bonus effect when on your opponent's starting side of the battlefield.
+This minion gains a bonus effect when on your opponent's starting side of the
+battlefield.
 
 ### Intensity
 
@@ -236,7 +247,9 @@ Cannot die or be affected by anything.
 
 ### Opening gambit
 
-When this minion is summoned from your action bar, trigger the Opening Gambit effect. Opening Gambit effects trigger before the minion enters the battlefield.
+When this minion is summoned from your action bar, trigger the Opening Gambit
+effect. Opening Gambit effects trigger before the minion enters the
+battlefield.
 
 ### Provoke
 
@@ -250,7 +263,8 @@ The defender doesn't strike back if it's not in range of the defender.
 
 ### Rebirth
 
-When this minion dies, it leaves behind a 0/1 Egg that hatches into the same minion after one full turn.
+When this minion dies, it leaves behind a 0/1 Egg that hatches into the same
+minion after one full turn.
 
 ### Rush
 
@@ -266,7 +280,8 @@ Prevents a minion or General from moving and attacking.
 
 ### Summon Dervish
 
-This unit summons a 2/2 Wind Dervish with Rush on a random nearby space at the start of your turn.
+This unit summons a 2/2 Wind Dervish with Rush on a random nearby space at the
+start of your turn.
 
 ### Transform
 
@@ -274,11 +289,13 @@ Change a minion into another minion with different stats and abilities.
 
 ### Trial & Destiny
 
-Once the Trial has been satisfied, the card is now unlocked and can be played for its Destiny.
+Once the Trial has been satisfied, the card is now unlocked and can be played
+sfor its Destiny.
 
 ### Wall
 
-This minion cannot move, and is immediately removed from the battlefield if dispelled.
+This minion cannot move, and is immediately removed from the battlefield if
+sdispelled.
 
 ### Zeal
 
