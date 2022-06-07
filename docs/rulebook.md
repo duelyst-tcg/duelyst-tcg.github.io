@@ -31,6 +31,10 @@ Units are generals and minions on the field.
   Instead of `Minion` type the tribe is listed.
   See `Tribes` for their specific rules.
 
+### Spell
+
+- A used spell goes into the graveyard.
+
 ### Artifact
 
 - An artifact is equipped to a general.
@@ -38,10 +42,6 @@ Units are generals and minions on the field.
 - When the equipped general takes damage, all artifacts equipped to it take 1
   damage.
 - An artifact with 0 durability goes into the graveyard.
-
-### Spell
-
-A used spell goes into the graveyard.
 
 ## Playing the game
 
@@ -79,15 +79,15 @@ The board should look like this:
 ### Player's turn overview
 
 - Begin phase
-  1. Gain +1 mana capacity if its below 9
+    1. Gain +1 mana capacity if its below 9
 - Main phase
-  - Replace a card from your hand
-  - Cast your general's bloodbound spell
-  - Play artifact/spells/minions
-  - Move your units
-  - Attack with your units
+    - Replace a card from your hand
+    - Cast your general's bloodbound spell
+    - Play artifact/spells/minions
+    - Move your units
+    - Attack with your units
 - End phase
-  1. Draw a card
+    1. Draw a card
 
 ## Movement
 
@@ -145,6 +145,18 @@ Resolving combat:
 These give generals/units additional abilities.
 Keywords take predecense over the basic rules.
 
+### Airdrop
+
+The unit can be summoned on any non-occupied tile on the battlefield.
+
+### Backstab: (X)
+
+When attacking from behind the enemy unit, this unit deals an additional X damage AND prevents a counterattack. The additional damage also applies when this unit is counterattacking from behind the enemy unit.
+
+### Blast
+
+When this unit attacks in a cardinal direction, it hits ALL enemy units on the same line. Only nearby or Ranged units will counterattack. Can target non-adjacent minions and generals.
+
 ### Bloodbound Spell
 
 Bloodbound Spells (BBS) costs 1 mana to activate and can only be activated when
@@ -157,28 +169,120 @@ every of your turns (ex: 3, 5, 7, 9, 10, 11, 12, etc).
 You may choose to withhold a BBS the turn it's available to use on an "off"
 turn (ex: use it on your 4th turn).
 
+### Blood Surge
+
+Triggers an effect after you activate your Bloodbound Spell.
+
+### Bond
+
+Triggers an effect when summoned if you have another minion from the same tribe.
+
+### Build
+
+When you summon a minion with the Build keyword, it comes into play as a 0/10 Structure. At the beginning of your turn, your minion's build counter decrements by one: this occurs every turn until the build counter reaches zero. Once the build counter reaches zero, the Structure will transform into the minion you played from your action bar.
+
+### Celerity
+
+This unit can activate twice per turn.
+
+### Deathwatch
+
+When ANY minion dies, trigger the Deathwatch effect.
+
+### Dispel
+
+Abilities and enchantments added to this minion are removed.
+
+### Draw
+
+The ability to draw card(s).
+
+### Dying Wish
+
+When this minion dies, trigger the Dying Wish effect.
+
 ### Exhaust
 
 The unit cannot attack nor move until end of turn.
-
-### Rush
-
-The unit can attack and move the same turn it was summoned.
 
 ### Flying
 
 The unit can move to any non-occupied tile on the battlefield.
 Being fully surrounded doesn't prevent movement.
 
-### Ranged
+### Forcefield
 
-The unit can attack anyone on the battlefield.
-The defender doesn't strike back if it's not in range of the defender.
+Cancel the first damage taken each turn.
+
+### Frenzy
+
+When this unit attacks, it simultaneously hits ALL nearby enemy units. Only the attack target will counterattack.
+
+### Grow: +X/+X
+
+This minion gains +X/+X at the start of your turn.
+
+### Infiltrate
+
+This minion gains a bonus effect when on your opponent's starting side of the battlefield.
+
+### Intensity
+
+Appears on minions and spells granting them a powerful stacking effect.
+
+### Invunerable
+
+Cannot die or be affected by anything.
+
+### Opening gambit
+
+When this minion is summoned from your action bar, trigger the Opening Gambit effect. Opening Gambit effects trigger before the minion enters the battlefield.
 
 ### Provoke
 
 Enemy units within the normal range of a friedly unit with this keyword can
 only attack the friendly unit with this keyword and cannot move.
+
+### Ranged
+
+The unit can attack anyone on the battlefield.
+The defender doesn't strike back if it's not in range of the defender.
+
+### Rebirth
+
+When this minion dies, it leaves behind a 0/1 Egg that hatches into the same minion after one full turn.
+
+### Rush
+
+The unit can attack and move the same turn it was summoned.
+
+### Sentinel
+
+This minion transforms into a stronger minion on a hidden condition.
+
+### Stun
+
+Prevents a minion or General from moving and attacking.
+
+### Summon Dervish
+
+This unit summons a 2/2 Wind Dervish with Rush on a random nearby space at the start of your turn.
+
+### Transform
+
+Change a minion into another minion with different stats and abilities.
+
+### Trial & Destiny
+
+Once the Trial has been satisfied, the card is now unlocked and can be played for its Destiny.
+
+### Wall
+
+This minion cannot move, and is immediately removed from the battlefield if dispelled.
+
+### Zeal
+
+This minion gains a bonus effect when nearby your General.
 
 ## Tribes
 
@@ -229,7 +333,7 @@ Your Obelysks won’t spawn Dervish tokens if the Obelysk is surrounded.
 Ephemeral is a special tag possessed by wind dervishes. It can be removed by a
 Dunecaster, but can't otherwise be dispelled. Equally, when a wind dervish that
 has been buffed by a dunecaster is dispelled, it does not regain the
-"ephemeral" tag and does not disappear at the end of the turn.
+ephemeral keyword and does not disappear at the end of the turn.
 
 ### Golem
 
