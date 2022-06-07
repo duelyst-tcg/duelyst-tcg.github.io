@@ -373,7 +373,7 @@ Structure minions cannot move or attack and can not increase their attack.
 
 All cards with the build are structures during their build time.
 
-A dispelled structure no longer activates summon minions, but still cannot
+A dispelled structure no longer activates summon devrish, but still cannot
 attack or move, and continues to occupy its terrain space until it is
 destroyed. 
 
