@@ -1,0 +1,9 @@
+{
+    "name": "@merijnhendriks/card-editor",
+    "author": "Merijn Hendriks",
+    "version": "1.0.0",
+    "description": "Batch edit cards",
+    "dependencies": {
+        "jsdom": "^19.0.0"
+    }
+}
