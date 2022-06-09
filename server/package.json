@@ -2,8 +2,5 @@
     "name": "@merijnhendriks/dev-server",
     "author": "Merijn Hendriks",
     "version": "1.0.0",
-    "private": true,
-    "dependencies": {
-        "express": "^4.18.1"
-    }
+    "description": "Static website server"
 }
