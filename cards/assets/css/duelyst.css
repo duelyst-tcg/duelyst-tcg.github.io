@@ -114,22 +114,16 @@
     font-size: 21px;
     color: #373e47;
 }
-.card-rarity:before {
-    content: "\e908";
-    font-size: 20px;
-}
 
 /* card rarity */
 .card-rarity {
     position: relative;
     margin: 85px 0px 10px 0px;
     line-height: 30px;
-    color: #6d7782;
-    font-weight: 300;
-    font-size: 12px;
-    font-family: "Times New Roman", Times, serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+}
+.card-rarity:before {
+    content: "\e908";
+    font-size: 20px;
 }
 .card-rarity.mythron:before {
     color: #28e396;
@@ -146,27 +140,6 @@
 .card-rarity.basic:before, .card-rarity.common:before {
     color: #dddddd;
 }
-.core-set .card-rarity:before {
-    content: "\ea2f";
-    font-family: duelspot;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.denizens-of-shimzar .card-rarity:before {
-    content: "I";
-}
-.bloodbound-ancients .card-rarity:before {
-    content: "II";
-}
-.unearthed-prophecy .card-rarity:before {
-    content: "III";
-}
-.immortal-vanguard .card-rarity:before {
-    content: "IV";
-}
-.trials-of-mythron .card-rarity:before {
-    content: "V";
-}
 
 /* only display rarity for non-creature cards */
 .card-container.spell .card-rarity:after, .card-container.artifact .card-rarity:after {
@@ -175,23 +148,21 @@
 
 /* card attack */
 .card-attack {
-    color: #fedb3a;
+    color: #dddddd;
 }
 .card-attack:before {
     content: "\e903";
-    color: #fedb3a;
-    opacity: .3;
+    color: #dddddd;
 }
 
 /* card health */
 .card-health {
     margin-top: 22px;
-    color: #e32828;
+    color: #dddddd;
 }
 .card-health:before {
     content: "\e905";
-    color: #e32828;
-    opacity: .3;
+    color: #dddddd;
 }
 
 /* card right */
@@ -280,15 +251,15 @@ a.legend-post-title {
 }
 
 /* special case images */
-.starhorn .card-image img {
+.starhorn-the-seeker .card-image img {
     transform: scale(1.5);
     transform-origin: 70px 180px;
 }
-.ragnora .card-image img {
+.ragnora-the-relentless .card-image img {
     transform: scale(1.55);
     transform-origin: 80px 180px;
 }
-.reva.eventide .card-image img {
+.reva-eventide .card-image img {
     transform: scale(1.6);
     transform-origin: 80px 180px;
 }
@@ -335,7 +306,7 @@ a.legend-post-title {
     transform: scale(1.25);
     transform-origin: 80px 160px;
 }
-.kraigon .card-image img {
+.grandmaster-kraigon .card-image img {
     transform: scale(1.7);
     transform-origin: 80px 180px;
 }
@@ -343,15 +314,15 @@ a.legend-post-title {
     transform: scale(1.3);
     transform-origin: 80px 180px;
 }
-.taygete .card-image img {
+.earth-sister-taygete .card-image img {
     transform: scale(1.3);
     transform-origin: 105px 180px;
 }
-.storm.sister.alkyone .card-image img {
+.storm-sister-alkyone .card-image img {
     transform: scale(1.2);
     transform-origin: 50px 230px;
 }
-.hamon.bladeseeker .card-image img {
+.hamon-bladeseeker .card-image img {
     transform: scale(1.2);
     transform-origin: 80px 190px;
 }
