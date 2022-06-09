@@ -3,28 +3,28 @@ var url = require('url')
 var fs = require('fs')
 var path = require('path')
 
-var baseDirectory = path.join(__dirname, '../cards/')
+var basedir = path.join(__dirname, '../cards/')
 var port = 3000
 
-var server = http.createServer(function (request, response) {
+var server = http.createServer(function (req, resp) {
   try {
-    var requestUrl = url.parse(request.url)
-    var fsPath = baseDirectory + path.normalize(requestUrl.pathname)
-    var fileStream = fs.createReadStream(fsPath)
+    var urlpath = url.parse(req.url).pathname
+    var filepath = basedir + path.normalize(urlpath)
+    var stream = fs.createReadStream(filepath)
 
-    fileStream.pipe(response)
+    stream.pipe(resp)
 
-    fileStream.on('open', function () {
-      response.writeHead(200)
+    stream.on('open', function () {
+      resp.writeHead(200)
     })
     
-    fileStream.on('error', function (e) {
-      response.writeHead(404)
-      response.end()
+    stream.on('error', function (e) {
+      resp.writeHead(404)
+      resp.end()
     })
   } catch (e) {
-    response.writeHead(500)
-    response.end()
+    resp.writeHead(500)
+    resp.end()
     console.log(e.stack)
   }
 })
