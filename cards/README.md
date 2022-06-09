@@ -1,12 +1,13 @@
 # Cards
 
-**Dimentions** | **Value**
--------------- | ---------
-DPI            | 150
-Width (px)     | 375
-Width (inch)   | 2.5"
-Height (px)    | 525
-Height (inch)  | 3.5"
+## Browser print options:
+
+**Option** | **Value**
+---------- | ---------
+Size       | A4
+Margin     | Minimal
+
+## Card set info
 
 **Symbol** | **Set name**
 ---------- | --------------------
