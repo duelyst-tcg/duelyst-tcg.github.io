@@ -68,11 +68,8 @@ function isCorrectClass(name)
         || name == "hamon-bladeseeker";
 }
 
-function generatePage(filename) {
-    var html = readFile("../cards/" + filename);
-    var dom  = new JSDOM(html);
-
-    var document = dom.window.document;
+function stripClasses(document)
+{
     var elements = document.getElementsByClassName("card-container");
 
     for (var i = 0; i < elements.length; i++) {
@@ -86,6 +83,14 @@ function generatePage(filename) {
             }
         }
     }
+}
+
+function generatePage(filename) {
+    var html = readFile("../cards/" + filename);
+    var dom  = new JSDOM(html);
+    var document = dom.window.document;
+
+    stripClasses(document);
 
     // add doctype to prevent quicks mode warning
     return "<!DOCTYPE html>" + document.documentElement.outerHTML;
