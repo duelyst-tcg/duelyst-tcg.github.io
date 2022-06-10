@@ -118,12 +118,13 @@
 /* card rarity */
 .card-rarity {
     position: relative;
-    margin: 85px 0px 10px 0px;
-    line-height: 30px;
+    margin: 85px 0px 0px 0px;
+    font-size: 10px;
 }
 .card-rarity:before {
     content: "\e908";
     font-size: 20px;
+    line-height: 20px;
 }
 .card-rarity.mythron:before {
     color: #28e396;
@@ -139,6 +140,11 @@
 }
 .card-rarity.basic:before, .card-rarity.common:before {
     color: #dddddd;
+}
+.core-set .card-rarity:before {
+    font-family: duelspot;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* only display rarity for non-creature cards */

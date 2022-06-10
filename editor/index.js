@@ -30,8 +30,7 @@ function getFiles(filepath) {
     return files;
 }
 
-function isCorrectClass(name)
-{
+function isCorrectClass(name) {
     return name == "card-container"
         || name == "core-set"
         || name == "spell"
@@ -75,12 +74,48 @@ function stripClasses(document)
     for (var i = 0; i < elements.length; i++) {
         var classes = elements[i].className.split(' ');
     
-        for (var item of classes)
-        {
-            if (!isCorrectClass(item) && item !== "")
-            {
+        for (var item of classes) {
+            if (!isCorrectClass(item) && item !== "") {
                 elements[i].classList.remove(item);
             }
+        }
+    }
+}
+
+function applySetType(document) {
+    var elements = document.getElementsByClassName("card-rarity");
+
+    for (var i = 0; i < elements.length; i++) {
+        var parentElement = elements[i].parentElement.parentElement;
+
+        if (parentElement.classList.contains("core-set"))
+        {
+            elements[i].innerHTML = "CORE";
+        }
+
+        if (parentElement.classList.contains("denizens-of-shimzar"))
+        {
+            elements[i].innerHTML = "DEOS";
+        }
+
+        if (parentElement.classList.contains("bloodbound-ancients"))
+        {
+            elements[i].innerHTML = "BLAN";
+        }
+
+        if (parentElement.classList.contains("unearthed-prophecy"))
+        {
+            elements[i].innerHTML = "UNPR";
+        }
+
+        if (parentElement.classList.contains("immortal-vanguard"))
+        {
+            elements[i].innerHTML = "IMVA";
+        }
+
+        if (parentElement.classList.contains("trials-of-mythron"))
+        {
+            elements[i].innerHTML = "TROM";
         }
     }
 }
@@ -91,6 +126,7 @@ function generatePage(filename) {
     var document = dom.window.document;
 
     stripClasses(document);
+    applySetType(document);
 
     // add doctype to prevent quicks mode warning
     return "<!DOCTYPE html>" + document.documentElement.outerHTML;

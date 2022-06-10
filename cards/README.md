@@ -9,11 +9,11 @@ Margin     | Minimal
 
 ## Card set info
 
-**Symbol** | **Set name**
----------- | --------------------
-Infinity   | Core
-I          | Denizens of Shim'Zar
-II         | Bloodbound Ancients
-III        | Unearthed Prophecy
-IV         | Immortal Vanguard
-V          | Trials of Mythron
+**Abbr.** | **Set name**
+--------- | --------------------
+CORE      | Core
+DEOS      | Denizens of Shim'Zar
+BLAN      | Bloodbound Ancients
+UNPR      | Unearthed Prophecy
+IMVA      | Immortal Vanguard
+TROM      | Trials of Mythron
