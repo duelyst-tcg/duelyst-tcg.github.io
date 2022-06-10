@@ -17,7 +17,7 @@ Listed in no particular order
 - Restore old content
   - List `Bloodbound Ancients` in their original sets
   - Restore warmaster
-  - Restore old balancing?
+  - Restore old names
   - Restore AI generals
 - Clean up html file
 - Add missing sections to rulebook
