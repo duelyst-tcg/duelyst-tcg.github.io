@@ -2,6 +2,8 @@ var fs = require("fs");
 var path = require("path");
 var { JSDOM } = require("jsdom");
 
+var basedir = path.join(__dirname, "../../cards/");
+
 async function writeFile(filepath, data) {
     if (!fs.existsSync(filepath)) {
         // create missing directories recursively
@@ -67,13 +69,12 @@ function isCorrectClass(name) {
         || name == "hamon-bladeseeker";
 }
 
-function stripClasses(document)
-{
+function stripClasses(document) {
     var elements = document.getElementsByClassName("card-container");
 
     for (var i = 0; i < elements.length; i++) {
         var classes = elements[i].className.split(' ');
-    
+
         for (var item of classes) {
             if (!isCorrectClass(item) && item !== "") {
                 elements[i].classList.remove(item);
@@ -88,41 +89,34 @@ function applySetType(document) {
     for (var i = 0; i < elements.length; i++) {
         var parentElement = elements[i].parentElement.parentElement;
 
-        if (parentElement.classList.contains("core-set"))
-        {
+        if (parentElement.classList.contains("core-set")) {
             elements[i].innerHTML = "CORE";
         }
 
-        if (parentElement.classList.contains("denizens-of-shimzar"))
-        {
+        if (parentElement.classList.contains("denizens-of-shimzar")) {
             elements[i].innerHTML = "DEOS";
         }
 
-        if (parentElement.classList.contains("bloodbound-ancients"))
-        {
+        if (parentElement.classList.contains("bloodbound-ancients")) {
             elements[i].innerHTML = "BLAN";
         }
 
-        if (parentElement.classList.contains("unearthed-prophecy"))
-        {
+        if (parentElement.classList.contains("unearthed-prophecy")) {
             elements[i].innerHTML = "UNPR";
         }
 
-        if (parentElement.classList.contains("immortal-vanguard"))
-        {
+        if (parentElement.classList.contains("immortal-vanguard")) {
             elements[i].innerHTML = "IMVA";
         }
 
-        if (parentElement.classList.contains("trials-of-mythron"))
-        {
+        if (parentElement.classList.contains("trials-of-mythron")) {
             elements[i].innerHTML = "TROM";
         }
     }
 }
 
-function generatePage(filename) {
-    var html = readFile("../cards/" + filename);
-    var dom  = new JSDOM(html);
+function generatePage(html) {
+    var dom = new JSDOM(html);
     var document = dom.window.document;
 
     stripClasses(document);
@@ -133,19 +127,18 @@ function generatePage(filename) {
 }
 
 function main() {
-    var filepath = "../cards";
-    var files = getFiles(filepath);
+    var files = getFiles(basedir);
 
     for (var i = 0; i < files.length; i++) {
-        if (files[i] == "README.md")
-        {
+        if (files[i] == "README.md") {
             continue;
         }
 
         var filename = files[i];
         console.log("Generating page: " + filename);
-        var html = generatePage(filename);
-        writeFile("../cards/" + filename, html);
+        var text = readFile(basedir + filename);
+        var html = generatePage(text);
+        writeFile(basedir + filename, html);
     }
 }
 
