@@ -346,7 +346,7 @@ places Battle Pets onto the battlefield from left to right, bottom to top.
 Summoned Wind Dervish tokens are Ephemeral and disappear at the end of your
 turn unless buffed by a Dunecaster.
 
-Your Obelysks won’t spawn Dervish tokens if the Obelysk is surrounded.
+Your Obelysks won't spawn Dervish tokens if the Obelysk is surrounded.
 
 Ephemeral is a special tag possessed by wind dervishes. It can be removed by a
 Dunecaster, but can't otherwise be dispelled. Equally, when a wind dervish that
