@@ -6,7 +6,7 @@
 - `>`: Player 1 minion
 - `<`: Player 2 minion
 - `x`: Within range
-- `o`: Mana globe
+- `o`: Mana Tile
 
 ## Card types
 
@@ -57,9 +57,9 @@ The board is 9x5 tiles.
     - Player 1: 3,1
     - Player 2: 3,9
 2. Place the special tiles onto the battlefield
-    - Mana globe: 5,1
-    - Mana globe: 5,9
-    - Mana globe: 6,3
+    - Mana Tile: 5,1
+    - Mana Tile: 5,9
+    - Mana Tile: 6,3
 
 The board should look like this:
 
@@ -270,8 +270,9 @@ You cannot dispel:
 - The following effects:
     - Bond
     - Destiny
+    - MECHAZ0R! building progress
+    - That become original stats
     - Transformation
-    - That become the original stats
 - Watchful Sentinels
 
 ### Draw
@@ -451,48 +452,40 @@ This minion gains a bonus effect when nearby your General.
 
 ### Battle pet
 
-Battle Pet is a tribe of minions that cannot be directly controlled
+Battle Pet is a tribe of minions that cannot be directly controlled.
 
-If there are enemies within immediate attacking range, a Battle Pet will attack
-the closest one without moving. If there are multiple such enemies, it will
-attack one at random. Enemies on the same row or column as the Battle Pet are
-prioritized over enemies diagonal to it.
+#### Movement and attack rules
 
-If there are no enemies within attacking range even after moving, a Battle Pet
-will move towards the closest enemy. If there are multiple enemies that share
-the closest distance, it will move towards one at random.
+1. The minion always chooses shortest the path to a target.
+    - If there are multiple shortest paths, it will choose one at random.
+    - If there are multiple targets, the minion prioritizes the target on the
+      same row or column over targets diagonal to it.
+    - If the distance is equal between the closest targets, it chooses one at
+      random.
+2. If there are enemies within immediate attacking range, the minion will
+   attack the closest one without moving.
+3. If there are enemies within attacking range but only after moving, the
+   minion will move towards the enemy that requires the least number of tiles
+   to reach for the attack.
+4. If there are no enemies in attack range even if it would move, the minion
+   moves towards the closest enemy.
+5. If a player controls multiple Battle Pets when their turn begins, they act
+   in the order they entered the battlefield.
 
-If there are enemies within attacking range but only after moving, a Battle Pet
-will move towards the enemy that requires the least number of tiles to reach
-for the attack. If there are multiple such enemies, it will choose one at
-random. Then as above, it attacks the closest enemy, prioritizing enemies on
-the same row or column. Note that this is different from moving towards the
-closest enemy; two enemies may have different distances but require the same
-number of tiles to reach.
+#### Special cases
 
-A Battle Pet will always take the shortest path towards its target. If there
-are multiple shortest paths, it will choose one at random.
-
-A Battle Pet with Ranged moves the same way as if it did not have Ranged (if it
-moves at all), and attacks the closest enemy.
-
-A Battle Pet with Flying behaves as above, except there is almost never a case
-where there are no enemies within attacking range.
-
-If a player controls multiple Battle Pets when their turn begins, they act in
-the order they entered the battlefield. If a Battle Pet hatches from an Egg or
-comes into play from a Transform, it is considered to have entered the
-battlefield after Battle Pets that were already there. Nature's Confluence
-places Battle Pets onto the battlefield from left to right, bottom to top.
+- A Battle Pet with Ranged and/or Flying moves the same way as if it did not
+  have these keywords, and attacks the closest enemy.
+- If a Battle Pet hatches from an Egg or comes into play from a Transform, it
+  is considered to have entered the battlefield after Battle Pets that were
+  already there.
 
 ### Mech
 
-Some mechs have the same Opening Gambit of progressing the
-Build for MECHAZ0R!. After playing 5 of these mechs you can summon MECHAZ0R!
-for free. After that the building progress gets reset and you can build
-towards a new MECHAZ0R!.
-
-The building progress can't be dispelled.
+Some mechs have the same Opening Gambit of progressing the Build for
+MECHAZ0R!. When the building progress reaches 100%, you can summon MECHAZ0R!
+for free. After that the building progress gets reset and you can build towards
+a new MECHAZ0R!.
 
 ### Structure
 
