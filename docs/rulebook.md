@@ -12,36 +12,39 @@
 
 ### Unit
 
-Units are generals and minions on the field.
+These are on the battlefield.
 
 #### General
 
-- It is always on the field.
-- If it dies, you lose the game.
-- It has 3 artifact slots.
-- It can equip multiple copies of the same artifact.
+A General is a representation of you and always on the field. You lose the game
+when it's health reaches 0. A General always has a BloodBound Spell (see
+Keywords for more info).
 
 #### Minion
 
-- When cast, you summon it onto the battlefield within range of an friendly
-  unit.
-- It come into play with `Exhaust`.
-- When it dies, it goes into the graveyard.
-- Some minions are part of a tribe.
-  Instead of `Minion` type the tribe is listed.
-  See `Tribes` for their specific rules.
+A Minion is an unit that help you kill your enemy General.
+
+When cast, you summon it onto the battlefield within range of an friendly unit.
+It come into play with `Exhaust`. It dies when it's health reaches 0. When it
+dies, it goes into the graveyard. 
+
+Some minions are part of a tribe. Instead of `Minion` type, the tribe is
+listed. See `Tribes` for their specific rules.
 
 ### Spell
 
-- A used spell goes into the graveyard.
+A spell contains effects to give you resources or put pressure on your enemy.
+A used spell goes into the graveyard.
 
 ### Artifact
 
-- An artifact is equipped to a general.
-- An artifact has 3 durability.
-- When the equipped general takes damage, all artifacts equipped to it take 1
-  damage.
-- An artifact with 0 durability goes into the graveyard.
+An Artifact increases your General's capabilities.
+
+A General has 3 Artifact slots, and can equip multiple of the same Artifact.
+
+An Artifact is equipped to a General and has 3 durability. When the equipped
+General takes damage from any source, all artifacts equipped to it remove 1
+durability. An artifact with 0 durability is sent to the graveyard immediately.
 
 ## Playing the game
 
@@ -78,6 +81,9 @@ The board should look like this:
 
 ### Player's turn overview
 
+A player's turn takes up to 90 seconds. When the time is up, the player
+automatically goes to the end phase.
+
 - Begin phase
     1. Gain +1 mana capacity if its below 9
     2. Activate all friendly units
@@ -93,14 +99,15 @@ The board should look like this:
 
 ## Replace
 
-You can set a card aside face down to draw another card from your deck. Is it
-the same card? Put that aside too and draw another. Repeat this until you no
-longer draw the same card.
+You can set a card from your Action Bar aside face down to draw another card
+from your deck. Is it the same card? Put that aside too and draw another.
+Repeat this until you no longer draw the same card. Then shuffle all cards put
+aside into the deck.
 
 ## Mulligan
 
 You select any number of cards from your Action Bar and replace them. A
-mulligan doesn't count as a replace, so Player 1 can still replace a card in
+mulligan doesn't count as a replace, so Player 1 can still Replace a card in
 his/her turn.
 
 ## Movement
@@ -208,31 +215,24 @@ effects happen after the BBS' effect is resolved.
 
 Triggers a special effect when this unit is put into play whilst at least one
 other minion from the same tribe at that unit is on the board. It doesn't need
-to be played from the action bar to occur. Tranform triggers Bond effects.
+to be played from the action bar to occur.
 
 ### Build
 
 When you summon a minion with the Build keyword, it comes into play as a 0/10
-Structure. At the beginning of your turn, your minion's build counter
-decrements by one: this occurs every turn until the build counter reaches zero.
-When the build counter reaches zero, the Structure will transform into the
-minion you played from your action bar.
+Structure token. At the beginning of your turn, your minion's build counter
+decrements by one until the build counter reaches zero. When it reaches zero,
+the Structure will transform into the minion you played from your action bar.
 
-While a minion is "Building," you cannot dispel the fact that it is building
-and will transform at the end of its build countdown. This means that you can
-treat buildings as regular Structures - you can target them with spells, heal
-them, damage them, transform them, destroy them, etc. They will however
-eventually transform into their final form if not destroyed or removed.
+A card with Build i a Structures during it's build time.
 
 If a Build Structure is returned to the action bar, the owner will receive a
-copy of the 0/10 Build Structure. Buildings will match their minion's Mana
-Cost, allowing you to play the Building again for its original cost, and the
-structure will eventually build into the specified minion.
+copy of the 0/10 Build Structure and loses build progrssion. Buildings will
+match the original minion's Mana Cost. The Structure will build into the
+original minion.
 
-Any buffs that are applied to a Build minion while the card is in your action
-bar will apply to the final/transformed version after it is done Building (eg
-via Phantasm) And finally, a "Building" is considered a token, so it is not a
-viable target for revive effects (you can, however, revive the final product).
+Anything that is applied to a Build minion while the card is in your action bar
+will apply to the transformed minion once done Building.
 
 ### Celerity
 
@@ -269,6 +269,7 @@ You cannot dispel:
 - Artifacts
 - The following effects:
     - Bond
+    - Build progression
     - Destiny
     - MECHAZ0R! building progress
     - That become original stats
@@ -285,18 +286,11 @@ more cards than the maximum hand size (6), the card gets discarded immediately.
 
 When this minion dies, trigger the Dying Wish effect.
 
-Transformation spells will not trigger Dying Wish. Cards with Dying Wish:
-Summon X on this space will not trigger if something spawns in the same square
-before Dying Wish triggers.
+Cards with Dying Wish: Summon X on this space will not trigger if something
+spawns in the same square before Dying Wish triggers.
 
 This is based on who initiates the action; the initiator’s effect takes
 priority.
-
-For example, if player A destroys player B's Reaper of the Nine Moons by
-playing Dark Transformation, then the Reaper's Dying Wish will not trigger
-because player A (the initiator's) effect (summon a wraithling on this space)
-takes place first. Spells such as consuming rebirth can be used to trigger
-Dying Wish effects.
 
 ### Flying
 
@@ -343,12 +337,8 @@ leaves your opponent's starting side of the battlefield.
 
 ### Intensity
 
-Intensify effects of minions will be triggered in whatever way this minion is
-put into play: Summoning from the Action Bar, spawned by any effect or via
-Transform.
-
-These cards become more powerful each time you cast them for the duration of
-the game. 
+Intensify is triggered whenver the minion is put into play in any way. The
+effect increases each time the minion is put in play.
 
 The formula is `x * n` 
 
@@ -356,24 +346,24 @@ The formula is `x * n`
 - `n` = numbers of times the card was played
 
 Only the minion put into play with Intensify gets the bonus, not those already
-on the field.
+on the battlefield.
 
 ### Invunerable
 
-Cannot die or be affected by anything. They also can't be healed.
+Cannot die or be affected by anything.
 
 ### Opening gambit
 
 This Minion triggers an effect immediately before being summoned from the
-Action Bar. It will not trigger when the minion wasn't summoned from the
 Action Bar. The effect also happens if the minion instantly dies when
-summoned.
+summoned. It will not trigger when the minion wasn't summoned from the
+Action Bar. 
 
 ### Provoke
 
-Nearby enemies can select ONLY this Minion as an Attack target and cannot
-move. If your enemy is Provoked by multiple Minions at once, they can choose
-any Provoke Minion to target.
+Nearby enemies can select only this minion as an attack target and cannot
+move. If your enemy is Provoked by multiple minions at once, they can choose
+any Provoke minion to target.
 
 ### Ranged
 
@@ -489,9 +479,8 @@ a new MECHAZ0R!.
 
 ### Structure
 
-Structure minions cannot move or attack and can not increase their attack.
-All cards with the build are structures during their build time.
-Structures cannot gain attack boosts, except through Stone to Spears.
+Structure minions cannot move or attack and can not increase their attack. A
+Structure cannot gain attack boosts unless explicitly specified by the card.
 
 ### Vespyr
 
