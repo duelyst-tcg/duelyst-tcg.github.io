@@ -2,11 +2,9 @@ var fs = require("fs");
 var path = require("path");
 var { JSDOM } = require("jsdom");
 
-var basedir = path.join(__dirname, "../../cards/");
-
-var cardIds = {};
-var setIds = {};
-var setNames = {
+var g_cardIds = {};
+var g_setIds = {};
+var g_setNames = {
     "core-set": "CORE",
     "denizens-of-shimzar": "DEOS",
     "bloodbound-ancients": "BLAN",
@@ -14,7 +12,7 @@ var setNames = {
     "immortal-vanguard": "IMVA",
     "trials-of-mythron": "TROM"
 };
-var cardContainerClasses = [
+var g_cardContainerClasses = [
     "card-container",
     "core-set",
     "spell",
@@ -81,8 +79,8 @@ function getFiles(filepath) {
 }
 
 function isCorrectClass(name) {
-    for (var i = 0; i < cardContainerClasses.length; i++) {
-        if (cardContainerClasses[i].indexOf(name) > -1) {
+    for (var i = 0; i < g_cardContainerClasses.length; i++) {
+        if (g_cardContainerClasses[i].indexOf(name) > -1) {
             return true;
         }
     }
@@ -108,12 +106,12 @@ function generateCardId(setName) {
     var cardId = setName + "-";
 
     // initialize card id's counter
-    if (setIds[setName] === undefined) {
-        setIds[setName] = 0;
+    if (g_setIds[setName] === undefined) {
+        g_setIds[setName] = 0;
     }
 
     // add number
-    var cardNumber = ++setIds[setName];
+    var cardNumber = ++g_setIds[setName];
 
     if (cardNumber < 100) {
         cardId += "0";
@@ -127,29 +125,43 @@ function generateCardId(setName) {
 }
 
 function getCardId(cardName, setName) {
-    if (cardIds[cardName] === undefined) {
-        cardIds[cardName] = generateCardId(setName);
+    if (g_cardIds[cardName] === undefined) {
+        g_cardIds[cardName] = generateCardId(setName);
     }
 
-    return cardIds[cardName];
+    return g_cardIds[cardName];
+}
+
+function getCardSet(element) {
+    var setNameKeys = Object.keys(g_setNames);
+
+    for (var j = 0; j < setNameKeys.length; j++) {
+        var setNameId = setNameKeys[j];
+
+        if (element.classList.contains(setNameId)) {
+            return g_setNames[setNameId];
+        }
+    }
+
+    return undefined;
 }
 
 function applySetType(document) {
-    var elements = document.getElementsByClassName("card-rarity");
-    var setNameKeys = Object.keys(setNames);
+    var elements = document.getElementsByClassName("card-rarity"); 
 
     for (var i = 0; i < elements.length; i++) {
         var parent = elements[i].parentElement.parentElement;
-        var name = parent.getElementsByClassName("legend-post-title")[0].innerHTML;
 
-        for (var j = 0; j < setNameKeys.length; j++) {
-            var key = setNameKeys[j];
+        // get card name
+        var cardName = parent
+            .getElementsByClassName("legend-post-title")[0]
+            .innerHTML;
 
-            if (parent.classList.contains(key)) {
-                elements[i].innerHTML = getCardId(name, setNames[key]);
-                break;
-            }
-        }
+        // get card set
+        var cardSet = getCardSet(parent);
+        
+        // set card id
+        elements[i].innerHTML = getCardId(cardName, cardSet);
     }
 }
 
@@ -165,6 +177,7 @@ function generatePage(html) {
 }
 
 function main() {
+    var basedir = path.join(__dirname, "../../cards/");
     var files = getFiles(basedir);
 
     for (var i = 0; i < files.length; i++) {
