@@ -71,6 +71,7 @@ function getFiles(filepath) {
 
     while (i--) {
         var item = path.join(filepath, files[i]);
+
         if (!fs.statSync(item).isFile()) {
             files.splice(i, 1);
         }
@@ -167,14 +168,17 @@ function main() {
     var files = getFiles(basedir);
 
     for (var i = 0; i < files.length; i++) {
-        if (files[i] == "README.md") {
+        var filename = files[i];
+
+        if (filename == "README.md") {
             continue;
         }
 
-        var filename = files[i];
         console.log("Generating page: " + filename);
+
         var text = readFile(basedir + filename);
         var html = generatePage(text);
+
         writeFile(basedir + filename, html);
     }
 }
