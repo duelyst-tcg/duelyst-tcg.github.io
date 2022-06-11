@@ -10,18 +10,20 @@ var g_setNames = {
     "bloodbound-ancients": "BLAN",
     "unearthed-prophecy": "UNPR",
     "immortal-vanguard": "IMVA",
-    "trials-of-mythron": "TROM"
+    "trials-of-mythron": "TROM",
+    "gauntlet-specials": "GASP"
 };
 var g_cardContainerClasses = [
     "card-container",
-    "core-set",
     "spell",
     "artifact",
+    "core-set",
     "denizens-of-shimzar",
     "bloodbound-ancients",
     "unearthed-prophecy",
     "immortal-vanguard",
     "trials-of-mythron",
+    "gauntlet-specials",
     "magmar",
     "songhai",
     "lyonar",
