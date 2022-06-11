@@ -18,7 +18,6 @@ https://duelyst.fandom.com/wiki/Grym_the_Vengeful
 https://duelyst.fandom.com/wiki/Harmony
 https://duelyst.fandom.com/wiki/High_Templar_Kron
 https://duelyst.fandom.com/wiki/Kahlmar_the_Spell_Eater
-https://duelyst.fandom.com/wiki/Legion_(Boss)
 https://duelyst.fandom.com/wiki/Malyk
 https://duelyst.fandom.com/wiki/Megapenti
 https://duelyst.fandom.com/wiki/Monolith_Guardian
@@ -41,3 +40,7 @@ https://duelyst.fandom.com/wiki/Unhallowed
 https://duelyst.fandom.com/wiki/Wolfpunch
 https://duelyst.fandom.com/wiki/Wu'Jin_the_Trickster
 https://duelyst.fandom.com/wiki/Xel
+
+## Missing image
+
+https://duelyst.fandom.com/wiki/Legion_(Boss)
