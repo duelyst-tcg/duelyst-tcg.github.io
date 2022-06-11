@@ -14,6 +14,42 @@ var setNames = {
     "immortal-vanguard": "IMVA",
     "trials-of-mythron": "TROM"
 };
+var cardContainerClasses = [
+    "card-container",
+    "core-set",
+    "spell",
+    "artifact",
+    "denizens-of-shimzar",
+    "bloodbound-ancients",
+    "unearthed-prophecy",
+    "immortal-vanguard",
+    "trials-of-mythron",
+    "magmar",
+    "songhai",
+    "lyonar",
+    "abyssian",
+    "vanar",
+    "vetruvian",
+    "starhorn-the-seeker",
+    "ragnora-the-relentless",
+    "reva-eventide",
+    "shidai-stormblossom",
+    "argeon-highmayne",
+    "ziran-sunforge",
+    "brome-warcrest",
+    "zirix-starstrider",
+    "scioness-sajj",
+    "ciphyron-ascendant",
+    "cassyva-soulreaper",
+    "maehv-skinsolder",
+    "kara-winterblade",
+    "ilena-cryobyte",
+    "grandmaster-kraigon",
+    "vindicator",
+    "earth-sister-taygete",
+    "storm-sister-alkyone",
+    "hamon-bladeseeker"
+];
 
 async function writeFile(filepath, data) {
     if (!fs.existsSync(filepath)) {
@@ -44,40 +80,13 @@ function getFiles(filepath) {
 }
 
 function isCorrectClass(name) {
-    return name == "card-container"
-        || name == "core-set"
-        || name == "spell"
-        || name == "artifact"
-        || name == "denizens-of-shimzar"
-        || name == "bloodbound-ancients"
-        || name == "unearthed-prophecy"
-        || name == "immortal-vanguard"
-        || name == "trials-of-mythron"
-        || name == "magmar"
-        || name == "songhai"
-        || name == "lyonar"
-        || name == "abyssian"
-        || name == "vanar"
-        || name == "vetruvian"
-        || name == "starhorn-the-seeker"
-        || name == "ragnora-the-relentless"
-        || name == "reva-eventide"
-        || name == "shidai-stormblossom"
-        || name == "argeon-highmayne"
-        || name == "ziran-sunforge"
-        || name == "brome-warcrest"
-        || name == "zirix-starstrider"
-        || name == "scioness-sajj"
-        || name == "ciphyron-ascendant"
-        || name == "cassyva-soulreaper"
-        || name == "maehv-skinsolder"
-        || name == "kara-winterblade"
-        || name == "ilena-cryobyte"
-        || name == "grandmaster-kraigon"
-        || name == "vindicator"
-        || name == "earth-sister-taygete"
-        || name == "storm-sister-alkyone"
-        || name == "hamon-bladeseeker";
+    for (var i = 0; i < cardContainerClasses.length; i++) {
+        if (cardContainerClasses[i].indexOf(name) > -1) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 function stripClasses(document) {
