@@ -4,6 +4,17 @@ var { JSDOM } = require("jsdom");
 
 var basedir = path.join(__dirname, "../../cards/");
 
+var cardIds = {};
+var setIds = {};
+var setNames = {
+    "core-set": "CORE",
+    "denizens-of-shimzar": "DEOS",
+    "bloodbound-ancients": "BLAN",
+    "unearthed-prophecy": "UNPR",
+    "immortal-vanguard": "IMVA",
+    "trials-of-mythron": "TROM"
+};
+
 async function writeFile(filepath, data) {
     if (!fs.existsSync(filepath)) {
         // create missing directories recursively
@@ -83,34 +94,51 @@ function stripClasses(document) {
     }
 }
 
+function generateCardId(setName) {
+    var cardId = setName + "-";
+
+    // initialize card id's counter
+    if (setIds[setName] === undefined) {
+        setIds[setName] = 0;
+    }
+
+    // add number
+    var cardNumber = ++setIds[setName];
+
+    if (cardNumber < 100) {
+        cardId += "0";
+    }
+
+    if (cardNumber < 10) {
+        cardId += "0"
+    }
+
+    return cardId + cardNumber;
+}
+
+function getCardId(cardName, setName) {
+    if (cardIds[cardName] === undefined) {
+        cardIds[cardName] = generateCardId(setName);
+    }
+
+    return cardIds[cardName];
+}
+
 function applySetType(document) {
     var elements = document.getElementsByClassName("card-rarity");
+    var setNameKeys = Object.keys(setNames);
 
     for (var i = 0; i < elements.length; i++) {
-        var parentElement = elements[i].parentElement.parentElement;
+        var parent = elements[i].parentElement.parentElement;
+        var name = parent.getElementsByClassName("legend-post-title")[0].innerHTML;
 
-        if (parentElement.classList.contains("core-set")) {
-            elements[i].innerHTML = "CORE";
-        }
+        for (var j = 0; j < setNameKeys.length; j++) {
+            var key = setNameKeys[j];
 
-        if (parentElement.classList.contains("denizens-of-shimzar")) {
-            elements[i].innerHTML = "DEOS";
-        }
-
-        if (parentElement.classList.contains("bloodbound-ancients")) {
-            elements[i].innerHTML = "BLAN";
-        }
-
-        if (parentElement.classList.contains("unearthed-prophecy")) {
-            elements[i].innerHTML = "UNPR";
-        }
-
-        if (parentElement.classList.contains("immortal-vanguard")) {
-            elements[i].innerHTML = "IMVA";
-        }
-
-        if (parentElement.classList.contains("trials-of-mythron")) {
-            elements[i].innerHTML = "TROM";
+            if (parent.classList.contains(key)) {
+                elements[i].innerHTML = getCardId(name, setNames[key]);
+                break;
+            }
         }
     }
 }
