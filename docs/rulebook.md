@@ -80,6 +80,7 @@ The board should look like this:
 
 - Begin phase
     1. Gain +1 mana capacity if its below 9
+    2. Activate all friendly units
 - Main phase
     - Replace a card from your hand
     - Cast your general's bloodbound spell
@@ -87,7 +88,20 @@ The board should look like this:
     - Move your units
     - Attack with your units
 - End phase
-    1. Draw a card
+    1. Exhaust all friendly units
+    2. Draw a card
+
+## Replace
+
+You can set a card aside face down to draw another card from your deck. Is it
+the same card? Put that aside too and draw another. Repeat this until you no
+longer draw the same card.
+
+## Mulligan
+
+You select any number of cards from your Action Bar and replace them. A
+mulligan doesn't count as a replace, so Player 1 can still replace a card in
+his/her turn.
 
 ## Movement
 
@@ -95,10 +109,10 @@ A tile occupied by a unit is blocked and cannot be moved to.
 
 A unit:
 
-- can only move once per turn.
-- can only move when not fully surrounded.
-- can only move before it attacked.
-- can per turn move one of the following choices:
+- Can only move once per turn.
+- Can only move when not fully surrounded.
+- Can only move before it attacked.
+- Can per turn move one of the following choices:
     - up to 2 tiles horizontal or vertical.
     - 1 tile diagonal.
 
@@ -116,11 +130,11 @@ Movement range:
 
 An unit:
 
-- can only attack once per turn
-- can only attack a general/unit within range of 1 tile (horizontal, vertical,
+- Can only attack once per turn
+- Can only attack a general/unit within range of 1 tile (horizontal, vertical,
   diagonal)
-- can only attack one target per turn
-- looks in a direction:
+- Can only attack one target per turn
+- Looks in a direction:
   - Player 1: left (`>`)
   - Player 2: right (`<`)
 
@@ -136,9 +150,20 @@ Unit attack range:
 
 Resolving combat:
 
-1. the attacker deals damage to the defender for the attacker's attack.
-2. if the defender didn't die, it strikes back; dealing damage to the attacker
+1. The attacker deals damage to the defender for the attacker's attack.
+2. If the defender didn't die, it strikes back; dealing damage to the attacker
    for the defender's attack.
+
+## Statusses
+
+### Activated
+
+Unit is allowed to move and attack.
+
+### Exhausted
+
+Unit receives this when it has done all actions it could.
+The unit cannot attack nor move until the beginning of your next turn.
 
 ## Keywords
 
@@ -148,15 +173,19 @@ The unit can be summoned on any non-occupied tile on the battlefield.
 
 ### Backstab: (X)
 
-When attacking from behind the enemy unit, this unit deals an additional X
-damage AND prevents a counterattack. The additional damage also applies when
-this unit is counterattacking from behind the enemy unit.
+When Attacking from the square directly behind the target, you deal extra
+damage and will not receive counterattacks. If a minion has 0 attack they can't
+attack or counter-attack even though backstab would increase the attack above
+0.
 
 ### Blast
 
-When this unit attacks in a cardinal direction, it hits ALL enemy units on the
-same line. Only nearby or Ranged units will counterattack. Can target
-non-adjacent minions and generals.
+Attack all enemy minions and Generals in one straight line. If a Blast unit
+attacks a nearby enemy diagonally, it will not attack any other units in that
+diagonal. The damage hits all targets equally. No damage is lost as the attack
+pierces multiple targets. This means that the effects of cards like Falcius and
+Psionic Strike can apply to multiple enemies. Only nearby or Ranged units will
+counterattack. Can target non-adjacent minions and generals.
 
 ### Bloodbound Spell
 
@@ -172,24 +201,42 @@ turn (ex: use it on your 4th turn).
 
 ### Blood Surge
 
-Triggers an effect after you activate your Bloodbound Spell.
+Triggers an effect after you activate your Bloodbound Spell. Blood Surge
+effects happen after the BBS' effect is resolved. 
 
 ### Bond
 
-Triggers an effect when summoned if you have another minion from the same
-tribe.
+Triggers a special effect when this unit is put into play whilst at least one
+other minion from the same tribe at that unit is on the board. It doesn't need
+to be played from the action bar to occur. Tranform triggers Bond effects.
 
 ### Build
 
 When you summon a minion with the Build keyword, it comes into play as a 0/10
 Structure. At the beginning of your turn, your minion's build counter
 decrements by one: this occurs every turn until the build counter reaches zero.
-Once the build counter reaches zero, the Structure will transform into the
+When the build counter reaches zero, the Structure will transform into the
 minion you played from your action bar.
+
+While a minion is "Building," you cannot dispel the fact that it is building
+and will transform at the end of its build countdown. This means that you can
+treat buildings as regular Structures - you can target them with spells, heal
+them, damage them, transform them, destroy them, etc. They will however
+eventually transform into their final form if not destroyed or removed.
+
+If a Build Structure is returned to the action bar, the owner will receive a
+copy of the 0/10 Build Structure. Buildings will match their minion's Mana
+Cost, allowing you to play the Building again for its original cost, and the
+structure will eventually build into the specified minion.
+
+Any buffs that are applied to a Build minion while the card is in your action
+bar will apply to the final/transformed version after it is done Building (eg
+via Phantasm) And finally, a "Building" is considered a token, so it is not a
+viable target for revive effects (you can, however, revive the final product).
 
 ### Celerity
 
-This unit can activate twice per turn.
+This unit can activate twice per turn before becoming exhausted.
 
 ### Deathwatch
 
@@ -197,19 +244,58 @@ When ANY minion dies, trigger the Deathwatch effect.
 
 ### Dispel
 
-Abilities and enchantments added to this minion are removed.
+Abilities, tiles and enchantments added to this minion or the battlefield are
+removed.
+
+Dispels applied in combat will apply before strike back if you are the
+attacker.
+
+Any damage sustained to an enchanted Minion will remain after being Dispelled.
+This means if a Minion takes more than its original max health in damage, it
+will die immediately after losing its bonus Health.
+
+- Walls will disappear immediately when Dispelled.
+- Wind Dervishes will disappear immediately when Dispelled, unless a Dunecaster
+  has erased their disappear effect.
+- Stun will be removed.
+- Mana Tiles will disappear.
+- Dispelling Rush on your own minion will exhaust that minion.
+- Dispelling Eggs will prevent them from hatching.
+- Flying units that are dispelled lose flying, but can still move normally.
+- Summon Dervish units will no longer summon Wind Dervish tokens.
+
+You cannot dispel:
+
+- Artifacts
+- The following effects:
+    - Bond
+    - Destiny
+    - Transformation
+    - That become the original stats
+- Watchful Sentinels
 
 ### Draw
 
-The ability to draw card(s).
+The ability to draw card(s). "Add to your action bar" without mentioning Draw
+means you don't get the card from your deck, but from thin air. If you draw
+more cards than the maximum hand size (6), the card gets discarded immediately.
 
 ### Dying Wish
 
 When this minion dies, trigger the Dying Wish effect.
 
-### Exhaust
+Transformation spells will not trigger Dying Wish. Cards with Dying Wish:
+Summon X on this space will not trigger if something spawns in the same square
+before Dying Wish triggers.
 
-The unit cannot attack nor move until end of turn.
+This is based on who initiates the action; the initiator’s effect takes
+priority.
+
+For example, if player A destroys player B's Reaper of the Nine Moons by
+playing Dark Transformation, then the Reaper's Dying Wish will not trigger
+because player A (the initiator's) effect (summon a wraithling on this space)
+takes place first. Spells such as consuming rebirth can be used to trigger
+Dying Wish effects.
 
 ### Flying
 
@@ -218,45 +304,85 @@ Being fully surrounded doesn't prevent movement.
 
 ### Forcefield
 
-Cancel the first damage taken each turn.
+Cancel the first damage taken each turn. Even if a spell deals 0 damage, it
+still breaks the Forcefield.
 
 ### Frenzy
 
 When this unit attacks, it simultaneously hits ALL nearby enemy units. Only the
-attack target will counterattack.
+attack target will counterattack. Counterattacks from enemies with Frenzy won’t
+strike any other targets besides the Attacker.
 
 ### Grow: +X/+X
 
 This minion gains +X/+X at the start of your turn.
 
+### Heal
+
+Restore the unit's health. You cannot heal past the minion's maximum total
+health.
+
 ### Infiltrate
 
 This minion gains a bonus effect when on your opponent's starting side of the
-battlefield.
+battlefield. your Infiltrate bonus applies to the first four columns from your
+opponent's starting side. A minion loses its Infiltrate bonus as soon as it
+leaves your opponent's starting side of the battlefield.
+
+```txt
+1: Player 1's starting side of the field
+2: Player 2's starting side of the field
+
+1111.2222
+1111.2222
+1111.2222
+1111.2222
+1111.2222
+```
 
 ### Intensity
 
-Appears on minions and spells granting them a powerful stacking effect.
+Intensify effects of minions will be triggered in whatever way this minion is
+put into play: Summoning from the Action Bar, spawned by any effect or via
+Transform.
+
+These cards become more powerful each time you cast them for the duration of
+the game. 
+
+The formula is `x * n` 
+
+- `x` = digits printed on card
+- `n` = numbers of times the card was played
+
+Only the minion put into play with Intensify gets the bonus, not those already
+on the field.
 
 ### Invunerable
 
-Cannot die or be affected by anything.
+Cannot die or be affected by anything. They also can't be healed.
 
 ### Opening gambit
 
-When this minion is summoned from your action bar, trigger the Opening Gambit
-effect. Opening Gambit effects trigger before the minion enters the
-battlefield.
+This Minion triggers an effect immediately before being summoned from the
+Action Bar. It will not trigger when the minion wasn't summoned from the
+Action Bar. The effect also happens if the minion instantly dies when
+summoned.
 
 ### Provoke
 
-Enemy units within the normal range of a friedly unit with this keyword can
-only attack the friendly unit with this keyword and cannot move.
+Nearby enemies can select ONLY this Minion as an Attack target and cannot
+move. If your enemy is Provoked by multiple Minions at once, they can choose
+any Provoke Minion to target.
 
 ### Ranged
 
-The unit can attack anyone on the battlefield.
-The defender doesn't strike back if it's not in range of the defender.
+The unit can attack anyone on the battlefield. The defender doesn't strike back
+if it's not in range of the defender. Ranged is counterattacked by other Ranged,
+but not by Blast.
+
+### Reactivate
+
+Remove exaust from minion.
 
 ### Rebirth
 
@@ -265,45 +391,63 @@ minion after one full turn.
 
 ### Rush
 
-The unit can attack and move the same turn it was summoned.
+The unit does not become exausted when summoned.
 
 ### Sentinel
 
-This minion transforms into a stronger minion on a hidden condition.
+When you first play your Sentinel minion it will appear on board as a Watchful
+Sentinel token. When your opponent triggers the Sentinel minion's listed
+condition in his/her turn, it transforms into the minion you played.
+
+If a destoy effect targeting a Watchful Sentinel directly, it dies. If it
+doesn't target, it does nothing against the Watchful Sentinel. Stats
+increases and decreases are applied after transformation.
+
+Transformations won't trigger Sentinels. This includes cases such as a Build
+minion finishing building, or an Egg hatching.
 
 ### Stun
 
-Prevents a minion or General from moving and attacking.
+Prevents a unit from moving and attacking until the caster's next turn. Stunned
+units cannot be reactivated. Stunned units can strike back.
 
 ### Summon Dervish
 
 This unit summons a 2/2 Wind Dervish with Rush on a random nearby space at the
-start of your turn.
+start of your turn. No Wind Dervish will be summoned if the surrounding space
+is fully occupied.
 
 ### Transform
 
-Change a minion into another minion with different stats and abilities.
+Change a minion into another minion with different stats and abilities. Stun is
+removed upon transformation. Transformations don't trigger Dying Wish or
+Deathwatch. Both Bond and Intensify effects can occur after a Transform.
 
 ### Trial & Destiny
 
-Once the Trial has been satisfied, the card is now unlocked and can be played
-sfor its Destiny.
+You can have only one Trial & Destiny card in your deck.
+
+At the start of your match, your Trial and Destiny card will be removed from
+your deck. It will be added to your Action Bar after the mulligan phase. This
+will be the sixth card in your Action Bar.
+
+It is locked (cannot be played or replaced) until the Trial condition of the
+card has been satisfied. When satisfied, the card remains unlocked even if the
+condition is no longer satisfied afterwards.
+
+The Destiny effect only triggers when it's played from the Action Bar and can
+only be triggered once pergame. The effect is permanent and cannot be removed
+nor dispelled.
 
 ### Wall
 
-This minion cannot move, and is immediately removed from the battlefield if
-sdispelled.
+This minion cannot move.
 
 ### Zeal
 
 This minion gains a bonus effect when nearby your General.
 
 ## Tribes
-
-### Arcanyst
-
-Arcanysts with the Bond keyword will only activate that ability if there is a
-friendly Arcanyst on the board when they are summoned.
 
 ### Battle pet
 
@@ -341,23 +485,6 @@ comes into play from a Transform, it is considered to have entered the
 battlefield after Battle Pets that were already there. Nature's Confluence
 places Battle Pets onto the battlefield from left to right, bottom to top.
 
-### Dervish
-
-Summoned Wind Dervish tokens are Ephemeral and disappear at the end of your
-turn unless buffed by a Dunecaster.
-
-Your Obelysks won't spawn Dervish tokens if the Obelysk is surrounded.
-
-Ephemeral is a special tag possessed by wind dervishes. It can be removed by a
-Dunecaster, but can't otherwise be dispelled. Equally, when a wind dervish that
-has been buffed by a dunecaster is dispelled, it does not regain the
-ephemeral keyword and does not disappear at the end of the turn.
-
-### Golem
-
-The special abilities of Golems with the Bond keyword only trigger when another
-friendly Golem is already on the battlefield.
-
 ### Mech
 
 Some mechs have the same Opening Gambit of progressing the
@@ -370,13 +497,7 @@ The building progress can't be dispelled.
 ### Structure
 
 Structure minions cannot move or attack and can not increase their attack.
-
 All cards with the build are structures during their build time.
-
-A dispelled structure no longer activates summon devrish, but still cannot
-attack or move, and continues to occupy its terrain space until it is
-destroyed. 
-
 Structures cannot gain attack boosts, except through Stone to Spears.
 
 ### Vespyr

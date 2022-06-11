@@ -27,6 +27,8 @@ Listed in no particular order
 
 - [duelspot](https://duelspot.com), as I used most of the styling and data from
   there.
+- [duelyst wiki](https://duelyst.fandom.com/), as I grabbed most information from
+  there.
 - [-norrinator-](https://www.reddit.com/user/-Norrinator-/), for his version of
   physical duelyst, which inspired me to make this.
 
