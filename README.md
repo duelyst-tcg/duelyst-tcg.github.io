@@ -5,23 +5,13 @@ The physical trading card game variant of Duelyst.
 **Folder** | **Content**
 ---------- | ---------------------------------------
 `cards`    | Printable html pages and related assets
+`audio`    | Audio to burn to a CD
 `docs`     | An (incomplete) rulebook
 `tools`    | Code to aid with development
 
-## Todo
+## Contribute
 
-Listed in no particular order
-
-- Fix missing card markup
-- Change naming of mechanics (eg: `action bar` to `in your hand`)
-- Restore old content
-  - List `Bloodbound Ancients` in their original sets
-  - Restore warmaster
-  - Restore old names
-  - Restore AI generals
-- Clean up html file
-- Add missing sections to rulebook
-- Add printable starter decks
+See `todo.md` for things that need to be done.
 
 ## Credits
 

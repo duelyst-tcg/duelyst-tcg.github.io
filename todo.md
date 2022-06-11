@@ -1,6 +1,10 @@
 # Todo
 
-Cards I need to make
+Listed in no particular order
+
+- Fix missing card markup
+- Add missing cards
+- Add missing music
 
 ## Boss
 
