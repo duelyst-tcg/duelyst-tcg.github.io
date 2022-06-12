@@ -1,18 +1,6 @@
-var fs = require("fs");
 var path = require("path");
-var { JSDOM } = require("jsdom");
+var lib = require("./lib");
 
-var g_cardIds = {};
-var g_setIds = {};
-var g_setNames = {
-    "core-set": "CORE",
-    "denizens-of-shimzar": "DEOS",
-    "bloodbound-ancients": "BLAN",
-    "unearthed-prophecy": "UNPR",
-    "immortal-vanguard": "IMVA",
-    "trials-of-mythron": "TROM",
-    "gauntlet-specials": "GASP"
-};
 var g_cardContainerClasses = [
     "card-container",
     "spell",
@@ -50,35 +38,6 @@ var g_cardContainerClasses = [
     "storm-sister-alkyone",
     "hamon-bladeseeker"
 ];
-
-async function writeFile(filepath, data) {
-    if (!fs.existsSync(filepath)) {
-        // create missing directories recursively
-        var target = filepath.substr(0, filepath.lastIndexOf("/"));
-        fs.mkdirSync(target, { "recursive": true });
-    }
-
-    fs.writeFileSync(filepath, data);
-}
-
-function readFile(filepath) {
-    return fs.readFileSync(filepath).toString();
-}
-
-function getFiles(filepath) {
-    var files = fs.readdirSync(filepath);
-    var i = files.length;
-
-    while (i--) {
-        var item = path.join(filepath, files[i]);
-
-        if (!fs.statSync(item).isFile()) {
-            files.splice(i, 1);
-        }
-    }
-
-    return files;
-}
 
 function isCorrectClass(name) {
     for (var i = 0; i < g_cardContainerClasses.length; i++) {
@@ -144,99 +103,29 @@ function removeTitleLink(document) {
     }
 }
 
-function generateCardId(setName) {
-    var cardId = setName + "-";
-
-    // initialize card id's counter
-    if (g_setIds[setName] === undefined) {
-        g_setIds[setName] = 0;
-    }
-
-    // add number
-    var cardNumber = ++g_setIds[setName];
-
-    if (cardNumber < 100) {
-        cardId += "0";
-    }
-
-    if (cardNumber < 10) {
-        cardId += "0"
-    }
-
-    return cardId + cardNumber;
-}
-
-function getCardId(cardName, setName) {
-    if (g_cardIds[cardName] === undefined) {
-        g_cardIds[cardName] = generateCardId(setName);
-    }
-
-    return g_cardIds[cardName];
-}
-
-function getCardSet(element) {
-    var setNameKeys = Object.keys(g_setNames);
-
-    for (var j = 0; j < setNameKeys.length; j++) {
-        var setNameId = setNameKeys[j];
-
-        if (element.classList.contains(setNameId)) {
-            return g_setNames[setNameId];
-        }
-    }
-
-    return undefined;
-}
-
-function applySetType(document) {
-    var elements = document.getElementsByClassName("card-rarity"); 
-
-    for (var i = 0; i < elements.length; i++) {
-        var parent = elements[i].parentElement.parentElement;
-
-        // get card name
-        var cardName = parent
-            .getElementsByClassName("card-title")[0]
-            .innerHTML;
-
-        // get card set
-        var cardSet = getCardSet(parent);
-        
-        // set card id
-        elements[i].innerHTML = getCardId(cardName, cardSet);
-    }
-}
-
 function generatePage(html) {
-    var dom = new JSDOM(html);
-    var document = dom.window.document;
+    var document = lib.createDocument(html);
 
     stripClasses(document);
     removeImageLink(document);
     removeTitleLink(document);
-    applySetType(document);
 
-    // add doctype to prevent quicks mode warning
-    return "<!DOCTYPE html>" + document.documentElement.outerHTML;
+    return lib.getHtml(document);
 }
 
 function main() {
-    var basedir = path.join(__dirname, "../../cards/");
-    var files = getFiles(basedir);
+    var basedir = path.join(__dirname, "../../cards/static/");
+    var files = lib.getFiles(basedir);
 
     for (var i = 0; i < files.length; i++) {
         var filename = files[i];
 
-        if (filename == "README.md") {
-            continue;
-        }
+        console.log("Fixing page: " + filename);
 
-        console.log("Generating page: " + filename);
-
-        var text = readFile(basedir + filename);
+        var text = lib.readFile(basedir + filename);
         var html = generatePage(text);
 
-        writeFile(basedir + filename, html);
+        lib.writeFile(basedir + filename, html);
     }
 }
 
