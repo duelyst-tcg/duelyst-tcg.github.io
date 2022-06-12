@@ -103,12 +103,26 @@ function removeTitleLink(document) {
     }
 }
 
+function removeCardAbility(document) {
+    var elements = document.getElementsByClassName("card-ability");
+
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        var newElement = document.createElement("span");
+        var cardAbility = element.getElementsByTagName("span")[0];
+
+        newElement.textContent = cardAbility.textContent;
+        element.parentNode.replaceChild(newElement, element);
+    }
+}
+
 function generatePage(html) {
     var document = lib.createDocument(html);
 
     stripClasses(document);
     removeImageLink(document);
     removeTitleLink(document);
+    removeCardAbility(document);
 
     return lib.getHtml(document);
 }

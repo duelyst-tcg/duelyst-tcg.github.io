@@ -238,18 +238,6 @@
     color: #ffffff;
 }
 
-/* card ability */
-.card-ability {
-    color: #ffffff;
-    font-size: 11px;
-    letter-spacing: 1px;
-    display: block;
-    margin-bottom: 10px;
-}
-.card-ability span {
-    font-weight: normal;
-}
-
 /* spell images */
 .spell .card-image img, .artifact .card-image img {
     width: 110px;
