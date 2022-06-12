@@ -1,6 +1,6 @@
 # Cards
 
-## Browser print options:
+## Browser print options
 
 **Option** | **Value**
 ---------- | ---------
@@ -18,3 +18,8 @@ UNPR      | Unearthed Prophecy
 IMVA      | Immortal Vanguard
 TROM      | Trials of Mythron
 GASP      | Gauntlet Specials
+
+## Starter decks
+
+Info taken from here:
+https://duelyst.fandom.com/wiki/Starter_Decks
