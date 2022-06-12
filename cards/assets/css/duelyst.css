@@ -201,12 +201,8 @@
 /* card name */
 .card-title {
     position: relative;
-}
-h2.legend-name {
     margin: 35px 3px 3px 3px;
     line-height: 12px;
-}
-a.legend-post-title {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;

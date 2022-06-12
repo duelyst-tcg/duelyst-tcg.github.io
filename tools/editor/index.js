@@ -104,6 +104,46 @@ function stripClasses(document) {
     }
 }
 
+function removeImageLink(document) {
+    var elements = document.getElementsByClassName("card-image");
+
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+
+        if (element.tagName !== "IMG") {
+            // create new image element
+            var imgElement = element.getElementsByTagName("img")[0];
+            var newImgElement = document.createElement("img");
+
+            newImgElement.setAttribute("src", imgElement.getAttribute("src"));
+
+            // create new div element
+            var newDivElement = document.createElement("div");
+
+            newDivElement.setAttribute("class", "card-image");
+            newDivElement.appendChild(newImgElement);
+            element.parentNode.replaceChild(newDivElement, element);
+        }
+    }
+}
+
+function removeTitleLink(document) {
+    var elements = document.getElementsByClassName("card-title");
+
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+
+        if (element.tagName !== "H2") {
+            var newElement = document.createElement("h2");
+            var targetElement = element.getElementsByClassName("legend-post-title")[0];
+
+            newElement.setAttribute("class", "card-title");
+            newElement.innerHTML = targetElement.textContent;
+            element.parentNode.replaceChild(newElement, element);
+        }
+    }
+}
+
 function generateCardId(setName) {
     var cardId = setName + "-";
 
@@ -156,7 +196,7 @@ function applySetType(document) {
 
         // get card name
         var cardName = parent
-            .getElementsByClassName("legend-post-title")[0]
+            .getElementsByClassName("card-title")[0]
             .innerHTML;
 
         // get card set
@@ -172,6 +212,8 @@ function generatePage(html) {
     var document = dom.window.document;
 
     stripClasses(document);
+    removeImageLink(document);
+    removeTitleLink(document);
     applySetType(document);
 
     // add doctype to prevent quicks mode warning
