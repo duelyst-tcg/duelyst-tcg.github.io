@@ -68,6 +68,12 @@
 .vetruvian .card-rarity:after, .vetruvian .card-attack:after {
     color: #a46e29;
 }
+.boss .card-left {
+    border-right: 1px solid #dddddd;
+}
+.boss .card-rarity:after, .boss .card-attack:after {
+    color: #dddddd;
+}
 
 /* card mana */
 .card-mana {
