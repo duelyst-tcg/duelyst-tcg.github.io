@@ -50,20 +50,6 @@ function isCorrectClass(name) {
     return false;
 }
 
-function stripClasses(document) {
-    var elements = document.getElementsByClassName("card-container");
-
-    for (var i = 0; i < elements.length; i++) {
-        var classes = elements[i].className.split(' ');
-
-        for (var item of classes) {
-            if (!isCorrectClass(item) && item !== "") {
-                elements[i].classList.remove(item);
-            }
-        }
-    }
-}
-
 function removeImageLink(document) {
     var elements = document.getElementsByClassName("card-image");
 
@@ -117,13 +103,40 @@ function removeCardAbility(document) {
     }
 }
 
+function stripContainerClasses(document) {
+    var elements = document.getElementsByClassName("card-container");
+
+    for (var i = 0; i < elements.length; i++) {
+        var classes = elements[i].className.split(' ');
+
+        for (var item of classes) {
+            if (!isCorrectClass(item) && item !== "") {
+                elements[i].classList.remove(item);
+            }
+        }
+    }
+}
+
+function stripDescriptionClasses(document) {
+    var elements = document.getElementsByClassName("card-description");
+
+    for (var i = 0; i < elements.length; i++) {
+        var spans = elements[i].getElementsByTagName("span");
+
+        for (var item of spans) {
+            item.removeAttribute("class");
+        }
+    }
+}
+
 function generatePage(html) {
     var document = lib.createDocument(html);
 
-    stripClasses(document);
     removeImageLink(document);
     removeTitleLink(document);
     removeCardAbility(document);
+    stripContainerClasses(document);
+    stripDescriptionClasses(document);
 
     return lib.getHtml(document);
 }
