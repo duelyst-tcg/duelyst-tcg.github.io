@@ -5,6 +5,7 @@ var g_cardContainerClasses = [
     "card-container",
     "spell",
     "artifact",
+    "token",
     "core-set",
     "denizens-of-shimzar",
     "bloodbound-ancients",
