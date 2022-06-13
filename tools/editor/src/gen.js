@@ -1,6 +1,3 @@
-var path = require("path");
-var lib = require("./lib");
-
 var g_cardIds = {};
 var g_setIds = {};
 var g_setNames = {
@@ -12,6 +9,39 @@ var g_setNames = {
     "trials-of-mythron": "TROM",
     "gauntlet-specials": "GASP"
 };
+var g_specialCardImages = [
+  "Starhorn the Seeker",
+  "Ragnora the Relentless":,
+  "Reva Eventide",
+  "Shidai Stormblossom",
+  "Argon Highmayne",
+  "Ziran Sunforge",
+  "Brome Warcrest",
+  "Scioness Sajj",
+  "Zirix Starstrider",
+  "Ciphyron Ascendant",
+  "Cassyva Soulreaper",
+  "Maehv Skinsolder",
+  "Kara Winterblade",
+  "Ilena Cryobyte",
+  "Grandmaster Kraigon":,
+  "vindicator",
+  "Earth Sister Taygete",
+  "Storm Sister Alkyone",
+  "Hamon Bladeseeker"
+];
+
+function getSpecialCardClass(card) {
+  for (var i = 0; i < g_specialCardImages.length; i++) {
+    var name = g_specialCardImages[i];
+
+    if (card.name === name) {
+      return name.replace(" ", "-").toLowerCase();
+    }
+  }
+
+  return undefined;
+}
 
 function generateCardId(setName) {
     var cardId = setName + "-";
@@ -58,7 +88,7 @@ function getCardSet(element) {
 }
 
 function applySetType(document) {
-    var elements = document.getElementsByClassName("card-rarity"); 
+    var elements = document.getElementsByClassName("card-rarity");
 
     for (var i = 0; i < elements.length; i++) {
         var parent = elements[i].parentElement.parentElement;
@@ -70,34 +100,8 @@ function applySetType(document) {
 
         // get card set
         var cardSet = getCardSet(parent);
-        
+
         // set card id
         elements[i].innerHTML = getCardId(cardName, cardSet);
     }
 }
-
-function generatePage(html) {
-    var document = lib.createDocument(html);
-
-    applySetType(document);
-    
-    return lib.getHtml(document);
-}
-
-function main() {
-    var basedir = path.join(__dirname, "../../cards/static/");
-    var files = lib.getFiles(basedir);
-
-    for (var i = 0; i < files.length; i++) {
-        var filename = files[i];
-        
-        console.log("Generating page: " + filename);
-
-        var text = lib.readFile(basedir + filename);
-        var html = generatePage(text);
-
-        lib.writeFile(basedir + filename, html);
-    }
-}
-
-main();

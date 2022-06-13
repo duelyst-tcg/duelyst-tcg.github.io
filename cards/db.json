@@ -1,0 +1,216 @@
+{
+  "sets": [
+    {
+      "id": "core-set",
+      "name": "Core",
+      "abbr": "CORE"
+    },
+    {
+      "id": "denizens-of-shimzar",
+      "name": "Denizens of Shim'zar",
+      "abbr": "DEOS"
+    },
+    {
+      "id": "bloodbound-ancients",
+      "name": "Bloodbound Ancients",
+      "abbr": "BOND"
+    },
+    {
+      "id": "unearthed-prophecy",
+      "name": "Unearthed Prophecy",
+      "abbr": "UART"
+    },
+    {
+      "id": "immortal-vanguard",
+      "name": "Immortal Vanguard",
+      "abbr": "VGRD"
+    },
+    {
+      "id": "trials-of-mythron",
+      "name": "Trials of Mythron",
+      "abbr": "MYTH"
+    },
+    {
+      "id": "gauntlet-specials",
+      "name": "Gauntlet Specials",
+      "abbr": "GALS"
+    }
+  ],
+  "cards": [
+    {
+      "name": "Futureshaper",
+      "img": "./assets/img/neutral/Fortuneshaper_idle.gif",
+      "set": "gauntlet-specials",
+      "rarity": "rare",
+      "type": "minion",
+      "token": false,
+      "mana": 2,
+      "attack": 2,
+      "health": 3,
+      "description": "Your next Gauntlet card choices will be Epic cards."
+    },
+    {
+      "name": "Futureshaker",
+      "img": "./assets/img/neutral/Futureshaker_idle.gif",
+      "set": "gauntlet-specials",
+      "rarity": "rare",
+      "type": "minion",
+      "token": false,
+      "mana": 3,
+      "attack": 3,
+      "health": 3,
+      "description": "Your next Gauntlet card choices will be Legendary Neutral cards."
+    },
+    {
+      "name": "Fatesealer",
+      "img": "./assets/img/neutral/Fatesealer_idle.gif",
+      "set": "gauntlet-specials",
+      "rarity": "rare",
+      "type": "minion",
+      "token": false,
+      "mana": 4,
+      "attack": 4,
+      "health": 4,
+      "description": "Your next Gauntlet card choices will be Legendary Faction cards."
+    }
+  ],
+  "decks": [
+    {
+      "name": "Lyonar Starter",
+      "cards": {
+        "Argeon Highmayne": 1,
+        "Windblade Adept": 3,
+        "Bloodshard Golem": 1,
+        "Putrid Dreadflayer": 1,
+        "Saberspine Tiger": 1,
+        "Silverguard Knight": 3,
+        "Lysian Brawler": 3,
+        "Primus Shieldmaster": 3,
+        "Necroseer": 3,
+        "Stormmetal Golem": 1,
+        "Drybone Golem": 2,
+        "Sun Sister Sterope": 3,
+        "Tempest": 3,
+        "War Surge": 3,
+        "Divine Bond": 3,
+        "Martyrdom": 3,
+        "Sunstone Bracers": 3
+      }
+    },
+    {
+      "name": "Songhai Starter",
+      "cards": {
+        "Kaleos Xaan": 3,
+        "Chakri Avatar": 3,
+        "Kaido Assassin": 3,
+        "Saberspine Tiger": 1,
+        "Widowmaker": 3,
+        "Hailstone Golem": 2,
+        "Primus Shieldmaster": 1,
+        "Thorn Needler": 1,
+        "Necroseer": 2,
+        "Facestriker": 3,
+        "Drybone Golem": 2,
+        "Ghost Lightning": 3,
+        "Inner Focus": 3,
+        "Phoenix Fire": 3,
+        "Saberspine Seal": 3,
+        "Killing Edge": 3,
+        "Bloodrage Mask": 3
+      }
+    },
+    {
+      "name": "Vetruvian Starter",
+      "cards": {
+        "Zirix Starstrider": 1,
+        "Ethereal Obelysk": 3,
+        "Pyromancer": 3,
+        "Bloodshard Golem": 1,
+        "Putrid Dreadflayer": 1,
+        "Saberspine Tiger": 1,
+        "Hailstorm Golem": 1,
+        "Primus Shieldmaster": 2,
+        "Wind Shrike": 3,
+        "Necroseer": 2,
+        "Stormmetal Golem": 2,
+        "Drybone Golem": 2,
+        "Blindscorch": 3,
+        "Scion's First Wish": 3,
+        "Scion's Second Wish": 3,
+        "Cosmic Flesh": 3,
+        "Entropic Decay": 3,
+        "Staff of Y'Kir": 3,
+        "Iron Dervish": 3,
+        "Wind Dervish": 3
+      }
+    },
+    {
+      "name": "Abyssian Starter",
+      "cards": {
+        "Lilithe Blightchaser": 1,
+        "Abyssal Crawler": 3,
+        "Gloomchaser": 3,
+        "Putrid Dreadflayer": 1,
+        "Shadow Watcher": 3,
+        "Hailstone Golem": 2,
+        "Thorn Needler": 2,
+        "Necroseer": 3,
+        "Stormmetal Golem": 2,
+        "Drybone Golem": 2,
+        "Daemonic Lure": 3,
+        "Soulshatter Pact": 3,
+        "Wraithling Swarm": 3,
+        "Shadow Nova": 3,
+        "Dark Transformation": 3,
+        "Horn of the Forsaken": 3,
+        "Wraithling": 10,
+        "Shadow Creep": 1
+      }
+    },
+    {
+      "name": "Magmar Starter",
+      "cards": {
+        "Vaath the Immortal": 1,
+        "Phalanxar": 3,
+        "Bloodshard Minion": 1,
+        "Earth Walker": 3,
+        "Primordial Gazer": 3,
+        "Putrid Dreadflayer": 1,
+        "Saberspine Tiger": 1,
+        "Brightmoss Golem": 1,
+        "Necroseer": 3,
+        "Facestriker": 1,
+        "Stormmetal Golem": 2,
+        "Drybone Golem": 2,
+        "Damping Wave": 3,
+        "Dance of Dreams": 3,
+        "Greater Fortitude": 3,
+        "Natural Selection": 3,
+        "Plasma Storm": 3,
+        "Adamantite Claws": 3
+      }
+    },
+    {
+      "name": "Vanar Starter",
+      "cards": {
+        "Faie Bloodwing": 1,
+        "Crystal Cloaker": 3,
+        "Fenrir Warmaster": 3,
+        "Putrid Dreadflayer": 3,
+        "Hailstone Golem": 1,
+        "Primus Shieldmaster": 1,
+        "Young Flamewing": 2,
+        "Artic Displacer": 3,
+        "Necroseer": 3,
+        "Stormmetal Golem": 2,
+        "Drybone Golem": 2,
+        "Flash Freeze": 3,
+        "Aspect of the Ravager": 3,
+        "Chromatic Cold": 3,
+        "Frostfire": 3,
+        "Avalanche": 3,
+        "Snowpiercer": 3
+      }
+    }
+  ]
+}
