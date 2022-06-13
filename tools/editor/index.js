@@ -39,7 +39,7 @@ function scrapData(document, database) {
       "description": scrap.getDescription(element)
     };
 
-    scrap.addCard(card);
+    scrap.addCard(database, card);
   }
 }
 
@@ -59,9 +59,6 @@ function main() {
 
     removeUnusedData(document);
     scrapData(document, database);
-
-    var outdir = "./assets/output/";
-    lib.writeFile(outdir + filename, lib.getHtml(document));
   }
 
   //lib.writeFile(dbfile, database);
