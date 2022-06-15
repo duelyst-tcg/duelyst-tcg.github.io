@@ -28,7 +28,7 @@ function scrapFile(filename, basedir) {
 
   // remove redundant classes from card descriptions
   console.log("- Removing description classes...");
-  fixer.removeDescriptionClasses(document);
+  scrap.removeDescriptionClasses(document);
 
   // get the card info
   scrapCards(document);
