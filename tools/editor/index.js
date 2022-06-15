@@ -4,15 +4,6 @@ var scrap = require("./src/scrap");
 //var gen = require("./src/gen");
 
 function removeUnusedData(document) {
-  console.log("- Removing image links...");
-  fixer.removeImageLink(document);
-
-  console.log("- Removing title links...");
-  fixer.removeTitleLink(document);
-
-  // console.log("- Removing ability classes...");
-  //fixer.removeAbilityClasses(document);
-
   console.log("- Removing description classes...");
   fixer.removeDescriptionClasses(document);
 }
@@ -26,19 +17,7 @@ function scrapData(document, database) {
 
     console.log("- Scraping " + name + "...");
 
-    var card = {
-      "name": name,
-      "img": scrap.getImg(element),
-      "set": scrap.getSet(element),
-      "rarity": scrap.getRarity(element),
-      "type": scrap.getType(element),
-      "token": scrap.isToken(element),
-      "mana": scrap.getMana(element),
-      "attack": scrap.getAttack(element),
-      "health": scrap.getHealth(element),
-      "description": scrap.getDescription(element)
-    };
-
+    var card = new scrap.Card(element);
     scrap.addCard(database, card);
   }
 }
@@ -54,14 +33,15 @@ function main() {
 
     console.log("Scrap data from: " + filename);
 
-    var html = lib.readFile(indir + filename);
+    var text = lib.readFile(indir + filename);
+    var html = lib.minifyHtml(text);
     var document = lib.createDocument(html);
 
     removeUnusedData(document);
     scrapData(document, database);
   }
 
-  //lib.writeFile(dbfile, database);
+  lib.writeFile("./proto.db", JSON.stringify(database));
 }
 
 main();

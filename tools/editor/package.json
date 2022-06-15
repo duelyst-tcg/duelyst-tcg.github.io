@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "description": "Batch edit cards",
     "dependencies": {
+        "html-minifier": "^4.0.0",
         "jsdom": "^19.0.0"
     }
 }
