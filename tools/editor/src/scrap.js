@@ -86,9 +86,12 @@ function getName(element) {
   return removeGarbage(target.textContent);
 }
 
-function getImg(element) {
+function getImage(element) {
   var target = element.getElementsByTagName("img")[0];
-  return target.getAttribute("src");
+  var faction = getFaction(element);
+  return target.getAttribute("src")
+    .replace("https://duelspot.com/assets/uploads/", "./assets/img/")
+    .replace(".gif", ".png");
 }
 
 function getSet(element) {
@@ -137,14 +140,18 @@ function getDescription(element) {
 class Card {
   constructor(element) {
     this.name = getName(element);
-    this.img =  getImg(element);
+    this.image = getImage(element);
     this.set = getSet(element);
     this.rarity = getRarity(element);
     this.faction = getFaction(element);
     this.type = getType(element);
     this.token = isToken(element);
     this.mana = getMana(element);
-    this.description = getDescription(element);
+
+    var description = getDescription(element);
+    if (description !== "") {
+      this.description = description;
+    }
 
     if (this.type !== "spell" && this.type !== "artifact") {
       this.attack = getAttack(element);

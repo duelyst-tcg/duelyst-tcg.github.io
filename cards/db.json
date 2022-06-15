@@ -39,7 +39,7 @@
   "cards": [
     {
       "name": "Futureshaper",
-      "img": "./assets/img/neutral/Fortuneshaper_idle.gif",
+      "img": "./assets/img/Fortuneshaper_idle.gif",
       "set": "gauntlet-specials",
       "rarity": "rare",
       "type": "minion",
@@ -51,7 +51,7 @@
     },
     {
       "name": "Futureshaker",
-      "img": "./assets/img/neutral/Futureshaker_idle.gif",
+      "img": "./assets/img/Futureshaker_idle.gif",
       "set": "gauntlet-specials",
       "rarity": "rare",
       "type": "minion",
@@ -63,7 +63,7 @@
     },
     {
       "name": "Fatesealer",
-      "img": "./assets/img/neutral/Fatesealer_idle.gif",
+      "img": "./assets/img/Fatesealer_idle.gif",
       "set": "gauntlet-specials",
       "rarity": "rare",
       "type": "minion",
