@@ -131,19 +131,19 @@
     font-size: 20px;
     line-height: 20px;
 }
-.card-rarity.mythron:before {
+.mythron .card-rarity:before {
     color: #28e396;
 }
-.card-rarity.legendary:before {
+.legendary .card-rarity:before {
     color: #e39f28;
 }
-.card-rarity.epic:before {
+.epic .card-rarity:before {
     color: #bf20e1;
 }
-.card-rarity.rare:before {
+.rare .card-rarity:before {
     color: #396cfd;
 }
-.card-rarity.basic:before, .card-rarity.common:before {
+.basic .card-rarity:before, .common .card-rarity:before {
     color: #dddddd;
 }
 .core-set .card-rarity:before {
