@@ -1,7 +1,7 @@
 [
   {
     "name": "Futureshaper",
-    "img": "./assets/img/Fortuneshaper_idle.png",
+    "img": "./assets/img/Fortuneshaper.png",
     "set": "gauntlet-specials",
     "rarity": "rare",
     "type": "minion",
@@ -13,7 +13,7 @@
   },
   {
     "name": "Futureshaker",
-    "img": "./assets/img/Futureshaker_idle.png",
+    "img": "./assets/img/Futureshaker.png",
     "set": "gauntlet-specials",
     "rarity": "rare",
     "type": "minion",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Fatesealer",
-    "img": "./assets/img/Fatesealer_idle.png",
+    "img": "./assets/img/Fatesealer.png",
     "set": "gauntlet-specials",
     "rarity": "rare",
     "type": "minion",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Argeon Highmayne",
-    "image": "./assets/img/Argeon-Highmayne_idle.png",
+    "image": "./assets/img/Argeon-Highmayne.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -50,7 +50,7 @@
   },
   {
     "name": "Zir'An Sunforge",
-    "image": "./assets/img/ZirAn-Sunforge_idle.png",
+    "image": "./assets/img/ZirAn-Sunforge.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -63,7 +63,7 @@
   },
   {
     "name": "Brome Warcrest",
-    "image": "./assets/img/Brome-Warcrest_idle.png",
+    "image": "./assets/img/Brome-Warcrest.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -219,7 +219,7 @@
   },
   {
     "name": "Silverguard Squire",
-    "image": "./assets/img/Silverguard-Squire_idle.png",
+    "image": "./assets/img/Silverguard-Squire.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "lyonar",
@@ -279,7 +279,7 @@
   },
   {
     "name": "Azurite Lion",
-    "image": "./assets/img/Azurite-Lion_idle.png",
+    "image": "./assets/img/Azurite-Lion.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "lyonar",
@@ -360,7 +360,7 @@
   },
   {
     "name": "Lightchaser",
-    "image": "./assets/img/Lightchaser_idle.png",
+    "image": "./assets/img/Lightchaser.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "lyonar",
@@ -454,7 +454,7 @@
   },
   {
     "name": "Sunstone Templar",
-    "image": "./assets/img/Sunstone-Templar_idle.png",
+    "image": "./assets/img/Sunstone-Templar.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "lyonar",
@@ -513,7 +513,7 @@
   },
   {
     "name": "Windblade Adept",
-    "image": "./assets/img/Windblade-Adept_idle.png",
+    "image": "./assets/img/Windblade-Adept.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -537,7 +537,7 @@
   },
   {
     "name": "Arclyte Sentinel",
-    "image": "./assets/img/Arclyte-Sentinel_idle.png",
+    "image": "./assets/img/Arclyte-Sentinel.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "lyonar",
@@ -683,7 +683,7 @@
   },
   {
     "name": "Silverguard Knight",
-    "image": "./assets/img/Silverguard-Knight_idle.png",
+    "image": "./assets/img/Silverguard-Knight.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -838,7 +838,7 @@
   },
   {
     "name": "Lysian Brawler",
-    "image": "./assets/img/Lysian-Brawler_idle.png",
+    "image": "./assets/img/Lysian-Brawler.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -864,7 +864,7 @@
   },
   {
     "name": "Sun Sister Sterope",
-    "image": "./assets/img/Sun-Sister-Sterope_idle.png",
+    "image": "./assets/img/Sun-Sister-Sterope.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "lyonar",
@@ -890,7 +890,7 @@
   },
   {
     "name": "Sunriser",
-    "image": "./assets/img/Sunriser_idle.png",
+    "image": "./assets/img/Sunriser.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "lyonar",
@@ -914,7 +914,7 @@
   },
   {
     "name": "Suntide Maiden",
-    "image": "./assets/img/Suntide-Maiden_idle.png",
+    "image": "./assets/img/Suntide-Maiden.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "lyonar",
@@ -1010,7 +1010,7 @@
   },
   {
     "name": "Ironcliffe Guardian",
-    "image": "./assets/img/Ironcliffe-Guardian_idle.png",
+    "image": "./assets/img/Ironcliffe-Guardian.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "lyonar",
@@ -1047,7 +1047,7 @@
   },
   {
     "name": "Second Sun",
-    "image": "./assets/img/Second-Sun_idle.png",
+    "image": "./assets/img/Second-Sun.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "lyonar",
@@ -1110,7 +1110,7 @@
   },
   {
     "name": "Elyx Stormblade",
-    "image": "./assets/img/Elyx-Stormblade_idle.png",
+    "image": "./assets/img/Elyx-Stormblade.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "lyonar",
@@ -1182,7 +1182,7 @@
   },
   {
     "name": "Grandmaster Z'ir",
-    "image": "./assets/img/Grandmaster-Zir_idle.png",
+    "image": "./assets/img/Grandmaster-Zir.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "lyonar",
@@ -1256,7 +1256,7 @@
   },
   {
     "name": "Kaleos Xaan",
-    "image": "./assets/img/Kaleos-Xaan_idle.png",
+    "image": "./assets/img/Kaleos-Xaan.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -1269,7 +1269,7 @@
   },
   {
     "name": "Reva Eventide",
-    "image": "./assets/img/Reva-Eventide_idle.png",
+    "image": "./assets/img/Reva-Eventide.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -1282,7 +1282,7 @@
   },
   {
     "name": "Shidai Stormblossom",
-    "image": "./assets/img/Shidai-Stormblossom_idle.png",
+    "image": "./assets/img/Shidai-Stormblossom.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -1398,7 +1398,7 @@
   },
   {
     "name": "Heartseeker",
-    "image": "./assets/img/Heartseeker_idle.png",
+    "image": "./assets/img/Heartseeker.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "songhai",
@@ -1545,7 +1545,7 @@
   },
   {
     "name": "Chakri Avatar",
-    "image": "./assets/img/Chakri-Avatar_idle.png",
+    "image": "./assets/img/Chakri-Avatar.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -1602,7 +1602,7 @@
   },
   {
     "name": "Kaido Assassin",
-    "image": "./assets/img/Kaido-Assassin_idle.png",
+    "image": "./assets/img/Kaido-Assassin.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -1707,7 +1707,7 @@
   },
   {
     "name": "Tusk Boar",
-    "image": "./assets/img/Tusk-Boar_idle.png",
+    "image": "./assets/img/Tusk-Boar.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "songhai",
@@ -1768,7 +1768,7 @@
   },
   {
     "name": "Celestial Phantom",
-    "image": "./assets/img/Celestial-Phantom_idle.png",
+    "image": "./assets/img/Celestial-Phantom.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "songhai",
@@ -1816,7 +1816,7 @@
   },
   {
     "name": "Gore Horn",
-    "image": "./assets/img/Gore-Horn_idle.png",
+    "image": "./assets/img/Gore-Horn.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "songhai",
@@ -1842,7 +1842,7 @@
   },
   {
     "name": "Jade Monk",
-    "image": "./assets/img/Jade-Monk_idle.png",
+    "image": "./assets/img/Jade-Monk.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "songhai",
@@ -1892,7 +1892,7 @@
   },
   {
     "name": "Lantern Fox",
-    "image": "./assets/img/Lantern-Fox_idle.png",
+    "image": "./assets/img/Lantern-Fox.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "songhai",
@@ -2062,7 +2062,7 @@
   },
   {
     "name": "Widowmaker",
-    "image": "./assets/img/Widowmaker_idle.png",
+    "image": "./assets/img/Widowmaker.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -2136,7 +2136,7 @@
   },
   {
     "name": "Four Winds Magi",
-    "image": "./assets/img/Four-Winds-Magi_idle.png",
+    "image": "./assets/img/Four-Winds-Magi.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "songhai",
@@ -2149,7 +2149,7 @@
   },
   {
     "name": "Keshrai Fanblade",
-    "image": "./assets/img/Keshrai-Fanblade_idle.png",
+    "image": "./assets/img/Keshrai-Fanblade.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "songhai",
@@ -2212,7 +2212,7 @@
   },
   {
     "name": "Storm Sister Alkyone",
-    "image": "./assets/img/Storm-Sister-Alkyone_idle.png",
+    "image": "./assets/img/Storm-Sister-Alkyone.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "songhai",
@@ -2262,7 +2262,7 @@
   },
   {
     "name": "Hamon Bladeseeker",
-    "image": "./assets/img/Hamon-Bladeseeker_idle.png",
+    "image": "./assets/img/Hamon-Bladeseeker.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "songhai",
@@ -2310,7 +2310,7 @@
   },
   {
     "name": "Scarlet Viper",
-    "image": "./assets/img/Scarlet-Viper_idle.png",
+    "image": "./assets/img/Scarlet-Viper.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "songhai",
@@ -2432,7 +2432,7 @@
   },
   {
     "name": "Storm Kage",
-    "image": "./assets/img/Storm-Kage_idle.png",
+    "image": "./assets/img/Storm-Kage.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "songhai",
@@ -4920,7 +4920,7 @@
   },
   {
     "name": "Vaath the Immortal",
-    "image": "./assets/img/Vaath-the-Immortal_idle.png",
+    "image": "./assets/img/Vaath-the-Immortal.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -4933,7 +4933,7 @@
   },
   {
     "name": "Starhorn the Seeker",
-    "image": "./assets/img/Starhorn-the-Seeker_idle.png",
+    "image": "./assets/img/Starhorn-the-Seeker.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -4946,7 +4946,7 @@
   },
   {
     "name": "Ragnora the Relentless",
-    "image": "./assets/img/Ragnora-the-Relentless_idle.png",
+    "image": "./assets/img/Ragnora-the-Relentless.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -5069,7 +5069,7 @@
   },
   {
     "name": "Rex",
-    "image": "./assets/img/Rex_idle.png",
+    "image": "./assets/img/Rex.png",
     "set": "denizens-of-shimzar",
     "rarity": "common",
     "faction": "magmar",
@@ -5174,7 +5174,7 @@
   },
   {
     "name": "Gro",
-    "image": "./assets/img/Gro_idle.png",
+    "image": "./assets/img/Gro.png",
     "set": "denizens-of-shimzar",
     "rarity": "rare",
     "faction": "magmar",
@@ -5209,7 +5209,7 @@
   },
   {
     "name": "Kujata",
-    "image": "./assets/img/Kujata_idle.png",
+    "image": "./assets/img/Kujata.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "magmar",
@@ -5244,7 +5244,7 @@
   },
   {
     "name": "Phalanxar",
-    "image": "./assets/img/Phalanxar_idle.png",
+    "image": "./assets/img/Phalanxar.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -5317,7 +5317,7 @@
   },
   {
     "name": "Young Silithar",
-    "image": "./assets/img/Young-Silithar_idle.png",
+    "image": "./assets/img/Young-Silithar.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "magmar",
@@ -5365,7 +5365,7 @@
   },
   {
     "name": "Earth Walker",
-    "image": "./assets/img/Earth-Walker_idle.png",
+    "image": "./assets/img/Earth-Walker.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -5437,7 +5437,7 @@
   },
   {
     "name": "Moloki Huntress",
-    "image": "./assets/img/Moloki-Huntress_idle.png",
+    "image": "./assets/img/Moloki-Huntress.png",
     "set": "denizens-of-shimzar",
     "rarity": "epic",
     "faction": "magmar",
@@ -5463,7 +5463,7 @@
   },
   {
     "name": "Primordial Gazer",
-    "image": "./assets/img/Primordial-Gazer_idle.png",
+    "image": "./assets/img/Primordial-Gazer.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -5558,7 +5558,7 @@
   },
   {
     "name": "Vindicator",
-    "image": "./assets/img/Vindicator_idle.png",
+    "image": "./assets/img/Vindicator.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "magmar",
@@ -5619,7 +5619,7 @@
   },
   {
     "name": "Earth Sister Taygete",
-    "image": "./assets/img/Earth-Sister-Taygete_idle.png",
+    "image": "./assets/img/Earth-Sister-Taygete.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "magmar",
@@ -5654,7 +5654,7 @@
   },
   {
     "name": "Elucidator",
-    "image": "./assets/img/Elucidator_idle.png",
+    "image": "./assets/img/Elucidator.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "magmar",
@@ -5691,7 +5691,7 @@
   },
   {
     "name": "Grimrock",
-    "image": "./assets/img/Grimrock_idle.png",
+    "image": "./assets/img/Grimrock.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "magmar",
@@ -5824,7 +5824,7 @@
   },
   {
     "name": "Veteran Silithar",
-    "image": "./assets/img/Veteran-Silithar_idle.png",
+    "image": "./assets/img/Veteran-Silithar.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "magmar",
@@ -5837,7 +5837,7 @@
   },
   {
     "name": "Wild Inceptor",
-    "image": "./assets/img/Wild-Inceptor_idle.png",
+    "image": "./assets/img/Wild-Inceptor.png",
     "set": "denizens-of-shimzar",
     "rarity": "common",
     "faction": "magmar",
@@ -5850,7 +5850,7 @@
   },
   {
     "name": "Kolossus",
-    "image": "./assets/img/Kolossus_idle.png",
+    "image": "./assets/img/Kolossus.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "magmar",
@@ -5911,7 +5911,7 @@
   },
   {
     "name": "Spirit Harvester",
-    "image": "./assets/img/Spirit-Harvester_idle.png",
+    "image": "./assets/img/Spirit-Harvester.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "magmar",
@@ -5924,7 +5924,7 @@
   },
   {
     "name": "Visionar",
-    "image": "./assets/img/Visionar_idle.png",
+    "image": "./assets/img/Visionar.png",
     "set": "denizens-of-shimzar",
     "rarity": "epic",
     "faction": "magmar",
@@ -5961,7 +5961,7 @@
   },
   {
     "name": "Dreadnought",
-    "image": "./assets/img/Dreadnought_idle.png",
+    "image": "./assets/img/Dreadnought.png",
     "set": "denizens-of-shimzar",
     "rarity": "legendary",
     "faction": "magmar",
@@ -5985,7 +5985,7 @@
   },
   {
     "name": "Makantor Warbeast",
-    "image": "./assets/img/Makantor-Warbeast_idle.png",
+    "image": "./assets/img/Makantor-Warbeast.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "magmar",
@@ -6042,7 +6042,7 @@
   },
   {
     "name": "Silithar Elder",
-    "image": "./assets/img/Silithar-Elder_idle.png",
+    "image": "./assets/img/Silithar-Elder.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "magmar",
@@ -6055,7 +6055,7 @@
   },
   {
     "name": "Unstable Leviathan",
-    "image": "./assets/img/Unstable-Leviathan_idle.png",
+    "image": "./assets/img/Unstable-Leviathan.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "magmar",
@@ -6114,7 +6114,7 @@
   },
   {
     "name": "Grandmaster Kraigon",
-    "image": "./assets/img/Grandmaster-Kraigon_idle.png",
+    "image": "./assets/img/Grandmaster-Kraigon.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "magmar",
@@ -6127,7 +6127,7 @@
   },
   {
     "name": "Mandrake",
-    "image": "./assets/img/Mandrake_idle.png",
+    "image": "./assets/img/Mandrake.png",
     "set": "denizens-of-shimzar",
     "rarity": "rare",
     "faction": "magmar",
