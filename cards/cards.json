@@ -1,41 +1,5 @@
 [
   {
-    "name": "Futureshaper",
-    "img": "./assets/img/Fortuneshaper.png",
-    "set": "gauntlet-specials",
-    "rarity": "rare",
-    "type": "minion",
-    "token": false,
-    "mana": 2,
-    "description": "Your next Gauntlet card choices will be Epic cards.",
-    "attack": 2,
-    "health": 3
-  },
-  {
-    "name": "Futureshaker",
-    "img": "./assets/img/Futureshaker.png",
-    "set": "gauntlet-specials",
-    "rarity": "rare",
-    "type": "minion",
-    "token": false,
-    "mana": 3,
-    "description": "Your next Gauntlet card choices will be Legendary Neutral cards.",
-    "attack": 3,
-    "health": 3
-  },
-  {
-    "name": "Fatesealer",
-    "img": "./assets/img/Fatesealer.png",
-    "set": "gauntlet-specials",
-    "rarity": "rare",
-    "type": "minion",
-    "token": false,
-    "mana": 4,
-    "description": "Your next Gauntlet card choices will be Legendary Faction cards.",
-    "attack": 4,
-    "health": 4
-  },
-  {
     "name": "Argeon Highmayne",
     "image": "./assets/img/Argeon-Highmayne.png",
     "set": "core-set",
@@ -11286,5 +11250,41 @@
     "description": "**Airdrop**, **Frenzy**, **Ranged**, **Forcefield**",
     "attack": 6,
     "health": 6
+  },
+  {
+    "name": "Futureshaper",
+    "img": "./assets/img/Fortuneshaper.png",
+    "set": "gauntlet-specials",
+    "rarity": "rare",
+    "type": "minion",
+    "token": false,
+    "mana": 2,
+    "description": "Your next Gauntlet card choices will be Epic cards.",
+    "attack": 2,
+    "health": 3
+  },
+  {
+    "name": "Futureshaker",
+    "img": "./assets/img/Futureshaker.png",
+    "set": "gauntlet-specials",
+    "rarity": "rare",
+    "type": "minion",
+    "token": false,
+    "mana": 3,
+    "description": "Your next Gauntlet card choices will be Legendary Neutral cards.",
+    "attack": 3,
+    "health": 3
+  },
+  {
+    "name": "Fatesealer",
+    "img": "./assets/img/Fatesealer.png",
+    "set": "gauntlet-specials",
+    "rarity": "rare",
+    "type": "minion",
+    "token": false,
+    "mana": 4,
+    "description": "Your next Gauntlet card choices will be Legendary Faction cards.",
+    "attack": 4,
+    "health": 4
   }
 ]
