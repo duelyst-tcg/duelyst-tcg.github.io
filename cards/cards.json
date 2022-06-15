@@ -1,7 +1,7 @@
 [
   {
     "name": "Futureshaper",
-    "img": "./assets/img/Fortuneshaper_idle.gif",
+    "img": "./assets/img/Fortuneshaper_idle.png",
     "set": "gauntlet-specials",
     "rarity": "rare",
     "type": "minion",
@@ -13,7 +13,7 @@
   },
   {
     "name": "Futureshaker",
-    "img": "./assets/img/Futureshaker_idle.gif",
+    "img": "./assets/img/Futureshaker_idle.png",
     "set": "gauntlet-specials",
     "rarity": "rare",
     "type": "minion",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Fatesealer",
-    "img": "./assets/img/Fatesealer_idle.gif",
+    "img": "./assets/img/Fatesealer_idle.png",
     "set": "gauntlet-specials",
     "rarity": "rare",
     "type": "minion",
@@ -76,7 +76,7 @@
   },
   {
     "name": "Beam Shock",
-    "image": "./assets/img/Beam-Shock_actionbar.png",
+    "image": "./assets/img/Beam-Shock.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "lyonar",
@@ -98,7 +98,7 @@
   },
   {
     "name": "Sunstone Bracers",
-    "image": "./assets/img/Sunstone-Bracers_actionbar.png",
+    "image": "./assets/img/Sunstone-Bracers.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -109,7 +109,7 @@
   },
   {
     "name": "Aegis Barrier",
-    "image": "./assets/img/Aegis-Barrier_actionbar.png",
+    "image": "./assets/img/Aegis-Barrier.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "lyonar",
@@ -120,7 +120,7 @@
   },
   {
     "name": "Aerial Rift",
-    "image": "./assets/img/Aerial-Rift_actionbar.png",
+    "image": "./assets/img/Aerial-Rift.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "lyonar",
@@ -131,7 +131,7 @@
   },
   {
     "name": "Auryn Nexus",
-    "image": "./assets/img/Auryn-Nexus_actionbar.png",
+    "image": "./assets/img/Auryn-Nexus.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "lyonar",
@@ -186,7 +186,7 @@
   },
   {
     "name": "Lionheart Blessing",
-    "image": "./assets/img/Lionheart-Blessing_actionbar.png",
+    "image": "./assets/img/Lionheart-Blessing.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "lyonar",
@@ -197,7 +197,7 @@
   },
   {
     "name": "Magnetize",
-    "image": "./assets/img/Magnetize_actionbar.png",
+    "image": "./assets/img/Magnetize.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "lyonar",
@@ -244,7 +244,7 @@
   },
   {
     "name": "Sundrop Elixir",
-    "image": "./assets/img/Sundrop-Elixir_actionbar.png",
+    "image": "./assets/img/Sundrop-Elixir.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "lyonar",
@@ -268,7 +268,7 @@
   },
   {
     "name": "True Strike",
-    "image": "./assets/img/True-Strike_actionbar.png",
+    "image": "./assets/img/True-Strike.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -349,7 +349,7 @@
   },
   {
     "name": "Lasting Judgement",
-    "image": "./assets/img/Lasting-Judgement_actionbar.png",
+    "image": "./assets/img/Lasting-Judgement.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "lyonar",
@@ -419,7 +419,7 @@
   },
   {
     "name": "Sun Bloom",
-    "image": "./assets/img/Sun-Bloom_actionbar.png",
+    "image": "./assets/img/Sun-Bloom.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "lyonar",
@@ -467,7 +467,7 @@
   },
   {
     "name": "Tempest",
-    "image": "./assets/img/Tempest_actionbar.png",
+    "image": "./assets/img/Tempest.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -489,7 +489,7 @@
   },
   {
     "name": "War Surge",
-    "image": "./assets/img/War-Surge_actionbar.png",
+    "image": "./assets/img/War-Surge.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -646,7 +646,7 @@
   },
   {
     "name": "Martyrdom",
-    "image": "./assets/img/Martyrdom_actionbar.png",
+    "image": "./assets/img/Martyrdom.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -707,7 +707,7 @@
   },
   {
     "name": "Skywind Glaives",
-    "image": "./assets/img/Skywind-Glaives_actionbar.png",
+    "image": "./assets/img/Skywind-Glaives.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "lyonar",
@@ -770,7 +770,7 @@
   },
   {
     "name": "Arclyte Regalia",
-    "image": "./assets/img/Arclyte-Regalia_actionbar.png",
+    "image": "./assets/img/Arclyte-Regalia.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "lyonar",
@@ -781,7 +781,7 @@
   },
   {
     "name": "Decimate",
-    "image": "./assets/img/Decimate_actionbar.png",
+    "image": "./assets/img/Decimate.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "lyonar",
@@ -792,7 +792,7 @@
   },
   {
     "name": "Holy Immolation",
-    "image": "./assets/img/Holy-Immolation_actionbar.png",
+    "image": "./assets/img/Holy-Immolation.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "lyonar",
@@ -964,7 +964,7 @@
   },
   {
     "name": "Circle of Life",
-    "image": "./assets/img/Circle-of-Life_actionbar.png",
+    "image": "./assets/img/Circle-of-Life.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "lyonar",
@@ -1308,7 +1308,7 @@
   },
   {
     "name": "Juxtaposition",
-    "image": "./assets/img/Juxtaposition_actionbar.png",
+    "image": "./assets/img/Juxtaposition.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "songhai",
@@ -1319,7 +1319,7 @@
   },
   {
     "name": "Mana Vortex",
-    "image": "./assets/img/Mana-Vortex_actionbar.png",
+    "image": "./assets/img/Mana-Vortex.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "songhai",
@@ -1376,7 +1376,7 @@
   },
   {
     "name": "Ghost Lightning",
-    "image": "./assets/img/Ghost-Lightning_actionbar.png",
+    "image": "./assets/img/Ghost-Lightning.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -1422,7 +1422,7 @@
   },
   {
     "name": "Inner Focus",
-    "image": "./assets/img/Inner-Focus_actionbar.png",
+    "image": "./assets/img/Inner-Focus.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -1468,7 +1468,7 @@
   },
   {
     "name": "Mist Dragon Seal",
-    "image": "./assets/img/Mist-Dragon-Seal_actionbar.png",
+    "image": "./assets/img/Mist-Dragon-Seal.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "songhai",
@@ -1479,7 +1479,7 @@
   },
   {
     "name": "Mist Walking",
-    "image": "./assets/img/Mist-Walking_actionbar.png",
+    "image": "./assets/img/Mist-Walking.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "songhai",
@@ -1523,7 +1523,7 @@
   },
   {
     "name": "Artifact Defiler",
-    "image": "./assets/img/Artifact-Defiler_actionbar.png",
+    "image": "./assets/img/Artifact-Defiler.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "songhai",
@@ -1534,7 +1534,7 @@
   },
   {
     "name": "Bloodrage Mask",
-    "image": "./assets/img/Bloodrage-Mask_actionbar.png",
+    "image": "./assets/img/Bloodrage-Mask.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -1569,7 +1569,7 @@
   },
   {
     "name": "Deathstrike Seal",
-    "image": "./assets/img/Deathstrike-Seal_actionbar.png",
+    "image": "./assets/img/Deathstrike-Seal.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "songhai",
@@ -1580,7 +1580,7 @@
   },
   {
     "name": "Eight Gates",
-    "image": "./assets/img/Eight-Gates_actionbar.png",
+    "image": "./assets/img/Eight-Gates.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "songhai",
@@ -1615,7 +1615,7 @@
   },
   {
     "name": "Mask of Shadows",
-    "image": "./assets/img/Mask-of-Shadows_actionbar.png",
+    "image": "./assets/img/Mask-of-Shadows.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "songhai",
@@ -1648,7 +1648,7 @@
   },
   {
     "name": "Phoenix Fire",
-    "image": "./assets/img/Phoenix-Fire_actionbar.png",
+    "image": "./assets/img/Phoenix-Fire.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -1659,7 +1659,7 @@
   },
   {
     "name": "Saberspine Seal",
-    "image": "./assets/img/Saberspine-Seal_actionbar.png",
+    "image": "./assets/img/Saberspine-Seal.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -1781,7 +1781,7 @@
   },
   {
     "name": "Cyclone Mask",
-    "image": "./assets/img/Cyclone-Mask_actionbar.png",
+    "image": "./assets/img/Cyclone-Mask.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "songhai",
@@ -1881,7 +1881,7 @@
   },
   {
     "name": "Killing Edge",
-    "image": "./assets/img/Killing-Edge_actionbar.png",
+    "image": "./assets/img/Killing-Edge.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "songhai",
@@ -1931,7 +1931,7 @@
   },
   {
     "name": "Onyx Bear Seal",
-    "image": "./assets/img/Onyx-Bear-Seal_actionbar.png",
+    "image": "./assets/img/Onyx-Bear-Seal.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "songhai",
@@ -2027,7 +2027,7 @@
   },
   {
     "name": "Twin Strike",
-    "image": "./assets/img/Twin-Strike_actionbar.png",
+    "image": "./assets/img/Twin-Strike.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "songhai",
@@ -2075,7 +2075,7 @@
   },
   {
     "name": "Ancestral Divination",
-    "image": "./assets/img/Ancestral-Divination_actionbar.png",
+    "image": "./assets/img/Ancestral-Divination.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "songhai",
@@ -2275,7 +2275,7 @@
   },
   {
     "name": "Heaven's Eclipse",
-    "image": "./assets/img/Heavens-Eclipse_actionbar.png",
+    "image": "./assets/img/Heavens-Eclipse.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "songhai",
@@ -2456,7 +2456,7 @@
   },
   {
     "name": "Spiral Technique",
-    "image": "./assets/img/Spiral-Technique_actionbar.png",
+    "image": "./assets/img/Spiral-Technique.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "songhai",
@@ -4959,7 +4959,7 @@
   },
   {
     "name": "Dampening Wave",
-    "image": "./assets/img/Dampening-Wave_actionbar.png",
+    "image": "./assets/img/Dampening-Wave.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -4970,7 +4970,7 @@
   },
   {
     "name": "Flash Reincarnation",
-    "image": "./assets/img/Flash-Reincarnation_actionbar.png",
+    "image": "./assets/img/Flash-Reincarnation.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "magmar",
@@ -4981,7 +4981,7 @@
   },
   {
     "name": "Amplification",
-    "image": "./assets/img/Amplification_actionbar.png",
+    "image": "./assets/img/Amplification.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "magmar",
@@ -4992,7 +4992,7 @@
   },
   {
     "name": "Dance of Dreams",
-    "image": "./assets/img/Dance-of-Dreams_actionbar.png",
+    "image": "./assets/img/Dance-of-Dreams.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -5025,7 +5025,7 @@
   },
   {
     "name": "Greater Fortitude",
-    "image": "./assets/img/Greater-Fortitude_actionbar.png",
+    "image": "./assets/img/Greater-Fortitude.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -5036,7 +5036,7 @@
   },
   {
     "name": "Lava Lance",
-    "image": "./assets/img/Lava-Lance_actionbar.png",
+    "image": "./assets/img/Lava-Lance.png",
     "set": "denizens-of-shimzar",
     "rarity": "common",
     "faction": "magmar",
@@ -5058,7 +5058,7 @@
   },
   {
     "name": "Razor Skin",
-    "image": "./assets/img/Razor-Skin_actionbar.png",
+    "image": "./assets/img/Razor-Skin.png",
     "set": "denizens-of-shimzar",
     "rarity": "common",
     "faction": "magmar",
@@ -5082,7 +5082,7 @@
   },
   {
     "name": "Tremor",
-    "image": "./assets/img/Tremor_actionbar.png",
+    "image": "./assets/img/Tremor.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "magmar",
@@ -5141,7 +5141,7 @@
   },
   {
     "name": "Diretide Frenzy",
-    "image": "./assets/img/Diretide-Frenzy_actionbar.png",
+    "image": "./assets/img/Diretide-Frenzy.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "magmar",
@@ -5198,7 +5198,7 @@
   },
   {
     "name": "Iridium Scale",
-    "image": "./assets/img/Iridium-Scale_actionbar.png",
+    "image": "./assets/img/Iridium-Scale.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "magmar",
@@ -5233,7 +5233,7 @@
   },
   {
     "name": "Natural Selection",
-    "image": "./assets/img/Natural-Selection_actionbar.png",
+    "image": "./assets/img/Natural-Selection.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -5413,7 +5413,7 @@
   },
   {
     "name": "Kinetic Equilibrium",
-    "image": "./assets/img/Kinetic-Equilibrium_actionbar.png",
+    "image": "./assets/img/Kinetic-Equilibrium.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "magmar",
@@ -5525,7 +5525,7 @@
   },
   {
     "name": "Twin Fang",
-    "image": "./assets/img/Twin-Fang_actionbar.png",
+    "image": "./assets/img/Twin-Fang.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "magmar",
@@ -5571,7 +5571,7 @@
   },
   {
     "name": "Adamantite Claws",
-    "image": "./assets/img/Adamantite-Claws_actionbar.png",
+    "image": "./assets/img/Adamantite-Claws.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -5632,7 +5632,7 @@
   },
   {
     "name": "Earth Sphere",
-    "image": "./assets/img/Earth-Sphere_actionbar.png",
+    "image": "./assets/img/Earth-Sphere.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "magmar",
@@ -5643,7 +5643,7 @@
   },
   {
     "name": "Egg Morph",
-    "image": "./assets/img/Egg-Morph_actionbar.png",
+    "image": "./assets/img/Egg-Morph.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "magmar",
@@ -5741,7 +5741,7 @@
   },
   {
     "name": "Mind Steal",
-    "image": "./assets/img/Mind-Steal_actionbar.png",
+    "image": "./assets/img/Mind-Steal.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "magmar",
@@ -5802,7 +5802,7 @@
   },
   {
     "name": "Thumping Wave",
-    "image": "./assets/img/Thumping-Wave_actionbar.png",
+    "image": "./assets/img/Thumping-Wave.png",
     "set": "denizens-of-shimzar",
     "rarity": "rare",
     "faction": "magmar",
@@ -5889,7 +5889,7 @@
   },
   {
     "name": "Nature's Confluence",
-    "image": "./assets/img/Natures-Confluence_actionbar.png",
+    "image": "./assets/img/Natures-Confluence.png",
     "set": "denizens-of-shimzar",
     "rarity": "epic",
     "faction": "magmar",
@@ -5900,7 +5900,7 @@
   },
   {
     "name": "Plasma Storm",
-    "image": "./assets/img/Plasma-Storm_actionbar.png",
+    "image": "./assets/img/Plasma-Storm.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "magmar",
@@ -5950,7 +5950,7 @@
   },
   {
     "name": "Chrysalis Burst",
-    "image": "./assets/img/Chrysalis-Burst_actionbar.png",
+    "image": "./assets/img/Chrysalis-Burst.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "magmar",
@@ -5974,7 +5974,7 @@
   },
   {
     "name": "Fractal Replication",
-    "image": "./assets/img/Fractal-Replication_actionbar.png",
+    "image": "./assets/img/Fractal-Replication.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "magmar",
@@ -5998,7 +5998,7 @@
   },
   {
     "name": "Metamorphosis",
-    "image": "./assets/img/Metamorphosis_actionbar.png",
+    "image": "./assets/img/Metamorphosis.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "magmar",
@@ -6009,7 +6009,7 @@
   },
   {
     "name": "Morin-Khur",
-    "image": "./assets/img/Morin-Khur_actionbar.png",
+    "image": "./assets/img/Morin-Khur.png",
     "set": "denizens-of-shimzar",
     "rarity": "legendary",
     "faction": "magmar",
@@ -6020,7 +6020,7 @@
   },
   {
     "name": "Bounded Lifeforce",
-    "image": "./assets/img/Bounded-Lifeforce_actionbar.png",
+    "image": "./assets/img/Bounded-Lifeforce.png",
     "set": "core-set",
     "rarity": "epic",
     "faction": "magmar",
@@ -6079,7 +6079,7 @@
   },
   {
     "name": "Flaming Stampede",
-    "image": "./assets/img/Flaming-Stampede_actionbar.png",
+    "image": "./assets/img/Flaming-Stampede.png",
     "set": "denizens-of-shimzar",
     "rarity": "legendary",
     "faction": "magmar",
@@ -6313,7 +6313,7 @@
   },
   {
     "name": "Bonechill Barrier",
-    "image": "./assets/img/Bonechill-Barrier_actionbar.png",
+    "image": "./assets/img/Bonechill-Barrier.png",
     "set": "core-set",
     "rarity": "common",
     "faction": "vanar",
@@ -6481,7 +6481,7 @@
   },
   {
     "name": "Gravity Well",
-    "image": "./assets/img/Gravity-Well_actionbar.png",
+    "image": "./assets/img/Gravity-Well.png",
     "set": "core-set",
     "rarity": "legendary",
     "faction": "vanar",
@@ -6634,7 +6634,7 @@
   },
   {
     "name": "Blazing Spines",
-    "image": "./assets/img/Blazing-Spines_actionbar.png",
+    "image": "./assets/img/Blazing-Spines.png",
     "set": "core-set",
     "rarity": "rare",
     "faction": "vanar",
