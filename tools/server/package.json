@@ -1,5 +1,5 @@
 {
-    "name": "@merijnhendriks/dev-server",
+    "name": "@merijnhendriks/server",
     "author": "Merijn Hendriks",
     "version": "1.0.0",
     "description": "Static website server"

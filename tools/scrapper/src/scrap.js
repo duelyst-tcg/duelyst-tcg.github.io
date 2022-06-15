@@ -161,22 +161,21 @@ class Card {
   }
 }
 
-function getCard(database, name) {
-
-  for (var i = 0; i < database.length; i++) {
-    if (database[i].name === name) {
-      return database[i];
+function getCard(cards, name) {
+  for (var i = 0; i < cards.length; i++) {
+    if (cards[i].name === name) {
+      return cards[i];
     }
   }
 
   return undefined;
 }
 
-function addCard(database, card) {
-  var result = getCard(database, card.name);
+function addCard(cards, card) {
+  var result = getCard(cards, card.name);
 
   if (result !== undefined) {
-    // card already existsunction
+    // card already exists
     return;
   }
 

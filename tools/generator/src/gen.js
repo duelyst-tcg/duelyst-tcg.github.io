@@ -43,16 +43,16 @@ function getSpecialCardClass(card) {
   return undefined;
 }
 
-function generateCardId(setName) {
-    var cardId = setName + "-";
+function generateCardId(card) {
+    var cardId = card.set + "-";
 
     // initialize card id's counter
-    if (g_setIds[setName] === undefined) {
-        g_setIds[setName] = 0;
+    if (g_setIds[card.set] === undefined) {
+        g_setIds[card.set] = 0;
     }
 
     // add number
-    var cardNumber = ++g_setIds[setName];
+    var cardNumber = ++g_setIds[card.set];
 
     if (cardNumber < 100) {
         cardId += "0";
@@ -65,43 +65,10 @@ function generateCardId(setName) {
     return cardId + cardNumber;
 }
 
-function getCardId(cardName, setName) {
-    if (g_cardIds[cardName] === undefined) {
-        g_cardIds[cardName] = generateCardId(setName);
+function getCardId(card) {
+    if (g_cardIds[card.name] === undefined) {
+        g_cardIds[card.name] = generateCardId(card);
     }
 
-    return g_cardIds[cardName];
-}
-
-function getCardSet(element) {
-    var setNameKeys = Object.keys(g_setNames);
-
-    for (var j = 0; j < setNameKeys.length; j++) {
-        var setNameId = setNameKeys[j];
-
-        if (element.classList.contains(setNameId)) {
-            return g_setNames[setNameId];
-        }
-    }
-
-    return undefined;
-}
-
-function applySetType(document) {
-    var elements = document.getElementsByClassName("card-rarity");
-
-    for (var i = 0; i < elements.length; i++) {
-        var parent = elements[i].parentElement.parentElement;
-
-        // get card name
-        var cardName = parent
-            .getElementsByClassName("card-title")[0]
-            .innerHTML;
-
-        // get card set
-        var cardSet = getCardSet(parent);
-
-        // set card id
-        elements[i].innerHTML = getCardId(cardName, cardSet);
-    }
+    return g_cardIds[card.name];
 }

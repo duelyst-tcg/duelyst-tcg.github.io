@@ -1,8 +1,9 @@
 var fs = require("fs");
 var path = require("path");
-var { JSDOM } = require("jsdom");
+var linkedom = require("linkedom");
 var htmlMinifier = require("html-minifier");
 
+var g_domParser = new linkedom.DOMParser();
 var g_htmlMinifyOptions = {
   "collapseInlineTagWhitespace": true,
   "collapseWhitespace": true,
@@ -42,8 +43,7 @@ function getFiles(filepath) {
 }
 
 function createDocument(html) {
-  var dom = new JSDOM(html);
-  return dom.window.document;
+  return g_domParser.parseFromString(html);
 }
 
 function getHtml(document) {
@@ -56,7 +56,8 @@ function minifyHtml(html) {
 }
 
 function prettifyJson(json) {
-  return JSON.stringify(json, undefined, 2);
+  // add eol as stringify remove it
+  return JSON.stringify(json, undefined, 2) + "\n";
 }
 
 module.exports = {

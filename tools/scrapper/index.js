@@ -1,47 +1,46 @@
 var lib = require("./src/lib");
 var fixer = require("./src/fixer");
 var scrap = require("./src/scrap");
-//var gen = require("./src/gen");
 
-function removeUnusedData(document) {
-  console.log("- Removing description classes...");
-  fixer.removeDescriptionClasses(document);
-}
-
-function scrapData(document, database) {
+function scrapCards(document) {
   var elements = document.getElementsByClassName("card-container");
+  var dbfile = "../../cards/cards.json";
+  var cards = JSON.parse(lib.readFile(dbfile));
 
   for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
     var name = scrap.getName(element);
 
     console.log("- Scraping " + name + "...");
-
-    var card = new scrap.Card(element);
-    scrap.addCard(database, card);
+    scrap.addCard(cards, new scrap.Card(element));
   }
+
+  lib.writeFile(dbfile, lib.prettifyJson(cards));
+}
+
+function scrapFile(filename, basedir) {
+  console.log("Scrap data from: " + filename);
+
+  // create DOM
+  var text = lib.readFile(basedir + filename);
+  var html = lib.minifyHtml(text);
+  var document = lib.createDocument(html);
+
+  // remove redundant classes from card descriptions
+  console.log("- Removing description classes...");
+  fixer.removeDescriptionClasses(document);
+
+  // get the card info
+  scrapCards(document);
 }
 
 function main() {
-  var dbfile = "../../cards/cards.json";
   var indir = "./assets/input/";
-  var database = JSON.parse(lib.readFile(dbfile));
   var files = lib.getFiles(indir);
 
   for (var i = 0; i < files.length; i++) {
-    var filename = files[i];
-
-    console.log("Scrap data from: " + filename);
-
-    var text = lib.readFile(indir + filename);
-    var html = lib.minifyHtml(text);
-    var document = lib.createDocument(html);
-
-    removeUnusedData(document);
-    scrapData(document, database);
+    scrapFile(files[i], indir);
   }
-
-  lib.writeFile(dbfile, lib.prettifyJson(database));
 }
 
 main();
