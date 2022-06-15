@@ -1,0 +1,34 @@
+[
+  {
+    "id": "lyonar",
+    "name": "Lyonar Kingdoms"
+  },
+  {
+    "id": "songhai",
+    "name": "Songhai Empire"
+  },
+  {
+    "id": "vetruvian",
+    "name": "Vetruvian Imperium"
+  },
+  {
+    "id": "abyssian",
+    "name": "Abyssian Host"
+  },
+  {
+    "id": "magmar",
+    "name": "Magmar Aspects"
+  },
+  {
+    "id": "vanar",
+    "name": "Vanar Kindred"
+  },
+  {
+    "id": "neutral",
+    "name": "Unaligned"
+  },
+  {
+    "id": "boss",
+    "name": "Weekly boss cards"
+  }
+]

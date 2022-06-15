@@ -45,11 +45,8 @@ function strstr(text, a, b) {
 function removeGarbage(text) {
   var bold = "**";
   var eol = "\n";
-  var space = " ";
-  var none = "";
 
   // convert html to markdown
-  text = strstr(text, "&nbsp;", space);
   text = strstr(text, "<a>", bold);
   text = strstr(text, "</a>", bold);
   text = strstr(text, "<span>", bold);
@@ -58,7 +55,11 @@ function removeGarbage(text) {
   text = strstr(text, "<strong>", bold);
   text = strstr(text, "<br>", eol);
   text = strstr(text, "</div>", eol);
-  text = strstr(text, '<div class="card-ability">', none);
+  text = strstr(text, '<div class="card-ability">', "");
+
+  // remove special characters
+  text = strstr(text, "’", "'");
+  text = strstr(text, "&nbsp;", " ");
 
   // remove whitespace
   text = text.trim();
@@ -161,11 +162,10 @@ class Card {
 }
 
 function getCard(database, name) {
-  var cards = database.cards;
 
-  for (var i = 0; i < cards.length; i++) {
-    if (cards[i].name === name) {
-      return cards[i];
+  for (var i = 0; i < database.length; i++) {
+    if (database[i].name === name) {
+      return database[i];
     }
   }
 
@@ -180,7 +180,7 @@ function addCard(database, card) {
     return;
   }
 
-  database.cards.push(card);
+  database.push(card);
 }
 
 module.exports = {

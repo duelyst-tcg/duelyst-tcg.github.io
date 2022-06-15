@@ -12,10 +12,6 @@ var g_htmlMinifyOptions = {
   "removeComments": true
 };
 
-function fileExists(filepath) {
-  return fs.existsSync(filepath);
-}
-
 function writeFile(filepath, data) {
   if (!fs.existsSync(filepath)) {
     // create missing directories recursively
@@ -59,12 +55,16 @@ function minifyHtml(html) {
   return htmlMinifier.minify(html, g_htmlMinifyOptions);
 }
 
+function prettifyJson(json) {
+  return JSON.stringify(json, undefined, 2);
+}
+
 module.exports = {
-  fileExists,
   writeFile,
   readFile,
   getFiles,
   createDocument,
   getHtml,
-  minifyHtml
+  minifyHtml,
+  prettifyJson
 };

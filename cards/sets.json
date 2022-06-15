@@ -1,0 +1,37 @@
+[
+  {
+    "id": "core-set",
+    "name": "Core",
+    "abbr": "CORE"
+  },
+  {
+    "id": "denizens-of-shimzar",
+    "name": "Denizens of Shim'zar",
+    "abbr": "DEOS"
+  },
+  {
+    "id": "bloodbound-ancients",
+    "name": "Bloodbound Ancients",
+    "abbr": "BOND"
+  },
+  {
+    "id": "unearthed-prophecy",
+    "name": "Unearthed Prophecy",
+    "abbr": "UART"
+  },
+  {
+    "id": "immortal-vanguard",
+    "name": "Immortal Vanguard",
+    "abbr": "VGRD"
+  },
+  {
+    "id": "trials-of-mythron",
+    "name": "Trials of Mythron",
+    "abbr": "MYTH"
+  },
+  {
+    "id": "gauntlet-specials",
+    "name": "Gauntlet Specials",
+    "abbr": "GALS"
+  }
+]

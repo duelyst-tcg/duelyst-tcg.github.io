@@ -9,6 +9,12 @@ The physical trading card game variant of Duelyst.
 `docs`     | An (incomplete) rulebook
 `tools`    | Code to aid with development
 
+**Tool**  | **Purpose**
+--------- | ----------------------------------------------
+generator | Produces a printable html page
+Scrapper  | Grab data from a cached duelspot.com html file
+Server    | View local html files in sandboxed browser
+
 ## Contribute
 
 See `todo.md` for things that need to be done.

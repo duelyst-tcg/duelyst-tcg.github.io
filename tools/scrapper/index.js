@@ -23,7 +23,7 @@ function scrapData(document, database) {
 }
 
 function main() {
-  var dbfile = "../../cards/db.json";
+  var dbfile = "../../cards/cards.json";
   var indir = "./assets/input/";
   var database = JSON.parse(lib.readFile(dbfile));
   var files = lib.getFiles(indir);
@@ -41,7 +41,7 @@ function main() {
     scrapData(document, database);
   }
 
-  lib.writeFile("./proto.db", JSON.stringify(database));
+  lib.writeFile(dbfile, lib.prettifyJson(database));
 }
 
 main();
