@@ -12,7 +12,6 @@ The physical trading card game variant of Duelyst.
 **Tool**  | **Purpose**
 --------- | ----------------------------------------------
 generator | Produces a printable html page
-Scrapper  | Grab data from a cached duelspot.com html file
 Server    | View local html files in sandboxed browser
 
 ## Contribute
