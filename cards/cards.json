@@ -7,7 +7,7 @@
     "faction": "lyonar",
     "type": "general",
     "mana": 0,
-    "description": "**Bloodbound Spell**:\nGive a minion nearby your general +2 Attack.",
+    "description": "**Bloodbound Spell**:<br>Give a minion nearby your general +2 Attack.",
     "attack": 2,
     "health": 25
   },
@@ -19,7 +19,7 @@
     "faction": "lyonar",
     "type": "general",
     "mana": 0,
-    "description": "**Bloodbound Spell**:\nRestore 3 Health to any Minion.",
+    "description": "**Bloodbound Spell**:<br>Restore 3 Health to any Minion.",
     "attack": 2,
     "health": 25
   },
@@ -31,7 +31,7 @@
     "faction": "lyonar",
     "type": "general",
     "mana": 0,
-    "description": "**Bloodbound Spell**:\nSummon a 1/2 **Crestfallen** with **Zeal**: **Provoke** in front of your general.",
+    "description": "**Bloodbound Spell**:<br>Summon a 1/2 **Crestfallen** with **Zeal**: **Provoke** in front of your general.",
     "attack": 2,
     "health": 25
   },
@@ -143,7 +143,7 @@
     "faction": "lyonar",
     "type": "spell",
     "mana": 1,
-    "description": "Give a friendly minion,\n\"**Zeal**: Whenever this minion deals damage, draw a card.\""
+    "description": "Give a friendly minion,<br>\"**Zeal**: Whenever this minion deals damage, draw a card.\""
   },
   {
     "name": "Magnetize",
@@ -260,7 +260,7 @@
     "faction": "lyonar",
     "type": "spell",
     "mana": 2,
-    "description": "Your General and nearby friendly minions gain,\n\"Takes no damage this turn.\""
+    "description": "Your General and nearby friendly minions gain,<br>\"Takes no damage this turn.\""
   },
   {
     "name": "Fiz",
@@ -598,7 +598,7 @@
     "faction": "lyonar",
     "type": "minion",
     "mana": 3,
-    "description": "**Provoke**\n**Zeal**: Gains +2 Attack.",
+    "description": "**Provoke**<br>**Zeal**: Gains +2 Attack.",
     "attack": 1,
     "health": 5
   },
@@ -666,7 +666,7 @@
     "faction": "lyonar",
     "type": "minion",
     "mana": 3,
-    "description": "**Build**: (1).\nWhen this minion is built, give nearby friendly minions +3 Health.",
+    "description": "**Build**: (1).<br>When this minion is built, give nearby friendly minions +3 Health.",
     "attack": 3,
     "health": 4
   },
@@ -728,7 +728,7 @@
     "faction": "lyonar",
     "type": "structure",
     "mana": 4,
-    "description": "**Build**: (2).\nWhenever you summon a minion nearby this, transform that minion into an **Ironcliffe Guardian**.",
+    "description": "**Build**: (2).<br>Whenever you summon a minion nearby this, transform that minion into an **Ironcliffe Guardian**.",
     "attack": 0,
     "health": 10
   },
@@ -776,7 +776,7 @@
     "faction": "lyonar",
     "type": "minion",
     "mana": 4,
-    "description": "**Forcefield**\nYour **Bloodbound Spell** is **Tempest**.",
+    "description": "**Forcefield**<br>Your **Bloodbound Spell** is **Tempest**.",
     "attack": 2,
     "health": 4
   },
@@ -876,7 +876,7 @@
     "faction": "lyonar",
     "type": "minion",
     "mana": 5,
-    "description": "**Trial**: Summon 12 minions with 1 or less Attack.\n\n**Destiny**: Promote other friendly minions at the end of your turn.",
+    "description": "**Trial**: Summon 12 minions with 1 or less Attack.<br><br>**Destiny**: Promote other friendly minions at the end of your turn.",
     "attack": 5,
     "health": 5
   },
@@ -898,7 +898,7 @@
     "faction": "lyonar",
     "type": "minion",
     "mana": 5,
-    "description": "**Airdrop**\n**Provoke**",
+    "description": "**Airdrop**<br>**Provoke**",
     "attack": 3,
     "health": 10
   },
@@ -920,7 +920,7 @@
     "faction": "lyonar",
     "type": "mech",
     "mana": 5,
-    "description": "**Opening Gambit**: Progresses **MECHAZ0R** build by +20%.\nYour other Mech minions have +1/+1.",
+    "description": "**Opening Gambit**: Progresses **MECHAZ0R** build by +20%.<br>Your other Mech minions have +1/+1.",
     "attack": 4,
     "health": 5
   },
@@ -956,7 +956,7 @@
     "faction": "lyonar",
     "type": "minion",
     "mana": 5,
-    "description": "**Provoke**\nAt the start of your turn, **Holy Immolation** your damaged minions.",
+    "description": "**Provoke**<br>At the start of your turn, **Holy Immolation** your damaged minions.",
     "attack": 3,
     "health": 8
   },
@@ -968,7 +968,7 @@
     "faction": "lyonar",
     "type": "minion",
     "mana": 5,
-    "description": "**Provoke**\nWhen a friendly **Windcliffe Alarmist** dies, transform this minion into a **Windcliffe Alarmist**.",
+    "description": "**Provoke**<br>When a friendly **Windcliffe Alarmist** dies, transform this minion into a **Windcliffe Alarmist**.",
     "attack": 5,
     "health": 5
   },
@@ -990,7 +990,7 @@
     "faction": "lyonar",
     "type": "minion",
     "mana": 6,
-    "description": "**Provoke**\nYour minions and General may move an additional space",
+    "description": "**Provoke**<br>Your minions and General may move an additional space",
     "attack": 7,
     "health": 7
   },
@@ -1014,7 +1014,7 @@
     "faction": "lyonar",
     "type": "artifact",
     "mana": 6,
-    "description": "Your General has +3 Attack.\nWhen your General attacks, summon a minion that costs 3 from your deck nearby."
+    "description": "Your General has +3 Attack.<br>When your General attacks, summon a minion that costs 3 from your deck nearby."
   },
   {
     "name": "Alabaster Titan",
@@ -1046,7 +1046,7 @@
     "faction": "lyonar",
     "type": "spell",
     "mana": 7,
-    "description": "Your General gains,\n\"Minions you summon nearby gain +3/+3.\""
+    "description": "Your General gains,<br>\"Minions you summon nearby gain +3/+3.\""
   },
   {
     "name": "Grandmaster Z'ir",
@@ -1092,7 +1092,7 @@
     "faction": "lyonar",
     "type": "minion",
     "mana": 8,
-    "description": "**Provoke**\n**Celerity**\nThis minion gains +1/+1 for each time you healed anything this game.",
+    "description": "**Provoke**<br>**Celerity**<br>This minion gains +1/+1 for each time you healed anything this game.",
     "attack": 6,
     "health": 6
   },
@@ -1124,7 +1124,7 @@
     "faction": "songhai",
     "type": "general",
     "mana": 0,
-    "description": "**Bloodbound Spell**:\nTeleport a friendly minion up to 2 spaces.",
+    "description": "**Bloodbound Spell**:<br>Teleport a friendly minion up to 2 spaces.",
     "attack": 2,
     "health": 25
   },
@@ -1136,7 +1136,7 @@
     "faction": "songhai",
     "type": "general",
     "mana": 0,
-    "description": "**Bloodbound Spell**:\nSummon a **Heartseeker** nearby your General.",
+    "description": "**Bloodbound Spell**:<br>Summon a **Heartseeker** nearby your General.",
     "attack": 2,
     "health": 25
   },
@@ -1148,7 +1148,7 @@
     "faction": "songhai",
     "type": "general",
     "mana": 0,
-    "description": "**Bloodbound Spell**:\nPut a **Spellsword** into your action bar that cannot be replaced.",
+    "description": "**Bloodbound Spell**:<br>Put a **Spellsword** into your action bar that cannot be replaced.",
     "attack": 2,
     "health": 25
   },
@@ -1160,7 +1160,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 0,
-    "description": "**Trial**: Summon 7 minions from your action bar with different costs.\n\n**Destiny**: Summon friendly minions to deal their cost as damage to an enemy.",
+    "description": "**Trial**: Summon 7 minions from your action bar with different costs.<br><br>**Destiny**: Summon friendly minions to deal their cost as damage to an enemy.",
     "attack": 5,
     "health": 5
   },
@@ -1266,7 +1266,7 @@
     "faction": "songhai",
     "type": "artifact",
     "mana": 1,
-    "description": "Your General gains +1 Attack.\nAfter a friendly minion with **Backstab** attacks, it gains +1/+1."
+    "description": "Your General gains +1 Attack.<br>After a friendly minion with **Backstab** attacks, it gains +1/+1."
   },
   {
     "name": "Inner Focus",
@@ -1410,7 +1410,7 @@
     "faction": "songhai",
     "type": "spell",
     "mana": 2,
-    "description": "Give a friendly minion,\n\"Whenever this damages an enemy minion, destroy that minion.\""
+    "description": "Give a friendly minion,<br>\"Whenever this damages an enemy minion, destroy that minion.\""
   },
   {
     "name": "Eight Gates",
@@ -1502,7 +1502,7 @@
     "faction": "songhai",
     "type": "arcanyst",
     "mana": 2,
-    "description": "**Backstab**: (1).\nWhenever this backstabs, steal a spell from your opponent's deck.",
+    "description": "**Backstab**: (1).<br>Whenever this backstabs, steal a spell from your opponent's deck.",
     "attack": 1,
     "health": 3
   },
@@ -1536,7 +1536,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 2,
-    "description": "**Rush**\nReturn this minion to your action bar at the beginning of your turn.",
+    "description": "**Rush**<br>Return this minion to your action bar at the beginning of your turn.",
     "attack": 2,
     "health": 3
   },
@@ -1614,7 +1614,7 @@
     "faction": "songhai",
     "type": "mech",
     "mana": 3,
-    "description": "**Backstab**: (2).\nWhenever this backstabs, put a **MECHAZ0R Progression** into your action bar.",
+    "description": "**Backstab**: (2).<br>Whenever this backstabs, put a **MECHAZ0R Progression** into your action bar.",
     "attack": 3,
     "health": 3
   },
@@ -1636,7 +1636,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 3,
-    "description": "**Backstab**: (2).\nAfter this minion attacks, it gains +1/+1.",
+    "description": "**Backstab**: (2).<br>After this minion attacks, it gains +1/+1.",
     "attack": 3,
     "health": 3
   },
@@ -1648,7 +1648,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 3,
-    "description": "**Sentinel**: Minion summoned.\n\nDeal 2 damage to the minion that transformed this.",
+    "description": "**Sentinel**: Minion summoned.<br><br>Deal 2 damage to the minion that transformed this.",
     "attack": 3,
     "health": 4
   },
@@ -1672,7 +1672,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 3,
-    "description": "**Backstab**: (1).\nWhenever this minion backstabs, summon a minion with **Backstab** that costs 2 or less from your deck nearby.",
+    "description": "**Backstab**: (1).<br>Whenever this minion backstabs, summon a minion with **Backstab** that costs 2 or less from your deck nearby.",
     "attack": 2,
     "health": 2
   },
@@ -1684,7 +1684,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 3,
-    "description": "**Ranged**\n**Opening Gambit**: An enemy minion cannot move next turn.",
+    "description": "**Ranged**<br>**Opening Gambit**: An enemy minion cannot move next turn.",
     "attack": 3,
     "health": 2
   },
@@ -1718,7 +1718,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 3,
-    "description": "**Sentinel**: Spell cast.\n\nWhenever your opponent casts a spell, put a copy of that spell into your action bar.",
+    "description": "**Sentinel**: Spell cast.<br><br>Whenever your opponent casts a spell, put a copy of that spell into your action bar.",
     "attack": 3,
     "health": 2
   },
@@ -1730,7 +1730,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 3,
-    "description": "**Sentinel**: General attacks.\n\n**Flying**, **Backstab**: (2).",
+    "description": "**Sentinel**: General attacks.<br><br>**Flying**, **Backstab**: (2).",
     "attack": 2,
     "health": 5
   },
@@ -1774,7 +1774,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 3,
-    "description": "**Build**: (2), **Backstab**: (2).\nWhenever this backstabs, transform it into a building with **Build**: (2).",
+    "description": "**Build**: (2), **Backstab**: (2).<br>Whenever this backstabs, transform it into a building with **Build**: (2).",
     "attack": 4,
     "health": 1
   },
@@ -1840,7 +1840,7 @@
     "faction": "songhai",
     "type": "artifact",
     "mana": 3,
-    "description": "Your General gains +1 Attack.\nYour General may move an additional space."
+    "description": "Your General gains +1 Attack.<br>Your General may move an additional space."
   },
   {
     "name": "Whiplash",
@@ -1966,7 +1966,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 4,
-    "description": "**Build**: (2).\nWhen this minion is built, gain +2 mana this turn.",
+    "description": "**Build**: (2).<br>When this minion is built, gain +2 mana this turn.",
     "attack": 5,
     "health": 5
   },
@@ -1978,7 +1978,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 4,
-    "description": "**Backstab**: (2).\nAfter this minion attacks and backstabs, all attacks are backstabs this turn.",
+    "description": "**Backstab**: (2).<br>After this minion attacks and backstabs, all attacks are backstabs this turn.",
     "attack": 2,
     "health": 5
   },
@@ -2080,7 +2080,7 @@
     "faction": "songhai",
     "type": "spell",
     "mana": 5,
-    "description": "Deal 3 damage to anything.\nPut a **Phoenix Fire** into your action bar."
+    "description": "Deal 3 damage to anything.<br>Put a **Phoenix Fire** into your action bar."
   },
   {
     "name": "Scarlet Viper",
@@ -2090,7 +2090,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 5,
-    "description": "**Flying**\n**Backstab**: (4).",
+    "description": "**Flying**<br>**Backstab**: (4).",
     "attack": 2,
     "health": 5
   },
@@ -2122,7 +2122,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 5,
-    "description": "**Ranged**\nWhenever you summon a minion with **Ranged**, that minion gains **Rush**.",
+    "description": "**Ranged**<br>Whenever you summon a minion with **Ranged**, that minion gains **Rush**.",
     "attack": 4,
     "health": 4
   },
@@ -2178,7 +2178,7 @@
     "faction": "songhai",
     "type": "arcanyst",
     "mana": 7,
-    "description": "**Rush**\nWhenever this minion attacks, put three Songhai spells into your action bar at end of turn.",
+    "description": "**Rush**<br>Whenever this minion attacks, put three Songhai spells into your action bar at end of turn.",
     "attack": 3,
     "health": 7
   },
@@ -2522,7 +2522,7 @@
     "faction": "vetruvian",
     "type": "structure",
     "mana": 2,
-    "description": "**Summon Dervish**\nAt the start of your turn, deal 6 damage to all enemy minions in this row.",
+    "description": "**Summon Dervish**<br>At the start of your turn, deal 6 damage to all enemy minions in this row.",
     "attack": 0,
     "health": 4
   },
@@ -2554,7 +2554,7 @@
     "faction": "vetruvian",
     "type": "artifact",
     "mana": 2,
-    "description": "Your General gains +1 Attack.\nAt the start of your turn, repair all of your artifacts by 1 durability."
+    "description": "Your General gains +1 Attack.<br>At the start of your turn, repair all of your artifacts by 1 durability."
   },
   {
     "name": "Orbrider",
@@ -2672,7 +2672,7 @@
     "faction": "vetruvian",
     "type": "structure",
     "mana": 2,
-    "description": "**Summon Dervish**\nYour dervishes have +1 Health.",
+    "description": "**Summon Dervish**<br>Your dervishes have +1 Health.",
     "attack": 0,
     "health": 4
   },
@@ -2738,7 +2738,7 @@
     "faction": "vetruvian",
     "type": "structure",
     "mana": 3,
-    "description": "**Summon Dervish**\nYour dervishes have +1 Attack.",
+    "description": "**Summon Dervish**<br>Your dervishes have +1 Attack.",
     "attack": 0,
     "health": 6
   },
@@ -2784,7 +2784,7 @@
     "faction": "vetruvian",
     "type": "minion",
     "mana": 3,
-    "description": "**Frenzy**\nWhenever you summon a minion, this minion gains +1 Attack.",
+    "description": "**Frenzy**<br>Whenever you summon a minion, this minion gains +1 Attack.",
     "attack": 0,
     "health": 8
   },
@@ -2828,7 +2828,7 @@
     "faction": "vetruvian",
     "type": "structure",
     "mana": 3,
-    "description": "**Build**: (2).\n**Summon Dervish**\nWhen this minion is built, start building another on a nearby space.",
+    "description": "**Build**: (2).<br>**Summon Dervish**<br>When this minion is built, start building another on a nearby space.",
     "attack": 0,
     "health": 7
   },
@@ -2906,7 +2906,7 @@
     "faction": "vetruvian",
     "type": "minion",
     "mana": 4,
-    "description": "**Build**: (2).\n**Blast**",
+    "description": "**Build**: (2).<br>**Blast**",
     "attack": 5,
     "health": 5
   },
@@ -3004,7 +3004,7 @@
     "faction": "vetruvian",
     "type": "structure",
     "mana": 4,
-    "description": "**Summon Dervish**\n**Summon Dervish**\n**Summon Dervish**",
+    "description": "**Summon Dervish**<br>**Summon Dervish**<br>**Summon Dervish**",
     "attack": 0,
     "health": 9
   },
@@ -3028,7 +3028,7 @@
     "faction": "vetruvian",
     "type": "minion",
     "mana": 4,
-    "description": "**Flying**\n**Dying Wish**: Draw a card.",
+    "description": "**Flying**<br>**Dying Wish**: Draw a card.",
     "attack": 4,
     "health": 3
   },
@@ -3040,7 +3040,7 @@
     "faction": "vetruvian",
     "type": "golem",
     "mana": 4,
-    "description": "**Flying**\n**Opening Gambit**: Equip a **Staff of Y'kir** to your General.",
+    "description": "**Flying**<br>**Opening Gambit**: Equip a **Staff of Y'kir** to your General.",
     "attack": 1,
     "health": 4
   },
@@ -3118,7 +3118,7 @@
     "faction": "vetruvian",
     "type": "dervish",
     "mana": 5,
-    "description": "**Flying**, **Rush**\n**Dying Wish**: A random friendly Dervish disappears, summoning a Khanuum-ka in its place.",
+    "description": "**Flying**, **Rush**<br>**Dying Wish**: A random friendly Dervish disappears, summoning a Khanuum-ka in its place.",
     "attack": 3,
     "health": 3
   },
@@ -3230,7 +3230,7 @@
     "faction": "vetruvian",
     "type": "minion",
     "mana": 6,
-    "description": "**Provoke**\n**Dying Wish**: Deal 5 damage to the enemy General. Restore 5 Health to your General.",
+    "description": "**Provoke**<br>**Dying Wish**: Deal 5 damage to the enemy General. Restore 5 Health to your General.",
     "attack": 5,
     "health": 5
   },
@@ -3264,7 +3264,7 @@
     "faction": "vetruvian",
     "type": "minion",
     "mana": 6,
-    "description": "**Trial**: General reaches the other edge of the battlefield with an equipped artifact.\n\n**Destiny**: Each equipped artifact gives your General a **tier of ascension**.",
+    "description": "**Trial**: General reaches the other edge of the battlefield with an equipped artifact.<br><br>**Destiny**: Each equipped artifact gives your General a **tier of ascension**.",
     "attack": 3,
     "health": 3
   },
@@ -3276,7 +3276,7 @@
     "faction": "vetruvian",
     "type": "minion",
     "mana": 6,
-    "description": "**Flying**\n**Dying Wish**: Equip 2 random artifacts from your deck.",
+    "description": "**Flying**<br>**Dying Wish**: Equip 2 random artifacts from your deck.",
     "attack": 6,
     "health": 5
   },
@@ -3300,7 +3300,7 @@
     "faction": "vetruvian",
     "type": "minion",
     "mana": 6,
-    "description": "**Blast**\nWhenever this minion blasts, summon 1/1 **Scarabyte** with **Flying** and **Rush** in those spaces.",
+    "description": "**Blast**<br>Whenever this minion blasts, summon 1/1 **Scarabyte** with **Flying** and **Rush** in those spaces.",
     "attack": 5,
     "health": 7
   },
@@ -3332,7 +3332,7 @@
     "faction": "vetruvian",
     "type": "minion",
     "mana": 8,
-    "description": "**Blast**\n**Flying**\nThe enemy General takes double damage.",
+    "description": "**Blast**<br>**Flying**<br>The enemy General takes double damage.",
     "attack": 4,
     "health": 8
   },
@@ -3734,7 +3734,7 @@
     "faction": "abyssian",
     "type": "artifact",
     "mana": 2,
-    "description": "Your General gains +2 Attack.\nWhenever your General destroys an enemy, restore 2 Health to your General."
+    "description": "Your General gains +2 Attack.<br>Whenever your General destroys an enemy, restore 2 Health to your General."
   },
   {
     "name": "Sphere of Darkness",
@@ -3818,7 +3818,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 3,
-    "description": "**Sentinel**: Minion summoned.\n\nPut a copy of the minion that transformed this into your action bar. It costs 2 less.",
+    "description": "**Sentinel**: Minion summoned.<br><br>Put a copy of the minion that transformed this into your action bar. It costs 2 less.",
     "attack": 2,
     "health": 3
   },
@@ -3830,7 +3830,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 3,
-    "description": "**Frenzy**\n**Opening Gambit**: Teleport the enemy General one space forward.",
+    "description": "**Frenzy**<br>**Opening Gambit**: Teleport the enemy General one space forward.",
     "attack": 4,
     "health": 3
   },
@@ -3842,7 +3842,7 @@
     "faction": "abyssian",
     "type": "spell",
     "mana": 3,
-    "description": "Give a friendly minion, \n\"**Deathwatch**: Gains +2/+2.\""
+    "description": "Give a friendly minion, <br>\"**Deathwatch**: Gains +2/+2.\""
   },
   {
     "name": "Horrific Visage",
@@ -3948,7 +3948,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 3,
-    "description": "**Sentinel**: General attacks.\n\nThe enemy General has -1 Attack.",
+    "description": "**Sentinel**: General attacks.<br><br>The enemy General has -1 Attack.",
     "attack": 2,
     "health": 4
   },
@@ -3960,7 +3960,7 @@
     "faction": "abyssian",
     "type": "artifact",
     "mana": 3,
-    "description": "Your General gains,\n\"**Deathwatch**: Gains +2 Attack.\""
+    "description": "Your General gains,<br>\"**Deathwatch**: Gains +2 Attack.\""
   },
   {
     "name": "Void Steal",
@@ -4012,7 +4012,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 3,
-    "description": "**Sentinel**: Spell cast.\n\nWhenever your opponent casts a spell, put a 4/4 **Fiend** into your action bar.",
+    "description": "**Sentinel**: Spell cast.<br><br>Whenever your opponent casts a spell, put a 4/4 **Fiend** into your action bar.",
     "attack": 3,
     "health": 2
   },
@@ -4080,7 +4080,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 4,
-    "description": "**Frenzy**\n**Opening Gambit**: Destroy friendly minions around it and gain +2/+2 for each minion.",
+    "description": "**Frenzy**<br>**Opening Gambit**: Destroy friendly minions around it and gain +2/+2 for each minion.",
     "attack": 4,
     "health": 4
   },
@@ -4092,7 +4092,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 4,
-    "description": "**Opening Gambit**: Steal 2 Health from the enemy General.\n\n**Dying Wish**: Return Desolator to your action bar.",
+    "description": "**Opening Gambit**: Steal 2 Health from the enemy General.<br><br>**Dying Wish**: Return Desolator to your action bar.",
     "attack": 2,
     "health": 1
   },
@@ -4104,7 +4104,7 @@
     "faction": "abyssian",
     "type": "structure",
     "mana": 4,
-    "description": "**Build**: (3).\n**Invulnerable**\n**Deathwatch**: Summon a random **Demon** nearby.",
+    "description": "**Build**: (3).<br>**Invulnerable**<br>**Deathwatch**: Summon a random **Demon** nearby.",
     "attack": 0,
     "health": 0
   },
@@ -4234,7 +4234,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 5,
-    "description": "**Dying Wish**: The enemy General gains,\n\"At the start of your turn, take 1 damage.\"",
+    "description": "**Dying Wish**: The enemy General gains,<br>\"At the start of your turn, take 1 damage.\"",
     "attack": 7,
     "health": 2
   },
@@ -4268,7 +4268,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 5,
-    "description": "**Flying**\n**Dying Wish**: Summon a random minion from the opponent's deck on this space.",
+    "description": "**Flying**<br>**Dying Wish**: Summon a random minion from the opponent's deck on this space.",
     "attack": 5,
     "health": 3
   },
@@ -4292,7 +4292,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 6,
-    "description": "**Provoke**\nYour **Shadow Creep** deals damage equal to the number of friendly **Shadow Creep**.",
+    "description": "**Provoke**<br>Your **Shadow Creep** deals damage equal to the number of friendly **Shadow Creep**.",
     "attack": 6,
     "health": 6
   },
@@ -4314,7 +4314,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 6,
-    "description": "**Provoke**\n**Dying Wish**: Turn six random spaces into **Shadow Creep**.",
+    "description": "**Provoke**<br>**Dying Wish**: Turn six random spaces into **Shadow Creep**.",
     "attack": 6,
     "health": 6
   },
@@ -4358,7 +4358,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 6,
-    "description": "**Trial**: Cast 6 spells that destroy a friendly minion.\n\n**Destiny**: Whenever a friendly minion dies, re-summon it on a random space.",
+    "description": "**Trial**: Cast 6 spells that destroy a friendly minion.<br><br>**Destiny**: Whenever a friendly minion dies, re-summon it on a random space.",
     "attack": 6,
     "health": 1
   },
@@ -4380,7 +4380,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 6,
-    "description": "**Celerity**\n**Dying Wish**: Summon six **Wraithlings** on random spaces.",
+    "description": "**Celerity**<br>**Dying Wish**: Summon six **Wraithlings** on random spaces.",
     "attack": 6,
     "health": 6
   },
@@ -4450,7 +4450,7 @@
     "faction": "abyssian",
     "type": "minion",
     "mana": 8,
-    "description": "**Rush**\nWhenever this damages an enemy minion, deal 4 damage to the enemy General.",
+    "description": "**Rush**<br>Whenever this damages an enemy minion, deal 4 damage to the enemy General.",
     "attack": 6,
     "health": 6
   },
@@ -4482,7 +4482,7 @@
     "faction": "magmar",
     "type": "general",
     "mana": 0,
-    "description": "**Bloodbound Spell**:\nGive your General +1 Attack.",
+    "description": "**Bloodbound Spell**:<br>Give your General +1 Attack.",
     "attack": 2,
     "health": 25
   },
@@ -4494,7 +4494,7 @@
     "faction": "magmar",
     "type": "general",
     "mana": 0,
-    "description": "**Bloodbound Spell**:\nBoth players draw a card.",
+    "description": "**Bloodbound Spell**:<br>Both players draw a card.",
     "attack": 2,
     "health": 25
   },
@@ -4506,7 +4506,7 @@
     "faction": "magmar",
     "type": "general",
     "mana": 0,
-    "description": "**Bloodbound Spell**:\nSummon a **Ripper Egg** nearby your general.",
+    "description": "**Bloodbound Spell**:<br>Summon a **Ripper Egg** nearby your general.",
     "attack": 2,
     "health": 25
   },
@@ -4568,7 +4568,7 @@
     "faction": "magmar",
     "type": "artifact",
     "mana": 1,
-    "description": "Your minions have\n\"**Grow**: +1/+1.\""
+    "description": "Your minions have<br>\"**Grow**: +1/+1.\""
   },
   {
     "name": "Greater Fortitude",
@@ -4598,7 +4598,7 @@
     "faction": "magmar",
     "type": "artifact",
     "mana": 1,
-    "description": "Your General gains +1 Attack.\nWhenever your General destroys an enemy, summon a Ripper Egg on that space."
+    "description": "Your General gains +1 Attack.<br>Whenever your General destroys an enemy, summon a Ripper Egg on that space."
   },
   {
     "name": "Razor Skin",
@@ -4857,7 +4857,7 @@
     "faction": "magmar",
     "type": "artifact",
     "mana": 2,
-    "description": "Your General has +1 Attack.\nYour Eggs have **Forcefield**."
+    "description": "Your General has +1 Attack.<br>Your Eggs have **Forcefield**."
   },
   {
     "name": "Bellow",
@@ -4867,7 +4867,7 @@
     "faction": "magmar",
     "type": "spell",
     "mana": 3,
-    "description": "Give a friendly minion +3 Attack.\n**Stun** enemy minions around it."
+    "description": "Give a friendly minion +3 Attack.<br>**Stun** enemy minions around it."
   },
   {
     "name": "Catalyst Quillbeast",
@@ -4921,7 +4921,7 @@
     "faction": "magmar",
     "type": "minion",
     "mana": 3,
-    "description": "**Rebirth**\nAfter this minion attacks or counterattacks, turn it into an Egg.",
+    "description": "**Rebirth**<br>After this minion attacks or counterattacks, turn it into an Egg.",
     "attack": 5,
     "health": 5
   },
@@ -4955,7 +4955,7 @@
     "faction": "magmar",
     "type": "minion",
     "mana": 3,
-    "description": "**Grow**: +1/+1\nFriendly minions **Grow** at the start of BOTH player's turns.",
+    "description": "**Grow**: +1/+1<br>Friendly minions **Grow** at the start of BOTH player's turns.",
     "attack": 1,
     "health": 2
   },
@@ -4967,7 +4967,7 @@
     "faction": "magmar",
     "type": "minion",
     "mana": 3,
-    "description": "**Grow**: +1/+1\nWhenever another friendly minion with **Grow** survives damage, that minion grows.",
+    "description": "**Grow**: +1/+1<br>Whenever another friendly minion with **Grow** survives damage, that minion grows.",
     "attack": 2,
     "health": 5
   },
@@ -4991,7 +4991,7 @@
     "faction": "magmar",
     "type": "golem",
     "mana": 3,
-    "description": "**Rebirth**\n**Bond**: Restore 3 Health to your General.",
+    "description": "**Rebirth**<br>**Bond**: Restore 3 Health to your General.",
     "attack": 3,
     "health": 4
   },
@@ -5154,7 +5154,7 @@
     "faction": "magmar",
     "type": "minion",
     "mana": 4,
-    "description": "**Rush**\n**Opening Gambit**: Deal 4 damage to your General.",
+    "description": "**Rush**<br>**Opening Gambit**: Deal 4 damage to your General.",
     "attack": 5,
     "health": 4
   },
@@ -5166,7 +5166,7 @@
     "faction": "magmar",
     "type": "spell",
     "mana": 4,
-    "description": "Give a minion, \n\"**Grow**: +8/+8.\""
+    "description": "Give a minion, <br>\"**Grow**: +8/+8.\""
   },
   {
     "name": "Gigaloth",
@@ -5176,7 +5176,7 @@
     "faction": "magmar",
     "type": "minion",
     "mana": 4,
-    "description": "**Build**: (2).\nWhenever this minion attacks, other friendly minions gain +3/+3.",
+    "description": "**Build**: (2).<br>Whenever this minion attacks, other friendly minions gain +3/+3.",
     "attack": 7,
     "health": 7
   },
@@ -5212,7 +5212,7 @@
     "faction": "magmar",
     "type": "minion",
     "mana": 4,
-    "description": "**Trial**: Give 7 minions on the battlefield +Attack by casting a spell.\n\n**Destiny**: Minions summoned from your action bar gain **Rush** and **Frenzy**.",
+    "description": "**Trial**: Give 7 minions on the battlefield +Attack by casting a spell.<br><br>**Destiny**: Minions summoned from your action bar gain **Rush** and **Frenzy**.",
     "attack": 5,
     "health": 4
   },
@@ -5358,7 +5358,7 @@
     "faction": "magmar",
     "type": "minion",
     "mana": 5,
-    "description": "**Ranged**\nWhenever this minion attacks, it also damages enemies around its target.",
+    "description": "**Ranged**<br>Whenever this minion attacks, it also damages enemies around its target.",
     "attack": 4,
     "health": 4
   },
@@ -5436,7 +5436,7 @@
     "faction": "magmar",
     "type": "minion",
     "mana": 6,
-    "description": "**Rebirth**\nEgg minions you summon gain +2/+2.",
+    "description": "**Rebirth**<br>Egg minions you summon gain +2/+2.",
     "attack": 4,
     "health": 7
   },
@@ -5458,7 +5458,7 @@
     "faction": "magmar",
     "type": "minion",
     "mana": 6,
-    "description": "**Frenzy**\n**Rush**",
+    "description": "**Frenzy**<br>**Rush**",
     "attack": 4,
     "health": 4
   },
@@ -5510,7 +5510,7 @@
     "faction": "magmar",
     "type": "minion",
     "mana": 7,
-    "description": "**Rebirth**\nAt the end of your turn, summon a Silithar Elder Egg nearby.",
+    "description": "**Rebirth**<br>At the end of your turn, summon a Silithar Elder Egg nearby.",
     "attack": 7,
     "health": 7
   },
@@ -5554,7 +5554,7 @@
     "faction": "magmar",
     "type": "golem",
     "mana": 8,
-    "description": "**Grow**: +5/+5\nWhenever this minion takes damage, summon that many random Golem Eggs nearby.",
+    "description": "**Grow**: +5/+5<br>Whenever this minion takes damage, summon that many random Golem Eggs nearby.",
     "attack": 4,
     "health": 10
   },
@@ -5566,7 +5566,7 @@
     "faction": "magmar",
     "type": "spell",
     "mana": 8,
-    "description": "**Stun** the enemy General.\nYour General gains +3 Attack.\nBoth players lose 3 mana.\nRestore 10 Health to your General."
+    "description": "**Stun** the enemy General.<br>Your General gains +3 Attack.<br>Both players lose 3 mana.<br>Restore 10 Health to your General."
   },
   {
     "name": "Grandmaster Kraigon",
@@ -5576,7 +5576,7 @@
     "faction": "magmar",
     "type": "minion",
     "mana": 9,
-    "description": "**Forcefield**, **Frenzy**, **Grow**: +7/+7\nYour General has:\nForcefield, Frenzy, Grow: +7/+7.",
+    "description": "**Forcefield**, **Frenzy**, **Grow**: +7/+7<br>Your General has:<br>Forcefield, Frenzy, Grow: +7/+7.",
     "attack": 7,
     "health": 7
   },
@@ -5986,7 +5986,7 @@
     "faction": "vanar",
     "type": "minion",
     "mana": 2,
-    "description": "**Build**: (1).\n**Airdrop**",
+    "description": "**Build**: (1).<br>**Airdrop**",
     "attack": 2,
     "health": 2
   },
@@ -5998,7 +5998,7 @@
     "faction": "vanar",
     "type": "artifact",
     "mana": 2,
-    "description": "Your General has +1 Attack.\nReactivate your General whenever they destroy a **Stunned** enemy."
+    "description": "Your General has +1 Attack.<br>Reactivate your General whenever they destroy a **Stunned** enemy."
   },
   {
     "name": "Shatter",
@@ -6018,7 +6018,7 @@
     "faction": "vanar",
     "type": "vespyr",
     "mana": 2,
-    "description": "**Flying**\n**Infiltrate**: When this minion attacks, permanently gain 1 mana crystal.",
+    "description": "**Flying**<br>**Infiltrate**: When this minion attacks, permanently gain 1 mana crystal.",
     "attack": 2,
     "health": 1
   },
@@ -6094,7 +6094,7 @@
     "faction": "vanar",
     "type": "minion",
     "mana": 3,
-    "description": "**Sentinel**: General attacks.\n\n**Ranged**\nWhenever this attacks, summon a 4/4 **Flying Drake** nearby.",
+    "description": "**Sentinel**: General attacks.<br><br>**Ranged**<br>Whenever this attacks, summon a 4/4 **Flying Drake** nearby.",
     "attack": 1,
     "health": 3
   },
@@ -6118,7 +6118,7 @@
     "faction": "vanar",
     "type": "minion",
     "mana": 3,
-    "description": "**Sentinel**: Minion summoned.\n\nThis switches positions with the minion that transformed it.",
+    "description": "**Sentinel**: Minion summoned.<br><br>This switches positions with the minion that transformed it.",
     "attack": 3,
     "health": 5
   },
@@ -6176,7 +6176,7 @@
     "faction": "vanar",
     "type": "minion",
     "mana": 3,
-    "description": "**Sentinel**: Spell cast.\n\nWhenever your opponent casts a spell, this minion gains +3/+3.",
+    "description": "**Sentinel**: Spell cast.<br><br>Whenever your opponent casts a spell, this minion gains +3/+3.",
     "attack": 2,
     "health": 2
   },
@@ -6200,7 +6200,7 @@
     "faction": "vanar",
     "type": "spell",
     "mana": 3,
-    "description": "**Stun** an enemy minion.\n**Stunned** enemy minions **Stun** a nearby enemy."
+    "description": "**Stun** an enemy minion.<br>**Stunned** enemy minions **Stun** a nearby enemy."
   },
   {
     "name": "Snow Rippler",
@@ -6232,7 +6232,7 @@
     "faction": "vanar",
     "type": "minion",
     "mana": 3,
-    "description": "**Flying**\n**Infiltrate**: Gain +3 Attack.",
+    "description": "**Flying**<br>**Infiltrate**: Gain +3 Attack.",
     "attack": 1,
     "health": 4
   },
@@ -6296,7 +6296,7 @@
     "faction": "vanar",
     "type": "spell",
     "mana": 4,
-    "description": "Summon a 3/3 Vespyr **Night Howler**.\nPut an Endless Hunt into your action bar."
+    "description": "Summon a 3/3 Vespyr **Night Howler**.<br>Put an Endless Hunt into your action bar."
   },
   {
     "name": "Hydrogarm",
@@ -6318,7 +6318,7 @@
     "faction": "vanar",
     "type": "minion",
     "mana": 4,
-    "description": "**Opening Gambit**: Take a mana crystal from your opponent.\n\n**Dying Wish**: Give back the mana crystal.",
+    "description": "**Opening Gambit**: Take a mana crystal from your opponent.<br><br>**Dying Wish**: Give back the mana crystal.",
     "attack": 4,
     "health": 3
   },
@@ -6430,7 +6430,7 @@
     "faction": "vanar",
     "type": "artifact",
     "mana": 5,
-    "description": "Your General gains +2 Attack.\nWhenever your General attacks or counterattacks, give all friendly Vespyr minions +2/+2."
+    "description": "Your General gains +2 Attack.<br>Whenever your General attacks or counterattacks, give all friendly Vespyr minions +2/+2."
   },
   {
     "name": "Arctic Displacer",
@@ -6452,7 +6452,7 @@
     "faction": "vanar",
     "type": "spell",
     "mana": 5,
-    "description": "Give friendly minions\n\"**Dying Wish**: Re-summon this minion on this space.\""
+    "description": "Give friendly minions<br>\"**Dying Wish**: Re-summon this minion on this space.\""
   },
   {
     "name": "Cloudcaller",
@@ -6508,7 +6508,7 @@
     "faction": "vanar",
     "type": "minion",
     "mana": 5,
-    "description": "**Forcefield**\nWhenever this minion attacks or is attacked, summon a 3/3 Vespyr **Night Howler** nearby.",
+    "description": "**Forcefield**<br>Whenever this minion attacks or is attacked, summon a 3/3 Vespyr **Night Howler** nearby.",
     "attack": 3,
     "health": 3
   },
@@ -6572,7 +6572,7 @@
     "faction": "vanar",
     "type": "minion",
     "mana": 6,
-    "description": "**Build**: (2).\nWhile this is building or on the battlefield, enemy minions and Generals can only move 1 space.",
+    "description": "**Build**: (2).<br>While this is building or on the battlefield, enemy minions and Generals can only move 1 space.",
     "attack": 7,
     "health": 14
   },
@@ -6628,7 +6628,7 @@
     "faction": "vanar",
     "type": "minion",
     "mana": 6,
-    "description": "**Trial**: Have 5 token minions with different names.\n\n**Destiny**: Friendly token minions have +4/+4.",
+    "description": "**Trial**: Have 5 token minions with different names.<br><br>**Destiny**: Friendly token minions have +4/+4.",
     "attack": 6,
     "health": 6
   },
@@ -6640,7 +6640,7 @@
     "faction": "vanar",
     "type": "vespyr",
     "mana": 7,
-    "description": "**Provoke**\n**Opening Gambit**: Your minions gain\n\"**Dying Wish**: Summon a 1/1 **Treant** with **Provoke**\".",
+    "description": "**Provoke**<br>**Opening Gambit**: Your minions gain<br>\"**Dying Wish**: Summon a 1/1 **Treant** with **Provoke**\".",
     "attack": 7,
     "health": 7
   },
@@ -7123,7 +7123,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 2,
-    "description": "**Build**: (2).\nWhen this minion is built, restore 5 Health to your General.",
+    "description": "**Build**: (2).<br>When this minion is built, restore 5 Health to your General.",
     "attack": 2,
     "health": 4
   },
@@ -7218,7 +7218,7 @@
     "faction": "neutral",
     "type": "mech",
     "mana": 2,
-    "description": "**Airdrop**\n**Opening Gambit**: Progresses **MECHAZ0R** build by +20%.",
+    "description": "**Airdrop**<br>**Opening Gambit**: Progresses **MECHAZ0R** build by +20%.",
     "attack": 1,
     "health": 4
   },
@@ -7230,7 +7230,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 2,
-    "description": "**Provoke**\n**Opening Gambit**: Give a nearby friendly minion **Provoke**.",
+    "description": "**Provoke**<br>**Opening Gambit**: Give a nearby friendly minion **Provoke**.",
     "attack": 2,
     "health": 2
   },
@@ -7302,7 +7302,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 3,
-    "description": "**Build**: (1).\nWhenever this or another friendly minion is built, draw a card.",
+    "description": "**Build**: (1).<br>Whenever this or another friendly minion is built, draw a card.",
     "attack": 1,
     "health": 5
   },
@@ -7361,7 +7361,7 @@
     "faction": "neutral",
     "type": "mech",
     "mana": 3,
-    "description": "**Ranged**\n**Opening Gambit**: Progresses **MECHAZ0R** build by +20%.",
+    "description": "**Ranged**<br>**Opening Gambit**: Progresses **MECHAZ0R** build by +20%.",
     "attack": 2,
     "health": 2
   },
@@ -7457,7 +7457,7 @@
     "faction": "neutral",
     "type": "golem",
     "mana": 3,
-    "description": "**Provoke**\nYour other Golem minions have **Provoke**.",
+    "description": "**Provoke**<br>Your other Golem minions have **Provoke**.",
     "attack": 2,
     "health": 4
   },
@@ -7481,7 +7481,7 @@
     "faction": "neutral",
     "type": "battle-pet",
     "mana": 3,
-    "description": "**Ranged**\nDeals double damage to Generals.",
+    "description": "**Ranged**<br>Deals double damage to Generals.",
     "attack": 2,
     "health": 3
   },
@@ -7505,7 +7505,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 3,
-    "description": "**Provoke**\n**Opening Gambit**: Other minions you summon this turn gain +1/+1 and gain **Provoke**.",
+    "description": "**Provoke**<br>**Opening Gambit**: Other minions you summon this turn gain +1/+1 and gain **Provoke**.",
     "attack": 2,
     "health": 3
   },
@@ -7697,7 +7697,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 3,
-    "description": "**Flying**\nYour other minions with **Flying** cost 1 less.",
+    "description": "**Flying**<br>Your other minions with **Flying** cost 1 less.",
     "attack": 3,
     "health": 3
   },
@@ -7757,7 +7757,7 @@
     "faction": "neutral",
     "type": "mech",
     "mana": 3,
-    "description": "**Frenzy**\n**Opening Gambit**: Progresses **MECHAZ0R** build by +20%.",
+    "description": "**Frenzy**<br>**Opening Gambit**: Progresses **MECHAZ0R** build by +20%.",
     "attack": 3,
     "health": 3
   },
@@ -7769,7 +7769,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 3,
-    "description": "**Ranged**\nWhenever your General takes damage, this minion gains +1 Attack.",
+    "description": "**Ranged**<br>Whenever your General takes damage, this minion gains +1 Attack.",
     "attack": 1,
     "health": 3
   },
@@ -7781,7 +7781,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 3,
-    "description": "**Ranged**\nMinions damaged by Syvrel are pulled in front of him.",
+    "description": "**Ranged**<br>Minions damaged by Syvrel are pulled in front of him.",
     "attack": 1,
     "health": 4
   },
@@ -7817,7 +7817,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 3,
-    "description": "**Frenzy**\nWhenever an enemy attacks, this minion gains +3 Attack until the end of your turn.",
+    "description": "**Frenzy**<br>Whenever an enemy attacks, this minion gains +3 Attack until the end of your turn.",
     "attack": 2,
     "health": 4
   },
@@ -7853,7 +7853,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 3,
-    "description": "**Flying**\nWhenever you replace a card, this minion gains +2 Attack this turn.",
+    "description": "**Flying**<br>Whenever you replace a card, this minion gains +2 Attack this turn.",
     "attack": 3,
     "health": 3
   },
@@ -7888,7 +7888,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 4,
-    "description": "**Ranged**\nYour other minions with **Ranged** get +1 Attack.",
+    "description": "**Ranged**<br>Your other minions with **Ranged** get +1 Attack.",
     "attack": 2,
     "health": 4
   },
@@ -7912,7 +7912,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 4,
-    "description": "**Flying**\nAfter this minion moves, summon a **Black Locust** nearby.",
+    "description": "**Flying**<br>After this minion moves, summon a **Black Locust** nearby.",
     "attack": 2,
     "health": 2
   },
@@ -7936,7 +7936,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 4,
-    "description": "**Ranged**\nEach time this minion attacks, it has a 50% chance to attack again, attacking a random enemy.",
+    "description": "**Ranged**<br>Each time this minion attacks, it has a 50% chance to attack again, attacking a random enemy.",
     "attack": 2,
     "health": 3
   },
@@ -7960,7 +7960,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 4,
-    "description": "**Ranged**\nWhenever this minion deals damage, restore that much Health to it.",
+    "description": "**Ranged**<br>Whenever this minion deals damage, restore that much Health to it.",
     "attack": 2,
     "health": 4
   },
@@ -7972,7 +7972,7 @@
     "faction": "neutral",
     "type": "mech",
     "mana": 4,
-    "description": "**Forcefield**\n**Opening Gambit**: Progresses **MECHAZ0R** build by +20%.",
+    "description": "**Forcefield**<br>**Opening Gambit**: Progresses **MECHAZ0R** build by +20%.",
     "attack": 2,
     "health": 4
   },
@@ -8163,7 +8163,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 4,
-    "description": "**Forcefield**\nWhenever ANY player summons a minion with **Rush**, exhaust it.",
+    "description": "**Forcefield**<br>Whenever ANY player summons a minion with **Rush**, exhaust it.",
     "attack": 2,
     "health": 4
   },
@@ -8222,7 +8222,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 4,
-    "description": "**Airdrop**\n**Intensify**: Deal 1 damage to everything around it.",
+    "description": "**Airdrop**<br>**Intensify**: Deal 1 damage to everything around it.",
     "attack": 3,
     "health": 3
   },
@@ -8330,7 +8330,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 4,
-    "description": "**Provoke**\n**Dispel** any minion that deals damage to this one.",
+    "description": "**Provoke**<br>**Dispel** any minion that deals damage to this one.",
     "attack": 1,
     "health": 6
   },
@@ -8449,7 +8449,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 5,
-    "description": "**Frenzy**\n**Celerity**",
+    "description": "**Frenzy**<br>**Celerity**",
     "attack": 2,
     "health": 5
   },
@@ -8604,7 +8604,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 5,
-    "description": "**Provoke**\nYour other minions with **Provoke** can move two additional spaces.",
+    "description": "**Provoke**<br>Your other minions with **Provoke** can move two additional spaces.",
     "attack": 4,
     "health": 6
   },
@@ -8640,7 +8640,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 5,
-    "description": "**Provoke**\nWhenever this minion is attacked, it gains +2 Attack.",
+    "description": "**Provoke**<br>Whenever this minion is attacked, it gains +2 Attack.",
     "attack": 1,
     "health": 10
   },
@@ -8652,7 +8652,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 5,
-    "description": "**Provoke**\nWhenever you replace a card, summon a 2/2 **Prisoner** with a random ability nearby.",
+    "description": "**Provoke**<br>Whenever you replace a card, summon a 2/2 **Prisoner** with a random ability nearby.",
     "attack": 4,
     "health": 5
   },
@@ -8688,7 +8688,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 5,
-    "description": "**Ranged**\nWhenever your General attacks, a **Cub** joins the pack.",
+    "description": "**Ranged**<br>Whenever your General attacks, a **Cub** joins the pack.",
     "attack": 2,
     "health": 6
   },
@@ -8700,7 +8700,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 5,
-    "description": "**Ranged**\nAt the end of your turn, restore 2 Health to all nearby friendly minions.",
+    "description": "**Ranged**<br>At the end of your turn, restore 2 Health to all nearby friendly minions.",
     "attack": 2,
     "health": 5
   },
@@ -8808,7 +8808,7 @@
     "faction": "neutral",
     "type": "arcanyst",
     "mana": 5,
-    "description": "**Flying**\n**Bond**: Put the three **Teachings of the Dragon** into your action bar.",
+    "description": "**Flying**<br>**Bond**: Put the three **Teachings of the Dragon** into your action bar.",
     "attack": 4,
     "health": 4
   },
@@ -8844,7 +8844,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 6,
-    "description": "**Provoke**\nAt the end of your turn, deal 2 damage to each enemy minion around this one.",
+    "description": "**Provoke**<br>At the end of your turn, deal 2 damage to each enemy minion around this one.",
     "attack": 2,
     "health": 9
   },
@@ -8879,7 +8879,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 6,
-    "description": "**Flying**\n**Opening Gambit**: Deal 3 damage to all enemies in front of this minion.",
+    "description": "**Flying**<br>**Opening Gambit**: Deal 3 damage to all enemies in front of this minion.",
     "attack": 3,
     "health": 4
   },
@@ -8951,7 +8951,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 6,
-    "description": "**Ranged**\n**Opening Gambit**: Summon a 1/1 **Ranged** **Mini-Jax** in each corner.",
+    "description": "**Ranged**<br>**Opening Gambit**: Summon a 1/1 **Ranged** **Mini-Jax** in each corner.",
     "attack": 1,
     "health": 1
   },
@@ -8963,7 +8963,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 6,
-    "description": "**Airdrop**, **Forcefield**\nAt the end of BOTH players' turns, pull some things to this minion.",
+    "description": "**Airdrop**, **Forcefield**<br>At the end of BOTH players' turns, pull some things to this minion.",
     "attack": 4,
     "health": 4
   },
@@ -8987,7 +8987,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 6,
-    "description": "**Trial**: Have no duplicate cards in your deck.\n\n**Destiny**: Your minions have +1/+1.",
+    "description": "**Trial**: Have no duplicate cards in your deck.<br><br>**Destiny**: Your minions have +1/+1.",
     "attack": 6,
     "health": 6
   },
@@ -9082,7 +9082,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 6,
-    "description": "**Provoke**\n**Opening Gambit**: Each player summons three **Spriggin Kin** nearby their General.",
+    "description": "**Provoke**<br>**Opening Gambit**: Each player summons three **Spriggin Kin** nearby their General.",
     "attack": 8,
     "health": 8
   },
@@ -9176,7 +9176,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 7,
-    "description": "**Forcefield**\nWhenever this minion attacks or is attacked, draw a card.",
+    "description": "**Forcefield**<br>Whenever this minion attacks or is attacked, draw a card.",
     "attack": 5,
     "health": 5
   },
@@ -9236,7 +9236,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 7,
-    "description": "**Airdrop**\n**Opening Gambit**: Push ALL nearby minions and Generals to random spaces.",
+    "description": "**Airdrop**<br>**Opening Gambit**: Push ALL nearby minions and Generals to random spaces.",
     "attack": 12,
     "health": 6
   },
@@ -9308,7 +9308,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 7,
-    "description": "**Frenzy**\n**Provoke**",
+    "description": "**Frenzy**<br>**Provoke**",
     "attack": 4,
     "health": 9
   },
@@ -9344,7 +9344,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 8,
-    "description": "**Opening Gambit**: Devour ANY minion, anywhere.\n\n**Dying Wish**: Spit out the devoured minion on this space.",
+    "description": "**Opening Gambit**: Devour ANY minion, anywhere.<br><br>**Dying Wish**: Spit out the devoured minion on this space.",
     "attack": 8,
     "health": 8
   },
@@ -9391,7 +9391,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 25,
-    "description": "**Provoke**\nThis minion's cost is your General's health.",
+    "description": "**Provoke**<br>This minion's cost is your General's health.",
     "attack": 12,
     "health": 12
   },
@@ -9414,7 +9414,7 @@
     "faction": "lyonar",
     "type": "artifact",
     "mana": 0,
-    "description": "Your General gains +X Attack.\nWhenever your General takes damage, restore X Health to them."
+    "description": "Your General gains +X Attack.<br>Whenever your General takes damage, restore X Health to them."
   },
   {
     "name": "Crestfallen",
@@ -9447,7 +9447,7 @@
     "faction": "songhai",
     "type": "artifact",
     "mana": 0,
-    "description": "Your General gains +X Attack.\nWhenever your General attacks or Counterattacks, deal X damage to a random enemy."
+    "description": "Your General gains +X Attack.<br>Whenever your General attacks or Counterattacks, deal X damage to a random enemy."
   },
   {
     "name": "MECHAZ0R Progression",
@@ -9500,7 +9500,7 @@
     "faction": "vetruvian",
     "type": "artifact",
     "mana": 0,
-    "description": "Your General gains +X Attack.\nWhenever your General attacks, Summon X sestroyed friendly minions on random spaces."
+    "description": "Your General gains +X Attack.<br>Whenever your General attacks, Summon X sestroyed friendly minions on random spaces."
   },
   {
     "name": "Iron Dervish",
@@ -9532,7 +9532,7 @@
     "faction": "vetruvian",
     "type": "minion",
     "mana": 1,
-    "description": "**Flying**\n **Rush**",
+    "description": "**Flying**<br> **Rush**",
     "attack": 1,
     "health": 1
   },
@@ -9568,7 +9568,7 @@
     "faction": "vetruvian",
     "type": "structure",
     "mana": 3,
-    "description": "**Summon Dervish**\n Destroy any minion that deals damage to this one.",
+    "description": "**Summon Dervish**<br> Destroy any minion that deals damage to this one.",
     "attack": 0,
     "health": 4
   },
@@ -9591,7 +9591,7 @@
     "faction": "abyssian",
     "type": "artifact",
     "mana": 0,
-    "description": "Your General gains +X Attack.\nWhenever your General attacks a minion, they steal X Health from the enemy General."
+    "description": "Your General gains +X Attack.<br>Whenever your General attacks a minion, they steal X Health from the enemy General."
   },
   {
     "name": "Abomination",
@@ -9700,7 +9700,7 @@
     "faction": "magmar",
     "type": "artifact",
     "mana": 0,
-    "description": "Your General gains +X Attack.\nWhenever your General deals damage, friendly minions gain +X/+X."
+    "description": "Your General gains +X Attack.<br>Whenever your General deals damage, friendly minions gain +X/+X."
   },
   {
     "name": "Magma",
@@ -9766,7 +9766,7 @@
     "faction": "vanar",
     "type": "artifact",
     "mana": 0,
-    "description": "Your General gains +X Attack.\nWhenever your General attacks, summon X Vespyr **Night Howlers** nearby."
+    "description": "Your General gains +X Attack.<br>Whenever your General attacks, summon X Vespyr **Night Howlers** nearby."
   },
   {
     "name": "Vanar Building",
@@ -9953,7 +9953,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 1,
-    "description": "**Flying**\n Whenever this damages a minion, restore 2 Health to your General.",
+    "description": "**Flying**<br> Whenever this damages a minion, restore 2 Health to your General.",
     "attack": 2,
     "health": 1
   },
@@ -10315,7 +10315,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 3,
-    "description": "**Celerity**\n Whenever this minion attacks, give other friendly minions +1/+1.",
+    "description": "**Celerity**<br> Whenever this minion attacks, give other friendly minions +1/+1.",
     "attack": 4,
     "health": 8
   },

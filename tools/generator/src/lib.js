@@ -1,7 +1,7 @@
 var fs = require("fs");
 var MarkdownIt = require("markdown-it");
 
-var g_md = new MarkdownIt();
+var g_md = new MarkdownIt({ "html": true });
 
 function strstr(text, a, b) {
    return text.split(a).join(b);
