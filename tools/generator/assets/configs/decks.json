@@ -1,8 +1,10 @@
 [
   {
     "name": "Lyonar Starter",
+    "author": "Duelyst",
+    "faction": "lyonar",
+    "general": "Argeon Highmayne",
     "cards": {
-      "Argeon Highmayne": 1,
       "Windblade Adept": 3,
       "Bloodshard Golem": 1,
       "Putrid Dreadflayer": 1,
@@ -23,8 +25,11 @@
   },
   {
     "name": "Songhai Starter",
+    "author": "Duelyst",
+    "faction": "songhai",
+    "general": "Kaleos Xaan",
     "cards": {
-      "Kaleos Xaan": 3,
+      "": 3,
       "Chakri Avatar": 3,
       "Kaido Assassin": 3,
       "Saberspine Tiger": 1,
@@ -45,8 +50,10 @@
   },
   {
     "name": "Vetruvian Starter",
+    "author": "Duelyst",
+    "faction": "vetruvian",
+    "general": "Zirix Starstrider",
     "cards": {
-      "Zirix Starstrider": 1,
       "Ethereal Obelysk": 3,
       "Pyromancer": 3,
       "Bloodshard Golem": 1,
@@ -70,8 +77,10 @@
   },
   {
     "name": "Abyssian Starter",
+    "author": "Duelyst",
+    "faction": "abyssian",
+    "general": "Lilithe Blightchaser",
     "cards": {
-      "Lilithe Blightchaser": 1,
       "Abyssal Crawler": 3,
       "Gloomchaser": 3,
       "Putrid Dreadflayer": 1,
@@ -93,8 +102,10 @@
   },
   {
     "name": "Magmar Starter",
+    "author": "Duelyst",
+    "faction": "magmar",
+    "general": "Vaath the Immortal"
     "cards": {
-      "Vaath the Immortal": 1,
       "Phalanxar": 3,
       "Bloodshard Minion": 1,
       "Earth Walker": 3,
@@ -116,8 +127,10 @@
   },
   {
     "name": "Vanar Starter",
+    "author": "Duelyst",
+    "faction": "vanar",
+    "general": "Faie Bloodwing",
     "cards": {
-      "Faie Bloodwing": 1,
       "Crystal Cloaker": 3,
       "Fenrir Warmaster": 3,
       "Putrid Dreadflayer": 3,
