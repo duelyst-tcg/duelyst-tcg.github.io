@@ -1296,7 +1296,7 @@
     "faction": "songhai",
     "type": "minion",
     "mana": 1,
-    "description": "**Backstab**",
+    "description": "**Backstab**: (1).",
     "attack": 1,
     "health": 3
   },
