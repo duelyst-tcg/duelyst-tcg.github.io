@@ -10,7 +10,7 @@ The physical trading card game variant of Duelyst.
 
 **Tool**  | **Purpose**
 --------- | ----------------------------------------------
-generator | Produces a printable html page
+Generator | Produces a printable html page
 Server    | View local html files in sandboxed browser
 
 **Print option** | **Value**
