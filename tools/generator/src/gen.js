@@ -2,36 +2,8 @@ var lib = require("./lib");
 
 var g_cardIds = {};
 var g_setIds = {};
-var g_setNames = {
-    "core-set": "CORE",
-    "denizens-of-shimzar": "DEOS",
-    "bloodbound-ancients": "BLAN",
-    "unearthed-prophecy": "UNPR",
-    "immortal-vanguard": "IMVA",
-    "trials-of-mythron": "TROM",
-    "gauntlet-specials": "GASP"
-};
-var g_specialCardImages = [
-  "Starhorn the Seeker",
-  "Ragnora the Relentless",
-  "Reva Eventide",
-  "Shidai Stormblossom",
-  "Argon Highmayne",
-  "Ziran Sunforge",
-  "Brome Warcrest",
-  "Scioness Sajj",
-  "Zirix Starstrider",
-  "Ciphyron Ascendant",
-  "Cassyva Soulreaper",
-  "Maehv Skinsolder",
-  "Kara Winterblade",
-  "Ilena Cryobyte",
-  "Grandmaster Kraigon",
-  "vindicator",
-  "Earth Sister Taygete",
-  "Storm Sister Alkyone",
-  "Hamon Bladeseeker"
-];
+var g_setNames = JSON.parse(lib.readFile("./assets/configs/sets.json"));
+var g_specialImages = JSON.parse(lib.readFile("./assets/configs/images.json"));
 
 function isCardNonUnit(card) {
   return card.type === "spell"
@@ -44,8 +16,8 @@ function getSpecialCardClass(card) {
     return card.type;
   }
 
-  for (var i = 0; i < g_specialCardImages.length; i++) {
-    var name = g_specialCardImages[i];
+  for (var i = 0; i < g_specialImages.length; i++) {
+    var name = g_specialImages[i];
 
     if (card.name === name) {
       return lib.strstr(name, " ", "-").toLowerCase();
@@ -55,8 +27,16 @@ function getSpecialCardClass(card) {
   return "";
 }
 
+function getSetName(card) {
+  for (var i = 0; i < g_setNames.length; i++) {
+    if (card.set === g_setNames[i].id) {
+      return g_setNames[i].abbr;
+    }
+  }
+}
+
 function generateCardId(card) {
-  var cardId = g_setNames[card.set] + "-";
+  var cardId = getSetName(card) + "-";
 
   // initialize card id's counter
   if (g_setIds[card.set] === undefined) {
@@ -121,6 +101,19 @@ function getCardHtml(card) {
   return result;
 }
 
+function writeHtmlPage(cards, filepath, isCondition) {
+  var html = lib.readFile("./assets/templates/page.html");
+  var items = "";
+
+  for (var i = 0; i < cards.length; i++) {
+    if (isCondition(cards[i])) {
+      items += getCardHtml(cards[i]);
+    }
+  }
+
+  lib.writeFile(filepath, html.replace("<!-- cards here -->", items));
+}
+
 module.exports = {
-  getCardHtml
+  writeHtmlPage
 };
