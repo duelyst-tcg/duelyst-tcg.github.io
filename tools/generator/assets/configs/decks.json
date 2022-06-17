@@ -2,6 +2,7 @@
   {
     "name": "Lyonar Starter",
     "author": "Duelyst",
+    "description": "AI's Practice Mode deck",
     "faction": "lyonar",
     "general": "Argeon Highmayne",
     "cards": {
@@ -26,6 +27,7 @@
   {
     "name": "Songhai Starter",
     "author": "Duelyst",
+    "description": "AI's Practice Mode deck",
     "faction": "songhai",
     "general": "Kaleos Xaan",
     "cards": {
@@ -51,6 +53,7 @@
   {
     "name": "Vetruvian Starter",
     "author": "Duelyst",
+    "description": "AI's Practice Mode deck",
     "faction": "vetruvian",
     "general": "Zirix Starstrider",
     "cards": {
@@ -78,6 +81,7 @@
   {
     "name": "Abyssian Starter",
     "author": "Duelyst",
+    "description": "AI's Practice Mode deck",
     "faction": "abyssian",
     "general": "Lilithe Blightchaser",
     "cards": {
@@ -103,8 +107,9 @@
   {
     "name": "Magmar Starter",
     "author": "Duelyst",
+    "description": "AI's Practice Mode deck",
     "faction": "magmar",
-    "general": "Vaath the Immortal"
+    "general": "Vaath the Immortal",
     "cards": {
       "Phalanxar": 3,
       "Bloodshard Minion": 1,
@@ -128,6 +133,7 @@
   {
     "name": "Vanar Starter",
     "author": "Duelyst",
+    "description": "AI's Practice Mode deck",
     "faction": "vanar",
     "general": "Faie Bloodwing",
     "cards": {
