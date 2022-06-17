@@ -111,10 +111,6 @@ function getType(element) {
   return getClass(element, g_cardTypes);
 }
 
-function isToken(element) {
-  return element.classList.contains("token");
-}
-
 function getMana(element) {
   var target = element
     .getElementsByClassName("card-mana")[0]
@@ -146,7 +142,6 @@ class Card {
     this.rarity = getRarity(element);
     this.faction = getFaction(element);
     this.type = getType(element);
-    this.token = isToken(element);
     this.mana = getMana(element);
 
     var description = getDescription(element);

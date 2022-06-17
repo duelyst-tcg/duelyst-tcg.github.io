@@ -2,5 +2,8 @@
     "name": "@merijnhendriks/generator",
     "author": "Merijn Hendriks",
     "version": "1.0.0",
-    "description": "Card website generator"
+    "description": "Card website generator",
+    "dependencies": {
+        "markdown-it": "^13.0.1"
+    }
 }
