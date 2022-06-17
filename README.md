@@ -4,7 +4,6 @@ The physical trading card game variant of Duelyst.
 
 **Folder** | **Content**
 ---------- | ---------------------------------------
-`cards`    | Printable html pages and related assets
 `audio`    | Audio to burn to a CD
 `docs`     | An (incomplete) rulebook
 `tools`    | Code to aid with development
@@ -14,9 +13,15 @@ The physical trading card game variant of Duelyst.
 generator | Produces a printable html page
 Server    | View local html files in sandboxed browser
 
+**Print option** | **Value**
+---------------- | ---------
+Size             | A4
+Margin           | Minimal
+
 ## Contribute
 
-See `todo.md` for things that need to be done.
+- See `docs/todo.md` for things that need to be done.
+- See `tools/generator/readme.md` for how to work on it.
 
 ## Credits
 

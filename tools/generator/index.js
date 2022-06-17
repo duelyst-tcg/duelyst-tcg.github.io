@@ -11,8 +11,8 @@ function isNotToken(card) {
 
 function main() {
   var cards = JSON.parse(lib.readFile("./assets/configs/cards.json"));
-  gen.writeHtmlPage(cards, "../../cards/cards-all.html", isNotToken);
-  gen.writeHtmlPage(cards, "../../cards/cards-tokens.html", isToken);
+  gen.writeHtmlPage(cards, "../../all.html", isNotToken);
+  gen.writeHtmlPage(cards, "../../tokens.html", isToken);
 }
 
 main();
