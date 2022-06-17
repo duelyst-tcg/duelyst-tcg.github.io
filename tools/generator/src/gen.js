@@ -48,7 +48,7 @@ function getSpecialCardClass(card) {
     var name = g_specialCardImages[i];
 
     if (card.name === name) {
-      return name.replace(" ", "-").toLowerCase();
+      return lib.strstr(name, " ", "-").toLowerCase();
     }
   }
 

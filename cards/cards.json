@@ -493,8 +493,8 @@
     "health": 5
   },
   {
-    "name": "",
-    "image": "",
+    "name": "Divine Bond",
+    "image": "./assets/img/Divine-Bond.png",
     "set": "core-set",
     "rarity": "basic",
     "faction": "lyonar",
@@ -8992,8 +8992,8 @@
     "health": 6
   },
   {
-    "name": "Project Ω",
-    "image": "./assets/img/Project-Ω.png",
+    "name": "Project Omega",
+    "image": "./assets/img/Project-Omega.png",
     "set": "immortal-vanguard",
     "rarity": "legendary",
     "faction": "neutral",

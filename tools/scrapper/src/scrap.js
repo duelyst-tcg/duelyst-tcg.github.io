@@ -1,3 +1,5 @@
+var lib - require("./lib");
+
 var g_cardSets = [
   "core-set",
   "denizens-of-shimzar",
@@ -38,28 +40,24 @@ var g_cardFactions = [
   "neutral"
 ];
 
-function strstr(text, a, b) {
-   return text.split(a).join(b);
-}
-
 function removeGarbage(text) {
   var bold = "**";
   var eol = "\n";
 
   // convert html to markdown
-  text = strstr(text, "<a>", bold);
-  text = strstr(text, "</a>", bold);
-  text = strstr(text, "<span>", bold);
-  text = strstr(text, "</span>", bold);
-  text = strstr(text, "</strong>", bold);
-  text = strstr(text, "<strong>", bold);
-  text = strstr(text, "<br>", eol);
-  text = strstr(text, "</div>", eol);
-  text = strstr(text, '<div class="card-ability">', "");
+  text = lib.strstr(text, "<a>", bold);
+  text = lib.strstr(text, "</a>", bold);
+  text = lib.strstr(text, "<span>", bold);
+  text = lib.strstr(text, "</span>", bold);
+  text = lib.strstr(text, "</strong>", bold);
+  text = lib.strstr(text, "<strong>", bold);
+  text = lib.strstr(text, "<br>", eol);
+  text = lib.strstr(text, "</div>", eol);
+  text = lib.strstr(text, '<div class="card-ability">', "");
 
   // remove special characters
-  text = strstr(text, "’", "'");
-  text = strstr(text, "&nbsp;", " ");
+  text = lib.strstr(text, "’", "'");
+  text = lib.strstr(text, "&nbsp;", " ");
 
   // remove whitespace
   text = text.trim();

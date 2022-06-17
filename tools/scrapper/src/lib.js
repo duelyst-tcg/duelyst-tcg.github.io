@@ -13,6 +13,10 @@ var g_htmlMinifyOptions = {
   "removeComments": true
 };
 
+function strstr(text, a, b) {
+   return text.split(a).join(b);
+}
+
 function writeFile(filepath, data) {
   if (!fs.existsSync(filepath)) {
     // create missing directories recursively
@@ -61,6 +65,7 @@ function prettifyJson(json) {
 }
 
 module.exports = {
+  strstr,
   writeFile,
   readFile,
   getFiles,

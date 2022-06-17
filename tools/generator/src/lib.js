@@ -3,6 +3,10 @@ var MarkdownIt = require("markdown-it");
 
 var g_md = new MarkdownIt();
 
+function strstr(text, a, b) {
+   return text.split(a).join(b);
+}
+
 function writeFile(filepath, data) {
   if (!fs.existsSync(filepath)) {
     // create missing directories recursively
@@ -22,6 +26,7 @@ function mdToHtml(markdown) {
 }
 
 module.exports = {
+  strstr,
   writeFile,
   readFile,
   mdToHtml
