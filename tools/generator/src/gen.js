@@ -111,7 +111,9 @@ function writeHtmlPage(cards, filepath, isCondition) {
     }
   }
 
-  lib.writeFile(filepath, html.replace("<!-- cards here -->", items));
+  html = html.replace("<!-- cards here -->", items);
+  html = lib.minifyHtml(html);
+  lib.writeFile(filepath, html);
 }
 
 module.exports = {
