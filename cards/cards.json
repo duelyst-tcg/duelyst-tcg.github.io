@@ -9482,7 +9482,7 @@
     "description": "Deal 5 damage to an enemy minion."
   },
   {
-    "name": "Songhai Watchful Sentinel",
+    "name": "Watchful Sentinel",
     "image": "./assets/img/Songhai-Watchful-Sentinel.png",
     "set": "unearthed-prophecy",
     "rarity": "token",
@@ -9649,7 +9649,7 @@
     "health": 4
   },
   {
-    "name": "Abyssian Watchful Sentinel",
+    "name": "Watchful Sentinel",
     "image": "./assets/img/Abyssian-Watchful-Sentinel.png",
     "set": "unearthed-prophecy",
     "rarity": "token",
@@ -9848,7 +9848,7 @@
     "health": 3
   },
   {
-    "name": "Vanar Watchful Sentinel",
+    "name": "Watchful Sentinel",
     "image": "./assets/img/Vanar-Watchful-Sentinel.png",
     "set": "unearthed-prophecy",
     "rarity": "token",
