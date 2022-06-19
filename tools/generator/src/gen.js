@@ -87,7 +87,7 @@ function getCardHtml(card) {
 
   result = result.replace('mana"><span>', 'mana"><span>' + card.mana);
   result = result.replace('rarity">', 'rarity">' + getCardId(card));
-  result = result.replace('src="', 'src="' + card.image);
+  result = result.replace('src="', 'src="' + card.image.replace("./", "../"));
   result = result.replace('name">', 'name">' + card.name);
   result = result.replace('type">', 'type">' + card.type);
   result = result.replace('description">',
@@ -102,7 +102,7 @@ function getCardHtml(card) {
 }
 
 function writeHtmlPage(cards, filepath, isCondition) {
-  var html = lib.readFile("./assets/templates/page.html");
+  var html = lib.readFile("./assets/templates/card-page.html");
   var items = "";
 
   for (var i = 0; i < cards.length; i++) {

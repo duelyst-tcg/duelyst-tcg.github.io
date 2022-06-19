@@ -3,7 +3,7 @@ var url = require("url");
 var fs = require("fs");
 var path = require("path");
 
-var basedir = path.join(__dirname, "../../cards/");
+var basedir = path.join(__dirname, "../../");
 var port = 3000;
 
 var server = http.createServer(function (req, resp) {
