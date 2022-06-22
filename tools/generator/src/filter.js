@@ -3,7 +3,7 @@ function isNotToken(card) {
 }
 
 function isToken(card) {
-  return card.rarity !== isNotToken(card);
+  return !isNotToken(card);
 }
 
 function isLyonar(card) {
