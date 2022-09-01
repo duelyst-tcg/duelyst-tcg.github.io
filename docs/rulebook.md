@@ -78,6 +78,9 @@ The board should look like this:
 
 1. Each player draws 5 cards
 2. Each player may take a mulligan
+3. Each player starts with mana:
+    - 1: 2 mana
+    - 2: 3 mana
 
 ### Player's turn overview
 
