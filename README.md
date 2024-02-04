@@ -36,12 +36,12 @@ See `docs/todo.md` for things that need to be done.
 ### Changing cards
 
 1. Modify the desired card inside `tools/generator/assets/config/cards.json`
-2. Inside the folder `tools/generator/`, run `node index.json`
+2. Inside the folder `tools/generator/`, run `node index.js`
 
 ### Changing decks
 
 1. Add or modify the desired deck inside `tools/generator/assets/config/decks.json`
-2. Inside the folder `tools/generator/`, run `node index.json`
+2. Inside the folder `tools/generator/`, run `node index.js`
 
 ### Changing appearance
 
