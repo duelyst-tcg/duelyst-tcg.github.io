@@ -113,7 +113,43 @@ function writeSingles(cards, filepath, filter) {
     }
   }
 
-  writeHtmlPage(items, filepath)
+  writeHtmlPage(items, filepath);
+}
+
+function writeDeck(cards, filepath, deck) {
+  var items = [];
+  var deckCardNames = Object.keys(deck.cards);
+  
+  // find geenral
+  for (var j = 0; j < cards.length; j++) {
+    var card = cards[j];
+
+    if (card.name === deck.general) {
+      items.push(card);
+    }
+  }
+
+  // find matching card (in order of decklist)
+  for (var i = 0; i < deckCardNames.length; i++) {
+    var name = deckCardNames[i];
+
+    for (var j = 0; j < cards.length; j++) {
+      var card = cards[j];
+
+      if (card.name !== name) {
+        continue;
+      }
+
+      // add cards
+      var count = deck.cards[name];
+
+      for (var k = 0; k < count; k++) {
+        items.push(card);
+      }
+    }
+  }
+
+  writeHtmlPage(items, filepath);
 }
 
 function writeHtmlPage(cards, filepath) {
@@ -130,5 +166,6 @@ function writeHtmlPage(cards, filepath) {
 }
 
 module.exports = {
-  writeSingles
+  writeSingles,
+  writeDeck
 };

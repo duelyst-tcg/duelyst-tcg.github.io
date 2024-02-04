@@ -4,6 +4,8 @@ The physical trading card game variant of Duelyst.
 
 **Folder** | **Content**
 ---------- | ---------------------------------------
+`cards`    | Generated HTML pages of all cards
+`decks`    | Generated HTML pagesof (offical) decks
 `audio`    | Audio to burn to a CD
 `docs`     | An (incomplete) rulebook
 `tools`    | Code to aid with development

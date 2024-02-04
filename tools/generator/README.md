@@ -15,6 +15,7 @@ Printable html cards generator
 ### Edit...
 
 - Cards: `./assets/configs/cards.json`
+- Decks: `./assets/configs/decks.json`
 - Sets: `./assets/configs/sets.json`
 - Special images: `./assets/configs/images.json`
 

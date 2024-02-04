@@ -1,6 +1,6 @@
 [
   {
-    "name": "Lyonar Starter",
+    "name": "Starter-Lyonar",
     "author": "Duelyst",
     "description": "AI's Practice Mode deck",
     "faction": "lyonar",
@@ -25,7 +25,7 @@
     }
   },
   {
-    "name": "Songhai Starter",
+    "name": "Starter-Songhai",
     "author": "Duelyst",
     "description": "AI's Practice Mode deck",
     "faction": "songhai",
@@ -51,7 +51,7 @@
     }
   },
   {
-    "name": "Vetruvian Starter",
+    "name": "Starter-Vetruvian",
     "author": "Duelyst",
     "description": "AI's Practice Mode deck",
     "faction": "vetruvian",
@@ -79,7 +79,7 @@
     }
   },
   {
-    "name": "Abyssian Starter",
+    "name": "Starter-Abyssian",
     "author": "Duelyst",
     "description": "AI's Practice Mode deck",
     "faction": "abyssian",
@@ -105,7 +105,7 @@
     }
   },
   {
-    "name": "Magmar Starter",
+    "name": "Starter-Magmar",
     "author": "Duelyst",
     "description": "AI's Practice Mode deck",
     "faction": "magmar",
@@ -131,7 +131,7 @@
     }
   },
   {
-    "name": "Vanar Starter",
+    "name": "Starter-Vanar",
     "author": "Duelyst",
     "description": "AI's Practice Mode deck",
     "faction": "vanar",
