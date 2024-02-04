@@ -26,9 +26,9 @@
     width: 50px;
     height: 100%;
     position: relative;
-    color: #eeeeee;
+    color: #ffffff;
     line-height: 20px;
-    border-right: 1px solid #bbbbbb;
+    border-right: 1px solid #aaaaaa;
 }
 
 /* card mana */
@@ -37,7 +37,7 @@
     font-size: 30px;
     line-height: 35px;
     font-weight: 600;
-    color: #eeeeee;
+    color: #ffffff;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -105,13 +105,13 @@
     display: block;
     margin: 15px 0px 18px 0px;
     opacity: .6;
-    color: #eeeeee;
+    color: #ffffff;
 }
 .card-rarity:before, .card-attack:before, .card-health:before {
     font-family: Duelspot;
     display: block;
     font-size: 21px;
-    color: #eeeeee;
+    color: #ffffff;
 }
 
 /* card rarity */
@@ -138,7 +138,7 @@
     color: #396cfd;
 }
 .basic .card-rarity:before, .common .card-rarity:before {
-    color: #dddddd;
+    color: #ffffff;;
 }
 .core-set .card-rarity:before {
     font-family: duelspot;
@@ -153,21 +153,21 @@
 
 /* card attack */
 .card-attack {
-    color: #eeeeee;
+    color: #ffffff;
 }
 .card-attack:before {
     content: "\e903";
-    color: #eeeeee;
+    color: #ffffff;
 }
 
 /* card health */
 .card-health {
     margin-top: 22px;
-    color: #eeeeee;
+    color: #ffffff;
 }
 .card-health:before {
     content: "\e905";
-    color: #eeeeee;
+    color: #ffffff;
 }
 
 /* card right */
@@ -221,7 +221,7 @@
 
 /* card type */
 .card-type {
-    color: #eeeeee;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 3px;
@@ -230,7 +230,7 @@
 
 /* card description */
 .card-description {
-    color: #eeeeee;
+    color: #ffffff;
     font-size: 11px;
     line-height: 17px;
     padding: 2px 10px;
@@ -239,11 +239,9 @@
 }
 .card-description a {
     font-weight: bold;
-    color: #ffffff;
 }
 .card-description span {
     font-weight: bold;
-    color: #ffffff;
 }
 
 /* special case images */
