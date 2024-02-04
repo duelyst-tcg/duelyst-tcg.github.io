@@ -10,7 +10,7 @@ function main() {
   gen.writeHtmlPage(cards, "../../cards/lyonar.html", filter.isLyonar);
   gen.writeHtmlPage(cards, "../../cards/songhai.html", filter.isSonghai);
   gen.writeHtmlPage(cards, "../../cards/vetruvian.html", filter.isVetruvian);
-  gen.writeHtmlPage(cards, "../../cards/vetruvian.html", filter.isAbyssian);
+  gen.writeHtmlPage(cards, "../../cards/abyssian.html", filter.isAbyssian);
   gen.writeHtmlPage(cards, "../../cards/magmar.html", filter.isMagmar);
   gen.writeHtmlPage(cards, "../../cards/vanar.html", filter.isVanar);
   gen.writeHtmlPage(cards, "../../cards/neutral.html", filter.isNeutral);
