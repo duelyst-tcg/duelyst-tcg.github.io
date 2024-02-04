@@ -88,7 +88,7 @@ function getCardHtml(card) {
 
   result = result.replace('mana"><span>', 'mana"><span>' + card.mana);
   result = result.replace('rarity">', 'rarity">' + getCardId(card));
-  result = result.replace('src="', 'src="' + card.image.replace("./", "../"));
+  result = result.replace('src="', 'src="' + card.image.replace("./", "../../"));
   result = result.replace('name">', 'name">' + card.name);
   result = result.replace('type">', 'type">' + card.type);
   result = result.replace('description">',
