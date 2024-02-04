@@ -2,18 +2,26 @@
 
 The physical trading card game variant of Duelyst.
 
-**Folder** | **Content**
----------- | ---------------------------------------
-`cards`    | Generated HTML pages of all cards
-`decks`    | Generated HTML pagesof (offical) decks
-`audio`    | Audio to burn to a CD
-`docs`     | An (incomplete) rulebook
-`tools`    | Code to aid with development
+## How to print
 
-**Tool**  | **Purpose**
---------- | ----------------------------------------------
-Generator | Produces a printable html page
-Server    | View local html files in sandboxed browser
+1. Open one of the following pages:
+  - [Cards: all](https://duelyst-tcg.github.io/gen/cards/all)
+  - [Cards: tokens](https://duelyst-tcg.github.io/gen/cards/tokens)
+  - [Cards: neutral](https://duelyst-tcg.github.io/gen/cards/neutral)
+  - [Cards: lyonar](https://duelyst-tcg.github.io/gen/cards/lyonar)
+  - [Cards: songhai](https://duelyst-tcg.github.io/gen/cards/songhai)
+  - [Cards: vetruvian](https://duelyst-tcg.github.io/gen/cards/vetruvian)
+  - [Cards: abyssian](https://duelyst-tcg.github.io/gen/cards/abyssian)
+  - [Cards: magmar](https://duelyst-tcg.github.io/gen/cards/magmar)
+  - [Cards: vanar](https://duelyst-tcg.github.io/gen/cards/vanar)
+  - [Deck: starter - lyonar](https://duelyst-tcg.github.io/gen/decks/duelyst_starter-lyonar)
+  - [Deck: starter - songhai](https://duelyst-tcg.github.io/gen/decks/duelyst_starter-songhai)
+  - [Deck: starter - vetruvian](https://duelyst-tcg.github.io/gen/decks/duelyst_starter-vetruvian)
+  - [Deck: starter - abyssian](https://duelyst-tcg.github.io/gen/decks/duelyst_starter-abyssian)
+  - [Deck: starter - magmar](https://duelyst-tcg.github.io/gen/decks/duelyst_starter-magmar)
+  - [Deck: starter - vanar](https://duelyst-tcg.github.io/gen/decks/duelyst_starter-vanar)
+2. Browser > Hambuger menu > Print...
+3. Set the printer options:
 
 **Print option** | **Value**
 ---------------- | ---------
@@ -30,13 +38,13 @@ Margin           | Minimal
 I wouldn't be here without any of these:
 
 - Duelyst, for being a truly remarkable game
-- [duelyst wiki](https://duelyst.fandom.com/), as I grabbed most information
+- [duelyst wiki](https://duelyst.fandom.com), as I grabbed most information
   from there.
 - [duelspot](https://duelspot.com), as I used most of the styling and data from
   there.
 - [duelers/resources](https://github.com/Duelers/resources) for some missing
   images and other resources.
-- [-norrinator-](https://www.reddit.com/user/-Norrinator-/), for his version of
+- [-norrinator-](https://www.reddit.com/user/-Norrinator-), for his version of
   physical duelyst, which inspired me to make this.
 
 ## License
