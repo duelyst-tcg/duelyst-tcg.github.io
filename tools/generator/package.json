@@ -3,7 +3,7 @@
     "author": "Merijn Hendriks",
     "version": "1.0.0",
     "description": "Card website generator",
-    "dependencies": {
+    "devDependencies": {
         "html-minifier": "^4.0.0",
         "markdown-it": "^13.0.1"
     }
