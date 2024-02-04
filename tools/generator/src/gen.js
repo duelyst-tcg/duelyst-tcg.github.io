@@ -102,13 +102,21 @@ function getCardHtml(card) {
   return result;
 }
 
-function writeSingles(cards, filepath, filter) {
+function writeSingles(cards, filepath, filters) {
   var items = [];
 
   for (var i = 0; i < cards.length; i++) {
     var card = cards[i];
+    var isMatch = true;
 
-    if (filter(card)) {
+    for (var j = 0; j < filters.length; j++) {
+      if (!filters[j](card)) {
+        isMatch = false;
+        break;
+      }
+    }
+
+    if (isMatch) {
       items.push(card);
     }
   }

@@ -11,35 +11,35 @@ function isToken(card) {
 }
 
 function isLyonar(card) {
-  return isNotToken(card) && card.faction === "lyonar";
+  return card.faction === "lyonar";
 }
 
 function isSonghai(card) {
-  return isNotToken(card) && card.faction === "songhai";
+  return card.faction === "songhai";
 }
 
 function isVetruvian(card) {
-  return isNotToken(card) && card.faction === "vetruvian";
+  return card.faction === "vetruvian";
 }
 
 function isAbyssian(card) {
-  return isNotToken(card) && card.faction === "abyssian";
+  return card.faction === "abyssian";
 }
 
 function isMagmar(card) {
-  return isNotToken(card) && card.faction === "magmar";
+  return card.faction === "magmar";
 }
 
 function isVanar(card) {
-  return isNotToken(card) && card.faction === "vanar";
+  return card.faction === "vanar";
 }
 
 function isNeutral(card) {
-  return isNotToken(card) && card.faction === "neutral";
+  return card.faction === "neutral";
 }
 
 function isBoss(card) {
-  return isNotToken(card) && card.faction === "boss";
+  return card.faction === "boss";
 }
 
 module.exports = {
