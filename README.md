@@ -1,5 +1,3 @@
-# Duelyst
-
 The physical trading card game variant of Duelyst.
 
 ## How to print
