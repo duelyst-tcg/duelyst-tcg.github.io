@@ -31,8 +31,22 @@ to change the stylesheet and backgrounds to get the best results.
 
 ## Contribute
 
-- See `docs/todo.md` for things that need to be done.
-- See `tools/generator/readme.md` for how to work on it.
+See `docs/todo.md` for things that need to be done.
+
+### Changing cards
+
+1. Modify the desired card inside `tools/generator/assets/config/cards.json`
+2. Inside the folder `tools/generator/`, run `node index.json`
+
+### Changing decks
+
+1. Add or modify the desired deck inside `tools/generator/assets/config/decks.json`
+2. Inside the folder `tools/generator/`, run `node index.json`
+
+### Changing appearance
+
+- For styling, modify `assets/css/duelyst.css`
+- For imgaes, modify the file(s) inside `assets/img/`
 
 ## Credits
 
