@@ -86,9 +86,14 @@ function getCardHtml(card) {
     + " " + card.faction
     + " " + cardClass);
 
-  result = result.replace('mana"><span>', 'mana"><span>' + card.mana);
+  var mana = card.type === "general"
+    ? "G"
+    : card.mana;
+
+  result = result.replace('mana"><span>', 'mana"><span>' + mana);
   result = result.replace('rarity">', 'rarity">' + getCardId(card));
-  result = result.replace('src="', 'src="' + card.image.replace("./", "../../"));
+  result = result.replace('class="card-back" src="">', 'class="card-back" src="../../assets/img/bg/' + card.faction + '.png">');
+  result = result.replace('class="card-front" src="">', 'class="card-front" src="' + card.image.replace("./", "../../") + '">');
   result = result.replace('name">', 'name">' + card.name);
   result = result.replace('type">', 'type">' + card.type);
   result = result.replace('description">',
