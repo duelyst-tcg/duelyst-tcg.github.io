@@ -28,6 +28,9 @@ The physical trading card game variant of Duelyst.
 Size             | A4
 Margin           | Minimal
 
+The colors have been tweaked for the Hp Color LaserJet CP2025. You might want
+to change the stylesheet and backgrounds to get the best results.
+
 ## Contribute
 
 - See `docs/todo.md` for things that need to be done.

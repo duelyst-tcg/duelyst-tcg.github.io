@@ -33,7 +33,7 @@
 
 /* card mana */
 .card-mana {
-    background-color: #444444;
+    background-color: #555555;
     font-size: 30px;
     line-height: 35px;
     font-weight: 600;
@@ -43,7 +43,7 @@
     position: absolute;
 }
 .card-mana:after {
-    border-top: 15px solid #444444;
+    border-top: 15px solid #555555;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     content: "";

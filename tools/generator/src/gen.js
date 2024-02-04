@@ -133,7 +133,7 @@ function writeDeck(cards, filepath, deck) {
   var items = [];
   var deckCardNames = Object.keys(deck.cards);
   
-  // find geenral
+  // find general
   for (var j = 0; j < cards.length; j++) {
     var card = cards[j];
 
