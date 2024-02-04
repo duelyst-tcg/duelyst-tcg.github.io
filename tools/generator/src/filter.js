@@ -1,3 +1,7 @@
+function all(card) {
+  return true;
+}
+
 function isNotToken(card) {
   return card.rarity !== "token";
 }
@@ -39,6 +43,7 @@ function isBoss(card) {
 }
 
 module.exports = {
+  all,
   isNotToken,
   isToken,
   isLyonar,

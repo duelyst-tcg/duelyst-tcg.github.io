@@ -75,6 +75,7 @@ function getCardDescription(card) {
 
 function getCardHtml(card) {
   var isNonUnit = isCardNonUnit(card);
+  var cardClass = getSpecialCardClass(card);
   var result = (isNonUnit)
     ? lib.readFile("./assets/templates/card-other.html")
     : lib.readFile("./assets/templates/card-unit.html");
@@ -83,7 +84,7 @@ function getCardHtml(card) {
     + " " + card.set
     + " " + card.rarity
     + " " + card.faction
-    + " " + getSpecialCardClass(card));
+    + " " + cardClass);
 
   result = result.replace('mana"><span>', 'mana"><span>' + card.mana);
   result = result.replace('rarity">', 'rarity">' + getCardId(card));
@@ -101,14 +102,26 @@ function getCardHtml(card) {
   return result;
 }
 
-function writeHtmlPage(cards, filepath, isCondition) {
+function writeSingles(cards, filepath, filter) {
+  var items = [];
+
+  for (var i = 0; i < cards.length; i++) {
+    var card = cards[i];
+
+    if (filter(card)) {
+      items.push(card);
+    }
+  }
+
+  writeHtmlPage(items, filepath)
+}
+
+function writeHtmlPage(cards, filepath) {
   var html = lib.readFile("./assets/templates/card-page.html");
   var items = "";
 
   for (var i = 0; i < cards.length; i++) {
-    if (isCondition(cards[i])) {
-      items += getCardHtml(cards[i]);
-    }
+    items += getCardHtml(cards[i]);
   }
 
   html = html.replace("<!-- cards here -->", items);
@@ -117,5 +130,5 @@ function writeHtmlPage(cards, filepath, isCondition) {
 }
 
 module.exports = {
-  writeHtmlPage
+  writeSingles
 };
