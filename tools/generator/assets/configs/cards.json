@@ -5738,7 +5738,7 @@
     "faction": "vanar",
     "type": "spell",
     "mana": 2,
-    "description": "Transform ANY minion into a 4/5 Ursaplomb that will not counterattack."
+    "description": "Transform ANY minion into a 4/5 **Ursaplomb** that will not counterattack."
   },
   {
     "name": "Aspect of the Ravager",
@@ -5748,7 +5748,7 @@
     "faction": "vanar",
     "type": "spell",
     "mana": 2,
-    "description": "Transform ANY minion into a 3/3 Fox Ravager with no abilities."
+    "description": "Transform ANY minion into a 3/3 **Fox Ravager** with no abilities."
   },
   {
     "name": "Bonechill Barrier",
