@@ -94,7 +94,7 @@ function getCardHtml(card) {
   result = result.replace('rarity">', 'rarity">' + getCardId(card));
   result = result.replace('class="card-back" src="">', 'class="card-back" src="../../assets/img/bg/' + card.faction + '.png">');
   result = result.replace('class="card-front" src="">', 'class="card-front" src="' + card.image.replace("./", "../../") + '">');
-  result = result.replace('name">', 'name">' + card.name);
+  result = result.replace('name">', 'name"><br/><br/>' + card.name);
   result = result.replace('type">', 'type">' + card.type);
   result = result.replace('description">',
     'description">' + getCardDescription(card));
