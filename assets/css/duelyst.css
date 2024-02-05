@@ -264,10 +264,6 @@
     transform: scale(1.15);
     transform-origin: 155px 160px;
 }
-.brome-warcrest .card-front {
-    transform: scale(1.50);
-    transform-origin: 70px 180px;
-}
 .zirix-starstrider .card-front {
     transform: scale(.95);
 }
