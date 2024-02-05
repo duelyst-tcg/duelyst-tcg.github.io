@@ -90,12 +90,16 @@ function getCardHtml(card) {
     ? "G"
     : card.mana;
 
+  var type = card.rarity === "token"
+    ? "token / " + card.type
+    : card.type;
+
   result = result.replace('mana"><span>', 'mana"><span>' + mana);
   result = result.replace('rarity">', 'rarity">' + getCardId(card));
   result = result.replace('class="card-back" src="">', 'class="card-back" src="../../assets/img/bg/' + card.faction + '.png">');
   result = result.replace('class="card-front" src="">', 'class="card-front" src="' + card.image.replace("./", "../../") + '">');
   result = result.replace('name">', 'name">' + card.name);
-  result = result.replace('type">', 'type">' + card.type);
+  result = result.replace('type">', 'type">' + type);
   result = result.replace('description">',
     'description">' + getCardDescription(card));
 
