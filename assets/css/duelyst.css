@@ -271,10 +271,6 @@
     transform: scale(1.3);
     transform-origin: 40px 170px;
 }
-.ciphyron-ascendant .card-front {
-    transform: scale(1.35);
-    transform-origin: 120px 170px;
-}
 .maehv-skinsolder .card-front {
     transform: scale(1.60);
     transform-origin: 101px 170px;
