@@ -283,10 +283,6 @@
     transform: scale(1.25);
     transform-origin: 80px 160px;
 }
-.grandmaster-kraigon .card-front {
-    transform: scale(1.7);
-    transform-origin: 80px 180px;
-}
 .vindicator .card-front {
     transform: scale(1.3);
     transform-origin: 80px 180px;
