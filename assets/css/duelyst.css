@@ -1,7 +1,6 @@
 /* printer */
 @media print {
     body {
-        color-adjust: exact;
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
     }
@@ -15,9 +14,9 @@
     width: 245px;
     height: 343px;
     text-align: center;
-    margin-bottom: 4px;
     vertical-align: top;
     font-family: Source Sans Pro, Arial, sans-serif;
+    margin-bottom: 4px;
 }
 
 /* card left */
