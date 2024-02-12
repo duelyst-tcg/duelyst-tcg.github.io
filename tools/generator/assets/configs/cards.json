@@ -133,7 +133,7 @@
     "faction": "lyonar",
     "type": "spell",
     "mana": 1,
-    "description": "Target a friendly Minion, it heals all damage from it.<br/>Draw a copy of the Minion from your deck."
+    "description": "Target a friendly Minion, it heals all damage from it.<br/>Search for a Minion with the same name in your deck, and add it to your hand. Shuffle your deck."
   },
   {
     "name": "Lionheart Blessing",
@@ -1830,7 +1830,7 @@
     "faction": "songhai",
     "type": "spell",
     "mana": 3,
-    "description": "Deal 2 damage to 2 random enemy Minions.<br/>Draw a card at end of turn."
+    "description": "Deal 2 damage to 2 random enemy Minions.<br/>Draw a card."
   },
   {
     "name": "Unbounded Energy Amulet",
@@ -2332,7 +2332,7 @@
     "faction": "vetruvian",
     "type": "spell",
     "mana": 1,
-    "description": "Until end of turn, whenever you summon a Minion with **Flying** from your hand, draw a Minion with **Flying** from your deck."
+    "description": "Until end of turn, whenever you summon a Minion with **Flying** from your hand, add a random Minion with **Flying** from your deck to your hand. Shuffle your deck."
   },
   {
     "name": "Blindscorch",
@@ -2392,7 +2392,7 @@
     "faction": "vetruvian",
     "type": "spell",
     "mana": 1,
-    "description": "Draw an Artifact from your deck."
+    "description": "Add a random Artifact from your deck to your hand. Shuffle your deck."
   },
   {
     "name": "Scion's First Wish",
@@ -3432,7 +3432,7 @@
     "faction": "abyssian",
     "type": "spell",
     "mana": 1,
-    "description": "Draw a Minion from your opponent's deck. It gains +1/+1."
+    "description": "Add a random Minion from your opponent's deck to your hand, it gains +1/+1. Shuffle your opponent's deck."
   },
   {
     "name": "Furiosa",
@@ -5780,7 +5780,7 @@
     "faction": "vanar",
     "type": "spell",
     "mana": 2,
-    "description": "Target a friendly Minion, it gains +2/+0.<br/>It takes no damage until end of turn."
+    "description": "Target a friendly Minion, it gains +2/+0. It takes no damage until end of turn."
   },
   {
     "name": "Bur",
@@ -5892,7 +5892,7 @@
     "faction": "vanar",
     "type": "spell",
     "mana": 2,
-    "description": "Target an enemy, **Stun** it and draw a card."
+    "description": "Target an enemy, **Stun** it.<br/>Draw a card."
   },
   {
     "name": "Frostfire",
@@ -6118,7 +6118,7 @@
     "faction": "vanar",
     "type": "minion",
     "mana": 3,
-    "description": "**Sentinel**: Minion summoned.<br/>This switches positions with the Minion that transformed it.",
+    "description": "**Sentinel**: Minion summoned.<br/>This Minion switches positions with the Minion that transformed it.",
     "attack": 3,
     "health": 5
   },
@@ -6274,7 +6274,7 @@
     "faction": "vanar",
     "type": "spell",
     "mana": 4,
-    "description": "Target an enemy Minion, deal 4 damage to it.<br/>Draw a Vespyr Minion from your deck."
+    "description": "Target an enemy Minion, deal 4 damage to it.<br/>Draw random a Vespyr Minion from your deck, and shuffle your deck."
   },
   {
     "name": "Denadoro",
@@ -7111,7 +7111,7 @@
     "faction": "neutral",
     "type": "mech",
     "mana": 2,
-    "description": "**Opening Gambit**: Draw another Replicant from your deck.",
+    "description": "**Opening Gambit**: Add a **Replicant** from your deck to your hand. Shuffle your deck.",
     "attack": 2,
     "health": 2
   },
@@ -7900,7 +7900,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 4,
-    "description": "**Opening Gambit**: Draw a random Artifact from your deck.",
+    "description": "**Opening Gambit**: Add a random Artifact from your deck to your hand. Shuffle your deck.",
     "attack": 3,
     "health": 4
   },
