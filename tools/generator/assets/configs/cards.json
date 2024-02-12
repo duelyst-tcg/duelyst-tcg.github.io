@@ -6860,7 +6860,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 2,
-    "description": "Whenever you summon a Minion with Opening Gambit from your hand, gain +2/+0.",
+    "description": "Whenever you summon a Minion with **Opening Gambit** from your hand, gain +2/+0.",
     "attack": 1,
     "health": 3
   },
@@ -7601,7 +7601,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 3,
-    "description": "**Opening Gambit**: Push a nearby enemy Minion to any space.",
+    "description": "**Opening Gambit**: Teleport a nearby enemy Minion to a random nearby space.",
     "attack": 2,
     "health": 2
   },
@@ -8664,7 +8664,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 5,
-    "description": "<b>Dying Wish</b>: **Dispel** all enemy Minions.",
+    "description": "**Dying Wish**: **Dispel** all enemy Minions.",
     "attack": 4,
     "health": 3
   },
@@ -8760,7 +8760,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 5,
-    "description": "**Opening Gambit**: all nearby Minions deal damage to themselves equal to their Attack.",
+    "description": "**Opening Gambit**: All nearby Minions deal damage to themselves equal to their Attack.",
     "attack": 3,
     "health": 2
   },
@@ -8784,7 +8784,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 5,
-    "description": "**Opening Gambit**: Gains +1/+1 for each card in your opponent's hand.",
+    "description": "**Opening Gambit**: Gain +1/+1 for each card in your opponent's hand.",
     "attack": 2,
     "health": 3
   },
@@ -8927,7 +8927,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 6,
-    "description": "**Opening Gambit** and **Dying Wish**: Summon a random Minion from any Tribe nearby.",
+    "description": "**Opening Gambit**: Summon a random Minion from any Tribe nearby.<br/>**Dying Wish**: Summon a random Minion from any Tribe nearby.",
     "attack": 3,
     "health": 3
   },
@@ -9236,7 +9236,7 @@
     "faction": "neutral",
     "type": "minion",
     "mana": 7,
-    "description": "**Airdrop**<br/>**Opening Gambit**: Push all nearby Generals and Minions to random spaces.",
+    "description": "**Airdrop**<br/>**Opening Gambit**: Teleport all nearby Generals and Minions to random nearby spaces.",
     "attack": 12,
     "health": 6
   },
